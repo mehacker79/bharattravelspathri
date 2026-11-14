@@ -76,10 +76,10 @@
   }
  },
  "hero": {
-  "bg": "images/hero-bg-1794684400689.jpg",
+  "bg": "",
   "bus": "images/hero-bus-1794684619182.png",
   "road": "images/hero-road-1794684726977.jpg",
-  "video": ""
+  "video": "https://youtube.com/shorts/dTq5xK5_wvQ?si=UHFWfzGb2odSKo-T"
  },
  "admin": {
   "email": "bharattravelspathri@gmail.com",
