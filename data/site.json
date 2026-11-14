@@ -1,6 +1,23 @@
 {
  "v": 1,
- "buses": [],
+ "buses": [
+  {
+   "id": "b1794685861631",
+   "name": "New Bus",
+   "desc": "42 Seater Tourist Coach",
+   "cap": 42,
+   "type": "AC",
+   "features": [
+    "Pushback Seats",
+    "DJ/Music System",
+    "Heavy Luggage Carrier",
+    "Mobile Charging"
+   ],
+   "imgs": [],
+   "blocked": [],
+   "booked": []
+  }
+ ],
  "rules": [
   {
    "t": {
@@ -77,9 +94,9 @@
  },
  "hero": {
   "bg": "images/hero-bg-1794685696361.jpg",
-  "bus": "images/hero-bus-1794685444122.png",
+  "bus": "images/hero-bus-1794686273892.png",
   "road": "images/hero-road-1794684726977.jpg",
-  "video": "https://youtube.com/shorts/dTq5xK5_wvQ?si=UHFWfzGb2odSKo-T"
+  "video": ""
  },
  "admin": {
   "email": "bharattravelspathri@gmail.com",
