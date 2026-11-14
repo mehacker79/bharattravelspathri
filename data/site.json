@@ -1,0 +1,143 @@
+{
+ "v": 1,
+ "buses": [
+  {
+   "id": "b1",
+   "name": "Tata Starbus Ultra",
+   "desc": "42 Seater Luxury Highway Coach",
+   "cap": 42,
+   "type": "AC",
+   "features": [
+    "Pushback Seats",
+    "DJ/Music System",
+    "Heavy Luggage Carrier",
+    "Mobile Charging"
+   ],
+   "imgs": [
+    "images/bus1.jpg"
+   ],
+   "blocked": [],
+   "booked": []
+  },
+  {
+   "id": "b2",
+   "name": "Tata Starbus Classic",
+   "desc": "42 Seater Group & Wedding Special",
+   "cap": 42,
+   "type": "AC",
+   "features": [
+    "Pushback Seats",
+    "DJ/Music System",
+    "Heavy Luggage Carrier",
+    "Mobile Charging"
+   ],
+   "imgs": [
+    "images/bus2.jpg"
+   ],
+   "blocked": [],
+   "booked": []
+  },
+  {
+   "id": "b3",
+   "name": "SML Dolphin Executive",
+   "desc": "42 Seater Comfort Tourist Coach",
+   "cap": 42,
+   "type": "Non-AC",
+   "features": [
+    "Pushback Seats",
+    "DJ/Music System",
+    "Heavy Luggage Carrier",
+    "Mobile Charging"
+   ],
+   "imgs": [
+    "images/bus3.jpg"
+   ],
+   "blocked": [],
+   "booked": []
+  }
+ ],
+ "rules": [
+  {
+   "t": {
+    "en": "Toll Tax",
+    "mr": "टोल टॅक्स"
+   },
+   "d": {
+    "en": "Toll tax is payable by the customer as per actual receipts.",
+    "mr": "टोल टॅक्स प्रत्यक्ष पावतीप्रमाणे ग्राहकाने भरावा."
+   }
+  },
+  {
+   "t": {
+    "en": "Parking",
+    "mr": "पार्किंग"
+   },
+   "d": {
+    "en": "Parking charges at destination or en-route are paid by the customer.",
+    "mr": "ठिकाणी किंवा प्रवासात लागणारे पार्किंग शुल्क ग्राहकाने भरावे."
+   }
+  },
+  {
+   "t": {
+    "en": "Border Tax",
+    "mr": "बॉर्डर टॅक्स"
+   },
+   "d": {
+    "en": "Inter-state border/permit tax is extra and charged as per actuals.",
+    "mr": "आंतरराज्य बॉर्डर/परमिट टॅक्स वेगळा, प्रत्यक्ष खर्चाप्रमाणे."
+   }
+  },
+  {
+   "t": {
+    "en": "Driver Allowance",
+    "mr": "ड्रायव्हर भत्ता"
+   },
+   "d": {
+    "en": "Driver food & night-halt allowance is payable per day, as agreed at booking.",
+    "mr": "ड्रायव्हरचा जेवण व मुक्काम भत्ता बुकिंगच्या वेळी ठरल्याप्रमाणे दररोज द्यावा."
+   }
+  },
+  {
+   "t": {
+    "en": "Advance Booking Policy",
+    "mr": "आगाऊ बुकिंग धोरण"
+   },
+   "d": {
+    "en": "Booking is confirmed only after advance payment. Balance is payable before/at trip start.",
+    "mr": "अ‍ॅडव्हान्स भरल्यानंतरच बुकिंग निश्चित होते. उर्वरित रक्कम प्रवासापूर्वी/सुरुवातीला द्यावी."
+   }
+  }
+ ],
+ "contact": {
+  "eb": {
+   "en": "Visit Us",
+   "mr": "भेट द्या"
+  },
+  "ttl": {
+   "en": "Find Us in Pathri",
+   "mr": "पाथरीत आम्हाला भेटा"
+  },
+  "addr": {
+   "en": "Manavat Road, Pathri, Dist. Parbhani, Maharashtra",
+   "mr": "मानवत रोड, पाथरी, जि. परभणी, महाराष्ट्र"
+  },
+  "phone": "9970889890",
+  "wa": "9960232822",
+  "email": "bharattravelspathri@gmail.com",
+  "map": {
+   "lat": 19.2519,
+   "lng": 76.4333,
+   "z": 15
+  }
+ },
+ "hero": {
+  "bg": "",
+  "bus": "",
+  "road": "",
+  "video": ""
+ },
+ "admin": {
+  "email": "bharattravelspathri@gmail.com",
+  "hash": "946c0d006128b03a25f3bda82b6c9fc7042129cbc38c9b115a591946f433ff3d"
+ }
+}
