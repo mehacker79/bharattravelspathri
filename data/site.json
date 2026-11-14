@@ -1,61 +1,6 @@
 {
  "v": 1,
- "buses": [
-  {
-   "id": "b1",
-   "name": "Tata Starbus Ultra",
-   "desc": "42 Seater Luxury Highway Coach",
-   "cap": 42,
-   "type": "AC",
-   "features": [
-    "Pushback Seats",
-    "DJ/Music System",
-    "Heavy Luggage Carrier",
-    "Mobile Charging"
-   ],
-   "imgs": [
-    "images/bus1.jpg"
-   ],
-   "blocked": [],
-   "booked": []
-  },
-  {
-   "id": "b2",
-   "name": "Tata Starbus Classic",
-   "desc": "42 Seater Group & Wedding Special",
-   "cap": 42,
-   "type": "AC",
-   "features": [
-    "Pushback Seats",
-    "DJ/Music System",
-    "Heavy Luggage Carrier",
-    "Mobile Charging"
-   ],
-   "imgs": [
-    "images/bus2.jpg"
-   ],
-   "blocked": [],
-   "booked": []
-  },
-  {
-   "id": "b3",
-   "name": "SML Dolphin Executive",
-   "desc": "42 Seater Comfort Tourist Coach",
-   "cap": 42,
-   "type": "Non-AC",
-   "features": [
-    "Pushback Seats",
-    "DJ/Music System",
-    "Heavy Luggage Carrier",
-    "Mobile Charging"
-   ],
-   "imgs": [
-    "images/bus3.jpg"
-   ],
-   "blocked": [],
-   "booked": []
-  }
- ],
+ "buses": [],
  "rules": [
   {
    "t": {
