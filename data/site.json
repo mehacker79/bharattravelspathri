@@ -26,8 +26,8 @@
     "mr": "टोल टॅक्स"
    },
    "d": {
-    "en": "Toll tax is payable by the customer as per actual receipts.",
-    "mr": "टोल टॅक्स प्रत्यक्ष पावतीप्रमाणे ग्राहकाने भरावा."
+    "en": "Toll tax, parking, and other charges will be decided based on the travel route after discussion with the owner.\n",
+    "mr": "टोल टॅक्स, पार्किंग आणि इतर शुल्क प्रवासाच्या मार्गाप्रमाणे (Route) मालकाशी चर्चा करून ठरवले जाईल.\n"
    }
   },
   {
@@ -36,8 +36,8 @@
     "mr": "पार्किंग"
    },
    "d": {
-    "en": "Parking charges at destination or en-route are paid by the customer.",
-    "mr": "ठिकाणी किंवा प्रवासात लागणारे पार्किंग शुल्क ग्राहकाने भरावे."
+    "en": "En-route and destination parking charges will be decided based on the travel route after discussion with the owner.\n",
+    "mr": "प्रवासातील आणि ठिकाणचे पार्किंग शुल्क प्रवासाच्या मार्गाप्रमाणे मालकाशी चर्चा करून ठरवले जाईल.\n"
    }
   },
   {
@@ -46,8 +46,8 @@
     "mr": "बॉर्डर टॅक्स"
    },
    "d": {
-    "en": "Inter-state border/permit tax is extra and charged as per actuals.",
-    "mr": "आंतरराज्य बॉर्डर/परमिट टॅक्स वेगळा, प्रत्यक्ष खर्चाप्रमाणे."
+    "en": "Inter-state border and permit taxes will be decided based on the travel route after discussion with the owner.\n",
+    "mr": "आंतरराज्य बॉर्डर आणि परमिट टॅक्स प्रवासाच्या मार्गाप्रमाणे मालकाशी चर्चा करून ठरवले जाईल.\n"
    }
   },
   {
@@ -56,8 +56,8 @@
     "mr": "ड्रायव्हर भत्ता"
    },
    "d": {
-    "en": "Driver food & night-halt allowance is payable per day, as agreed at booking.",
-    "mr": "ड्रायव्हरचा जेवण व मुक्काम भत्ता बुकिंगच्या वेळी ठरल्याप्रमाणे दररोज द्यावा."
+    "en": "Driver food and night-halt allowance will be decided based on the travel route after discussion with the owner.\n",
+    "mr": "ड्रायव्हरचा जेवण व मुक्काम भत्ता प्रवासाच्या मार्गाप्रमाणे मालकाशी चर्चा करून ठरवले जाईल.\n"
    }
   },
   {
