@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="mr" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -10,139 +10,164 @@
 <link rel="canonical" href="https://vercel.app">
 <link rel="icon" href="images/favicon.png"><link rel="apple-touch-icon" href="images/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Poppins:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Serif+Devanagari:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Poppins:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"TravelAgency","name":"Bharat Travels Pathri","url":"https://vercel.app","telephone":"+919970889890","email":"bharattravelspathri@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Manavat Road","addressLocality":"Pathri","addressRegion":"Maharashtra","addressCountry":"IN"}}</script>
 <style>
 :root{
---bg:#FBF7EF;--bg2:#F3ECDC;--ink:#0B192C;--mut:#5d6879;--card:#fff;--line:rgba(11,25,44,.13);--gold:#A97C2F;--gold2:#E2BE78;--sf:#FF6B00;--navy:#0B192C;--ivory:#F4EFE3;
---sh:0 24px 50px -26px rgba(11,25,44,.38);--hbg:rgba(251,247,239,.84);--r:22px;--star:0;
+--bg:#FBF7EF;--bg2:#F3ECDC;--ink:#0B192C;--mut:#5d6879;--card:#fff;--line:rgba(11,25,44,.13);--gold:#A97C2F;--gold2:#E2BE78;--navy:#0B192C;--ivory:#F4EFE3;
+--sh:0 24px 50px -26px rgba(11,25,44,.38);--hbg:rgba(251,247,239,.86);--r:22px;--star:0;
 --hero:linear-gradient(180deg,#FCF8F0 0%,#F8EDD5 68%,#F0DFB8 100%);--sk1:rgba(11,25,44,.13);--sk2:rgba(169,124,47,.34);
+--ov:linear-gradient(90deg,rgba(251,247,239,.94) 0%,rgba(251,247,239,.78) 46%,rgba(251,247,239,.12) 100%);
 --fd:'Playfair Display','Noto Serif Devanagari',serif;--fb:'Poppins','Noto Sans Devanagari',sans-serif;
 --sky:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 100' preserveAspectRatio='none'%3E%3Cpath d='M0 100V70h30V50h12V70h28V40l10-14 10 14v30h30V60h24V35l8-12 8 12v35h26V55h20V70h40V30l12-18 12 18v40h30V65h26V45h14V65h30V50l10-12 10 12v20h40V70h170V100Z'/%3E%3C/svg%3E")}
-[data-theme=dark]{--bg:#07101D;--bg2:#0B1830;--ink:#F4EFE3;--mut:#9bacc4;--card:#0E1D35;--line:rgba(255,255,255,.13);--gold:#DDB664;--gold2:#F3D894;--sh:0 24px 50px -26px #000;--hbg:rgba(7,16,29,.82);--star:1;
---hero:linear-gradient(180deg,#040a14 0%,#0a172d 62%,#15264b 100%);--sk1:#0d1c38;--sk2:#1b3059}
+[data-theme=dark]{--bg:#07101D;--bg2:#0B1830;--ink:#F4EFE3;--mut:#9bacc4;--card:#0E1D35;--line:rgba(255,255,255,.13);--gold:#DDB664;--gold2:#F3D894;--sh:0 24px 50px -26px #000;--hbg:rgba(7,16,29,.84);--star:1;
+--hero:linear-gradient(180deg,#040a14 0%,#0a172d 62%,#15264b 100%);--sk1:#0d1c38;--sk2:#1b3059;
+--ov:linear-gradient(90deg,rgba(4,10,20,.93) 0%,rgba(4,10,20,.68) 50%,rgba(4,10,20,.2) 100%)}
 *{box-sizing:border-box;margin:0;padding:0}
 html{overflow-x:hidden;scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:78px}
-body{font-family:var(--fb);background:var(--bg);color:var(--ink);line-height:1.65;overflow-x:hidden;transition:background .5s,color .5s}
+body{font-family:var(--fb);background:var(--bg);color:var(--ink);line-height:1.7;overflow-x:hidden;transition:background .5s,color .5s}
 a{color:inherit;text-decoration:none}img{max-width:100%;display:block}button{font-family:inherit}
 .wrap{max-width:1180px;margin:auto;padding:0 22px}
 section{padding:clamp(64px,9vw,112px) 0;position:relative;overflow-x:clip}
 ::selection{background:var(--gold);color:#fff}
+/* Marathi (Devanagari) – no clipped matras, no letter-spacing */
+html[lang=mr] body{line-height:1.85}
+html[lang=mr] *{letter-spacing:0!important}
+html[lang=mr] .hero h1{line-height:1.34}html[lang=mr] .hero h1 em{font-style:normal}html[lang=mr] .ttl{line-height:1.42}
+html[lang=mr] h3,html[lang=mr] h4,html[lang=mr] summary{line-height:1.5}
+html[lang=mr] .btn,html[lang=mr] .chip,html[lang=mr] .cp,html[lang=mr] .av,html[lang=mr] label,html[lang=mr] .eb,html[lang=mr] .eyb{line-height:1.6}
+html[lang=mr] .sx span{text-transform:none;font-size:.9rem}
 /* preloader */
 #pre{position:fixed;inset:0;z-index:300;display:grid;place-items:center;pointer-events:none}
 #pre:before,#pre:after{content:"";position:absolute;left:0;right:0;height:50.5%;background:var(--navy);transition:transform .9s cubic-bezier(.77,0,.18,1) .15s}
 #pre:before{top:0}#pre:after{bottom:0}
 #pre .pl{position:relative;z-index:2;text-align:center;color:#F4EFE3;transition:opacity .4s}
-#pre .pl div{width:104px;height:104px;margin:0 auto 14px;position:relative}
-#pre img{width:100%;height:100%;border-radius:50%;animation:pop 1s both}
-#pre i{position:absolute;inset:-8px;border-radius:50%;border:2px dashed var(--gold2);animation:spin 3s linear infinite}
-#pre span{font:600 .8rem var(--fb);letter-spacing:.3em;text-transform:uppercase;opacity:.85}
+#pre .lgo{width:110px;height:110px;margin:0 auto 22px}
+#pre span.t{font:600 .8rem var(--fb);letter-spacing:.3em;text-transform:uppercase;opacity:.85}
 #pre.done .pl{opacity:0}#pre.done:before{transform:translateY(-101%)}#pre.done:after{transform:translateY(101%)}
-@keyframes pop{from{transform:scale(.5);opacity:0}}
 @keyframes spin{to{transform:rotate(360deg)}}@keyframes sp2{to{transform:rotate(-360deg)}}
 @keyframes flo{50%{transform:translateY(-14px)}}@keyframes bob{50%{transform:translateY(-3px)}}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}100%{box-shadow:0 0 0 18px rgba(37,211,102,0)}}
 @keyframes dash{to{background-position:-100px 0}}
+/* logo animation: sonar ripples + neon breathe + shine sweep */
+.lgo{position:relative;display:block;border-radius:50%;flex:none;animation:breathe 4s ease-in-out infinite}
+.lgo>img{position:relative;z-index:2;width:100%;height:100%;border-radius:50%;display:block;object-fit:cover}
+.lgo:before,.lgo:after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--gold2);opacity:0;animation:rip 3.6s ease-out infinite;z-index:1}
+.lgo:after{animation-delay:1.8s}
+.lgo i{position:absolute;inset:0;border-radius:50%;overflow:hidden;z-index:3;pointer-events:none}
+.lgo i:after{content:"";position:absolute;top:-20%;bottom:-20%;left:-70%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.7),transparent);transform:skewX(-18deg);animation:shine 5s ease-in-out infinite}
+@keyframes rip{0%{transform:scale(1);opacity:.65}100%{transform:scale(1.75);opacity:0}}
+@keyframes shine{0%,55%{left:-70%}100%{left:140%}}
+@keyframes breathe{50%{filter:drop-shadow(0 0 16px rgba(255,107,0,.55)) drop-shadow(0 0 30px rgba(43,140,255,.25))}}
 #prog{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--gold2));z-index:90}
 /* header */
 header{position:fixed;top:0;left:0;right:0;z-index:50;background:var(--hbg);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);border-bottom:1px solid var(--line);transition:transform .4s,background .5s}
 header.hide{transform:translateY(-100%)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:12px}
-.logo{display:flex;align-items:center;gap:11px;min-width:0}
-.logo img{width:46px;height:46px;border-radius:50%;border:2px solid var(--gold);flex:none;background:#000}
-.logo b{font:700 1.08rem var(--fd);line-height:1.1;letter-spacing:.01em}.logo small{display:block;font:500 .62rem var(--fb);letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
-.links{display:flex;gap:26px}.links a{position:relative;font-size:.86rem;font-weight:500;padding:6px 0}
+.logo{display:flex;align-items:center;gap:12px;min-width:0}
+.logo .lgo{width:46px;height:46px}
+.logo b{font:700 1.08rem var(--fd);line-height:1.15;display:block}.logo small{display:block;font:500 .62rem var(--fb);letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.links{display:flex;gap:26px}.links a{position:relative;font-size:.88rem;font-weight:500;padding:6px 0}
 .links a:after{content:"";position:absolute;left:0;bottom:0;height:2px;width:100%;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:transform .35s}
 .links a:hover:after{transform:scaleX(1);transform-origin:left}
 .nr{display:flex;align-items:center;gap:8px}
-.ib{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;font-size:1rem;display:grid;place-items:center;flex:none;transition:.3s}.ib:hover{border-color:var(--gold);transform:rotate(15deg)}
+.ib{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;font-size:1rem;display:grid;place-items:center;flex:none;transition:.3s}.ib:hover{border-color:var(--gold)}
 .tg{display:flex;border:1px solid var(--line);border-radius:30px;padding:3px;background:var(--card)}
-.tg button{border:0;background:none;color:var(--ink);padding:5px 11px;border-radius:30px;cursor:pointer;font:600 .74rem var(--fb)}.tg button.on{background:var(--navy);color:#F4EFE3}
+.tg button{border:0;background:none;color:var(--ink);padding:5px 12px;border-radius:30px;cursor:pointer;font:600 .76rem var(--fb)}.tg button.on{background:var(--navy);color:#F4EFE3}
 [data-theme=dark] .tg button.on{background:var(--gold);color:#0B192C}
 .hb{display:none}
 .mnav{position:fixed;inset:0;z-index:45;background:var(--bg);padding:96px 28px 28px;display:flex;flex-direction:column;gap:2px;transform:translateX(100%);transition:transform .5s cubic-bezier(.77,0,.18,1);overflow:auto}
-.mo .mnav{transform:none}.mnav a{font:700 1.7rem var(--fd);padding:12px 0;border-bottom:1px solid var(--line)}
+.mo .mnav{transform:none}.mnav a{font:700 1.6rem var(--fd);padding:12px 0;border-bottom:1px solid var(--line)}
 .mnav .mc{margin-top:22px;display:grid;gap:10px}
 /* buttons */
-.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;cursor:pointer;background:var(--navy);color:#F4EFE3;padding:14px 28px;border-radius:50px;font:600 .92rem var(--fb);letter-spacing:.02em;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s;box-shadow:0 12px 26px -12px rgba(11,25,44,.6)}
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;cursor:pointer;background:var(--navy);color:#F4EFE3;padding:14px 28px;border-radius:50px;font:600 .92rem var(--fb);transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s;box-shadow:0 12px 26px -12px rgba(11,25,44,.6)}
 [data-theme=dark] .btn{background:var(--ivory);color:#0B192C}
-.btn:hover{transform:translateY(-3px);box-shadow:0 18px 32px -12px rgba(11,25,44,.55)}
-.btn.gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#1b1204;box-shadow:0 12px 26px -12px rgba(169,124,47,.8)}
-[data-theme=dark] .btn.gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#1b1204}
-.btn.wa{background:#1FA855;color:#fff}.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink);box-shadow:none}
+.btn:hover{transform:translateY(-3px)}
+.btn.gold,[data-theme=dark] .btn.gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#1b1204;box-shadow:0 12px 26px -12px rgba(169,124,47,.8)}
+.btn.wa,[data-theme=dark] .btn.wa{background:#1FA855;color:#fff}.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink);box-shadow:none}
 [data-theme=dark] .btn.ghost{color:var(--ivory);border-color:var(--ivory);background:transparent}
-.btn.sm{padding:9px 18px;font-size:.78rem}.btn.red{background:#C0392B;color:#fff}.btn.full{width:100%}
+.btn.sm{padding:9px 18px;font-size:.78rem}.btn.red,[data-theme=dark] .btn.red{background:#C0392B;color:#fff}.btn.full{width:100%}
 .rip{position:absolute;border-radius:50%;background:rgba(255,255,255,.45);transform:scale(0);animation:rp .6s linear;pointer-events:none}@keyframes rp{to{transform:scale(4);opacity:0}}
 /* hero */
 .hero{position:relative;min-height:100vh;min-height:100svh;padding:118px 0 262px;overflow:hidden;background:var(--hero);display:flex;align-items:center;transition:background .6s}
 .hero:before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(169,124,47,.18) 1px,transparent 1.4px);background-size:26px 26px;-webkit-mask-image:linear-gradient(#000,transparent 80%);mask-image:linear-gradient(#000,transparent 80%)}
+.hbg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.2s;animation:kb 26s ease-in-out infinite alternate}@keyframes kb{from{transform:scale(1)}to{transform:scale(1.09)}}
+.hvid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none}
+.hov{position:absolute;inset:0;background:var(--ov);display:none}
+.has-bg .hbg{opacity:1}.has-vid .hvid{display:block}.has-bg .hov,.has-vid .hov{display:block}.has-bg:before,.has-vid:before{display:none}
+.has-bg .sk,.has-bg .sun,.has-vid .sk,.has-vid .sun{display:none}
 #stars{position:absolute;inset:0;width:100%;height:100%;opacity:var(--star);transition:opacity .8s}
 .hg{position:relative;z-index:3;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
 .hg>div:first-child{transform:translateY(calc(var(--sy,0)*.18px));opacity:calc(1 - var(--sy,0)/700)}
 .eyb{display:inline-flex;align-items:center;gap:10px;font:600 .72rem var(--fb);letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}.eyb:before,.eyb:after{content:"";width:30px;height:1px;background:var(--gold)}
-.hero h1{font:800 clamp(2.3rem,6vw,4.7rem)/1.08 var(--fd);margin-bottom:22px;letter-spacing:-.01em}
+.hero h1{font:800 clamp(2.2rem,5.8vw,4.5rem)/1.12 var(--fd);margin-bottom:22px}
 .hero h1 em{font-style:italic;color:var(--gold)}
-.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.14em;margin-bottom:-.14em}
-.wi{display:inline-block;transform:translateY(112%) rotate(4deg);transition:transform 1s cubic-bezier(.2,.8,.2,1);transition-delay:calc(var(--d)*80ms + 350ms)}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding:.24em .14em .32em;margin:-.24em -.14em -.32em}
+.wi{display:inline-block;transform:translateY(125%) rotate(4deg);transition:transform 1s cubic-bezier(.2,.8,.2,1);transition-delay:calc(var(--d)*80ms + 350ms)}
 .ready .wi{transform:none}
 .hero p.lead{color:var(--mut);max-width:520px;margin-bottom:28px;font-size:1.02rem}
 .hc{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px}
-.trust{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:.82rem;font-weight:500}.trust span:before{content:"✦";color:var(--gold);margin-right:8px}
+.trust{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:.84rem;font-weight:500}.trust span:before{content:"✦";color:var(--gold);margin-right:8px}
 .fx{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:calc(var(--d,0)*120ms + 900ms)}.ready .fx{opacity:1;transform:none}
-.med{position:relative;width:min(390px,80vw);aspect-ratio:1;margin:auto;transform:translateY(calc(var(--sy,0)*.22px))}
-.med .r1,.med .r2{position:absolute;border-radius:50%}
-.med .r1{inset:-6%;border:2px dashed var(--gold);animation:spin 40s linear infinite}
-.med .r2{inset:-14%;border:1px solid var(--line);animation:sp2 60s linear infinite}
-.med .r2:before{content:"";position:absolute;top:-6px;left:50%;width:12px;height:12px;border-radius:50%;background:var(--gold)}
-.med .core{position:absolute;inset:0;border-radius:50%;background:#000;border:5px solid var(--gold);box-shadow:0 30px 60px -20px rgba(11,25,44,.6),0 0 0 10px rgba(169,124,47,.12);overflow:hidden;animation:flo 7s ease-in-out infinite}
-.med .core img{width:100%;height:100%;object-fit:cover}
-.chip{position:absolute;z-index:2;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:9px 16px;font-size:.78rem;font-weight:600;box-shadow:var(--sh);animation:flo 6s ease-in-out infinite;white-space:nowrap}
-.chip b{display:block;font:700 1.25rem var(--fd);color:var(--gold);line-height:1.1}
+.med{position:relative;width:min(380px,78vw);aspect-ratio:1;margin:auto;perspective:900px;transform:translateY(calc(var(--sy,0)*.22px))}
+.med .lgo{width:100%;height:100%;transition:transform .15s;animation:breathe 4s ease-in-out infinite,flo 7s ease-in-out infinite;box-shadow:0 30px 60px -24px rgba(11,25,44,.6)}
+.med .lgo:before,.med .lgo:after{border-width:3px}
+.chip{position:absolute;z-index:4;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:9px 16px;font-size:.78rem;font-weight:600;box-shadow:var(--sh);animation:flo 6s ease-in-out infinite}
+.chip b{display:block;font:700 1.25rem var(--fd);color:var(--gold);line-height:1.2}
 .chip.k1{top:2%;left:-12%}.chip.k2{top:42%;right:-14%;animation-delay:-2s}.chip.k3{bottom:2%;left:-6%;animation-delay:-4s}
-/* road scene */
+/* road scene (SVG fallback + real photo mode) */
 .scene{position:absolute;left:0;right:0;bottom:0;height:236px;z-index:2;pointer-events:none}
-.sun{position:absolute;right:14%;bottom:150px;width:96px;height:96px;border-radius:50%;background:radial-gradient(circle,#FFE7A8 0 38%,#F3C463 62%,rgba(243,196,99,0) 72%);animation:flo 9s ease-in-out infinite;transform:translateY(calc(var(--sy,0)*-.1px))}
+.sun{position:absolute;right:14%;bottom:150px;width:96px;height:96px;border-radius:50%;background:radial-gradient(circle,#FFE7A8 0 38%,#F3C463 62%,rgba(243,196,99,0) 72%);animation:flo 9s ease-in-out infinite}
 [data-theme=dark] .sun{background:radial-gradient(circle,#fff 0 40%,#d7e2ff 58%,rgba(215,226,255,0) 72%);width:70px;height:70px;box-shadow:0 0 60px rgba(180,200,255,.4)}
 .sk{position:absolute;left:0;right:0;bottom:56px;-webkit-mask-image:var(--sky);mask-image:var(--sky);-webkit-mask-repeat:repeat-x;mask-repeat:repeat-x;-webkit-mask-size:auto 100%;mask-size:auto 100%}
 .sk1{height:130px;background:var(--sk1);animation:m1 70s linear infinite}.sk2{height:84px;background:var(--sk2);animation:m2 28s linear infinite}
 @keyframes m1{to{-webkit-mask-position:-780px 0;mask-position:-780px 0}}@keyframes m2{to{-webkit-mask-position:-504px 0;mask-position:-504px 0}}
 .road{position:absolute;left:0;right:0;bottom:0;height:58px;background:#0B192C;border-top:3px solid var(--gold)}
 .road:after{content:"";position:absolute;top:27px;left:0;right:0;height:4px;background:repeating-linear-gradient(90deg,var(--gold2) 0 46px,transparent 46px 100px);animation:dash .55s linear infinite}
+.rroad{display:none;position:absolute;left:0;right:0;bottom:0;height:clamp(70px,11vw,150px);background-repeat:repeat-x;background-size:auto 100%;animation:rr 8s linear infinite}
+@keyframes rr{to{background-position:calc(var(--rw,1600px)*-1) 0}}
+.has-road .road{display:none}.has-road .rroad{display:block}
 .busrun{position:absolute;left:50%;bottom:40px;width:clamp(240px,34vw,410px);margin-left:calc(clamp(240px,34vw,410px)/-2);animation:bob 1.1s ease-in-out infinite;filter:drop-shadow(0 14px 14px rgba(11,25,44,.35))}
 .busrun svg{width:100%;display:block;overflow:visible}
+.has-road .busrun{bottom:calc(clamp(70px,11vw,150px)*.36)}
+.rbw{display:none;position:absolute;left:50%;bottom:40px;width:clamp(300px,52vw,700px);margin-left:calc(clamp(300px,52vw,700px)/-2);animation:drive 2.8s cubic-bezier(.16,.8,.2,1) .7s both}
+.rbw img{width:100%;animation:bob 1.2s ease-in-out infinite;filter:drop-shadow(0 18px 14px rgba(0,0,0,.35))}
+.rbw:after{content:"";position:absolute;left:5%;right:5%;bottom:-6px;height:18px;background:radial-gradient(ellipse,rgba(0,0,0,.5),transparent 70%);filter:blur(4px)}
+.has-bus .busrun{display:none}.has-bus .rbw{display:block}.has-road .rbw{bottom:calc(clamp(70px,11vw,150px)*.34)}
+@keyframes drive{from{transform:translateX(-110vw)}}
 .wh{animation:spin .5s linear infinite}.beam{animation:bk 2.2s ease-in-out infinite}@keyframes bk{50%{opacity:.5}}
 .sl{position:absolute;height:2px;background:linear-gradient(90deg,transparent,rgba(169,124,47,.55));animation:sl 1.3s linear infinite}
 @keyframes sl{from{transform:translateX(105vw)}to{transform:translateX(-260px)}}
 /* marquee */
 .mq{background:var(--navy);color:#F4EFE3;overflow:hidden;padding:15px 0;border-block:3px solid var(--gold);position:relative;z-index:3}
-.mt{display:flex;gap:44px;width:max-content;animation:mq 34s linear infinite}.mt span{font:700 1.02rem var(--fd);white-space:nowrap;letter-spacing:.04em}.mt span:after{content:"✦";color:var(--gold2);margin-left:44px}
+.mt{display:flex;gap:44px;width:max-content;animation:mq 34s linear infinite}.mt span{font:700 1.02rem var(--fd);white-space:nowrap}.mt span:after{content:"✦";color:var(--gold2);margin-left:44px}
 .mq:hover .mt{animation-play-state:paused}@keyframes mq{to{transform:translateX(-50%)}}
-/* section heads */
+/* headings */
 .eb{display:inline-flex;align-items:center;gap:12px;font:600 .74rem var(--fb);letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}.eb:before{content:"";width:36px;height:1px;background:var(--gold)}
-.ttl{font:700 clamp(1.9rem,4.6vw,3.2rem)/1.14 var(--fd);margin:10px 0 12px}
+.ttl{font:700 clamp(1.8rem,4.6vw,3.1rem)/1.2 var(--fd);margin:10px 0 12px}
 .sub{color:var(--mut);max-width:640px;margin-bottom:44px}
 .rv{opacity:0;transform:translateY(46px);transition:opacity .9s,transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--td,0s)}.rv.in{opacity:1;transform:none}
-.rv[data-a=l]{transform:translateX(-70px)}.rv[data-a=r]{transform:translateX(70px)}.rv[data-a=z]{transform:scale(.86)}.rv.in[data-a]{transform:none}
-.rv[data-a=c]{transform:translateY(38px) scale(.97);filter:blur(10px);letter-spacing:.06em;transition:opacity .9s,transform 1s cubic-bezier(.2,.8,.2,1),filter .9s,letter-spacing 1.1s cubic-bezier(.2,.8,.2,1)}.rv.in[data-a=c]{filter:none;letter-spacing:0}
-/* stats */
+.rv[data-a=l]{transform:translateX(-70px)}.rv[data-a=r]{transform:translateX(70px)}.rv[data-a=z]{transform:scale(.88)}.rv.in[data-a]{transform:none}
+.rv[data-a=c]{transform:translateY(38px) scale(.97);filter:blur(10px);transition:opacity .9s,transform 1s cubic-bezier(.2,.8,.2,1),filter .9s}.rv.in[data-a=c]{filter:none}
 .stats{background:var(--navy);color:#F4EFE3;padding:56px 0;position:relative;overflow:hidden}
 .stats:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 50%,rgba(226,190,120,.18),transparent 45%),radial-gradient(circle at 85% 50%,rgba(226,190,120,.12),transparent 45%)}
 .sg{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
 .sx{padding:10px;border-right:1px solid rgba(255,255,255,.12)}.sx:last-child{border:0}
-.sx b{display:block;font:800 clamp(2.2rem,5vw,3.4rem)/1.1 var(--fd);color:var(--gold2)}.sx span{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;opacity:.8}
+.sx b{display:block;font:800 clamp(2.2rem,5vw,3.4rem)/1.2 var(--fd);color:var(--gold2)}.sx span{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;opacity:.85}
 /* fleet */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:28px}
-.bus{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s,border-color .4s;will-change:transform}
+.bus{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);transition:transform .4s cubic-bezier(.2,.8,.2,1),border-color .4s}
 .bus:hover{border-color:var(--gold)}
 .bi{position:relative;aspect-ratio:16/10;overflow:hidden;cursor:pointer;background:linear-gradient(135deg,#12294a,#0B192C)}
-.bi .ph{position:absolute;inset:0;margin:auto;width:58%;height:auto;opacity:.55}
-.bi img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.8,.2,1)}.bus:hover .bi img{transform:scale(1.1)}
-.bi:after{content:"";position:absolute;top:0;left:-90%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.4),transparent);transform:skewX(-20deg);transition:left .9s;z-index:3}.bus:hover .bi:after{left:140%}
-.cp{position:absolute;top:14px;left:14px;z-index:4;background:var(--navy);color:var(--gold2);padding:5px 14px;border-radius:30px;font-size:.72rem;font-weight:600;letter-spacing:.04em;border:1px solid var(--gold)}
+.bi .ph{position:absolute;inset:0;margin:auto;width:58%;height:auto;opacity:.5}
+.bi img.s{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .9s,transform .9s cubic-bezier(.2,.8,.2,1)}.bi img.s.cur{opacity:1}.bus:hover .bi img.s{transform:scale(1.08)}
+.bi:after{content:"";position:absolute;top:0;left:-90%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.4),transparent);transform:skewX(-20deg);transition:left .9s;z-index:3;pointer-events:none}.bus:hover .bi:after{left:140%}
+.dots{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:6px;z-index:4}.dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.5);transition:.3s}.dots i.on{background:#fff;width:20px;border-radius:6px}
+.cp{position:absolute;top:14px;left:14px;z-index:4;background:var(--navy);color:var(--gold2);padding:5px 14px;border-radius:30px;font-size:.72rem;font-weight:600;border:1px solid var(--gold)}
 .av{position:absolute;top:14px;right:14px;z-index:4;padding:5px 13px;border-radius:30px;font-size:.72rem;font-weight:600;background:rgba(255,255,255,.95);color:#0B192C;display:flex;align-items:center;gap:7px}
 .av:before{content:"";width:8px;height:8px;border-radius:50%;background:#16a34a;animation:pulse 1.8s infinite}.av.n:before{background:#dc2626;animation:none}
-.bb{padding:22px}.bb h3{font:700 1.3rem var(--fd);line-height:1.2}.bb small{color:var(--mut);font-size:.82rem}
-.fp{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0 18px}.fp span{border:1px solid var(--line);padding:3px 11px;border-radius:30px;font-size:.7rem;color:var(--mut)}
+.bb{padding:22px}.bb h3{font:700 1.3rem var(--fd)}.bb small{color:var(--mut);font-size:.84rem}
+.fp{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0 18px}.fp span{border:1px solid var(--line);padding:3px 11px;border-radius:30px;font-size:.72rem;color:var(--mut)}
 /* occasions */
 .oc{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:26px}
 .occ{position:relative;padding:38px 30px 34px;border-radius:var(--r);background:var(--card);border:1px solid var(--line);overflow:hidden;transition:transform .4s,box-shadow .4s,border-color .4s}
@@ -150,100 +175,117 @@ header.hide{transform:translateY(-100%)}
 .occ:hover{transform:translateY(-10px);box-shadow:var(--sh);border-color:var(--gold)}.occ:hover:before{opacity:1;inset:6px}
 .occ .no{position:absolute;right:22px;top:6px;font:800 4.4rem var(--fd);color:var(--gold);opacity:.14;line-height:1}
 .occ .ic{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;font-size:1.8rem;background:var(--bg2);border:1px solid var(--gold);margin-bottom:18px;transition:transform .5s}.occ:hover .ic{transform:rotate(360deg) scale(1.08)}
-.occ h3{font:700 1.3rem/1.3 var(--fd);margin-bottom:8px}.occ p{color:var(--mut);font-size:.9rem}
-/* yatra route */
+.occ h3{font:700 1.25rem/1.45 var(--fd);margin-bottom:8px}.occ p{color:var(--mut);font-size:.92rem}
+/* yatra winding road */
 .yatra{background:var(--bg2)}
-.route{position:relative;max-width:900px;margin:0 auto}
-.route:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;margin-left:-1px;background:repeating-linear-gradient(var(--line) 0 8px,transparent 8px 16px)}
-.rf{position:absolute;left:50%;top:0;width:4px;margin-left:-2px;height:calc(var(--p,0)*100%);background:linear-gradient(var(--gold2),var(--gold));border-radius:4px}
-.rb{position:absolute;left:50%;top:calc(var(--p,0)*100%);width:48px;height:48px;margin:-24px 0 0 -24px;border-radius:50%;background:var(--navy);display:grid;place-items:center;font-size:23px;box-shadow:0 0 0 4px var(--bg2),0 0 0 6px var(--gold);z-index:3}
-.rs{position:relative;width:50%;padding:0 52px 44px 0;text-align:right}
-.rs:nth-child(even){margin-left:50%;padding:0 0 44px 52px;text-align:left}
-.rs:last-child{padding-bottom:0}
-.rs:before{content:"";position:absolute;top:10px;right:-10px;width:20px;height:20px;border-radius:50%;background:var(--bg2);border:3px solid var(--line);transition:.5s;z-index:2}
-.rs:nth-child(even):before{right:auto;left:-10px}
-.rs.on:before{background:var(--gold);border-color:var(--gold);box-shadow:0 0 0 7px rgba(169,124,47,.22)}
-.rs div{display:inline-block;background:var(--card);border:1px solid var(--line);padding:14px 22px;border-radius:16px;transition:.5s;opacity:.55;transform:scale(.97)}
-.rs.on div{opacity:1;transform:none;border-color:var(--gold);box-shadow:var(--sh)}
-.rs h4{font:700 1.15rem var(--fd)}.rs p{font-size:.82rem;color:var(--mut)}
+.route{position:relative;max-width:1000px;margin:0 auto}
+#rsvg{position:absolute;left:0;top:0;pointer-events:none;overflow:visible}
+.rpin{position:absolute;width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;background:var(--card);border:3px solid var(--line);display:grid;place-items:center;font-size:1.3rem;z-index:3;transition:.5s}
+.rpin.on{border-color:var(--gold);background:var(--navy);box-shadow:0 0 0 7px rgba(169,124,47,.22);transform:scale(1.12)}
+.rcard{position:absolute;z-index:2;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px 18px;opacity:.5;transform:scale(.95);transition:.6s cubic-bezier(.2,.8,.2,1)}
+.rcard.on{opacity:1;transform:none;border-color:var(--gold);box-shadow:var(--sh)}
+.rcard small{font:600 .66rem var(--fb);color:var(--gold);letter-spacing:.14em;text-transform:uppercase;display:block}.rcard h4{font:700 1.15rem var(--fd);line-height:1.35}.rcard p{font-size:.8rem;color:var(--mut);line-height:1.5}
+.rbus{position:absolute;width:52px;height:52px;margin:-26px 0 0 -26px;border-radius:50%;background:linear-gradient(135deg,var(--gold2),var(--gold));display:grid;place-items:center;font-size:26px;z-index:5;box-shadow:0 8px 20px rgba(0,0,0,.4),0 0 0 5px rgba(255,255,255,.55)}
+.rbus:after{content:"";position:absolute;inset:-12px;border-radius:50%;border:2px solid var(--gold);animation:rip 2s ease-out infinite}
 /* booking ticket */
-.tk{display:grid;grid-template-columns:.85fr 1.15fr;background:var(--card);border:1px solid var(--line);border-radius:28px;box-shadow:var(--sh);overflow:hidden}
+.tk{display:grid;grid-template-columns:.8fr 1.2fr;background:var(--card);border:1px solid var(--line);border-radius:28px;box-shadow:var(--sh);overflow:hidden}
 .tl{background:var(--navy);color:#F4EFE3;padding:40px 34px;position:relative}
 .tl:after{content:"";position:absolute;top:18px;bottom:18px;right:-1px;width:2px;background:repeating-linear-gradient(var(--card) 0 9px,transparent 9px 18px)}
-.tl img{width:64px;height:64px;border-radius:50%;border:2px solid var(--gold);margin-bottom:16px}
+.tl .lgo{width:68px;height:68px;margin-bottom:16px}
 .tl h3{font:700 1.5rem var(--fd);margin-bottom:18px}
 .tl ol{list-style:none;display:grid;gap:15px;counter-reset:s;margin-bottom:26px}
-.tl li{counter-increment:s;display:flex;gap:14px;font-size:.88rem;align-items:flex-start;opacity:.92}
+.tl li{counter-increment:s;display:flex;gap:14px;font-size:.9rem;align-items:flex-start}
 .tl li:before{content:counter(s);flex:none;width:30px;height:30px;border-radius:50%;background:var(--gold);color:#1b1204;font:700 .85rem var(--fb);display:grid;place-items:center}
-.tl .cn{font-size:.86rem;display:grid;gap:6px;border-top:1px solid rgba(255,255,255,.15);padding-top:18px}.tl .cn a:hover{color:var(--gold2)}
-.tr{padding:40px 34px;display:grid;grid-template-columns:1fr 1fr;gap:16px;align-content:start}
+.tl .cn{font-size:.86rem;display:grid;gap:6px;border-top:1px solid rgba(255,255,255,.15);padding-top:18px}.tl .cn a{white-space:nowrap}.tl .cn a:hover{color:var(--gold2)}
+.tr{padding:40px 34px;display:grid;grid-template-columns:1fr 1fr;gap:16px;align-content:start;min-width:0}
 .fd{display:flex;flex-direction:column;gap:6px;min-width:0}.fd.full{grid-column:1/-1}
 label{font-size:.76rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
 input,select,textarea{padding:13px 15px;border-radius:12px;border:1px solid var(--line);font:inherit;font-size:16px;background:var(--bg);color:var(--ink);width:100%;transition:border-color .25s,box-shadow .25s}
 input:focus,select:focus{outline:0;border-color:var(--gold);box-shadow:0 0 0 4px rgba(169,124,47,.18)}
-/* rules */
+input[readonly].dt{cursor:pointer;background:var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23A97C2F' stroke-width='2'%3E%3Crect x='3' y='5' width='18' height='16' rx='3'/%3E%3Cpath d='M3 10h18M8 3v4M16 3v4'/%3E%3C/svg%3E") no-repeat right 14px center}
+.stp{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:10px}
+.stl{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-size:.86rem}.stl b{display:flex;align-items:center;gap:8px}.stl b:before{content:"●";color:var(--gold);font-size:.7rem}
+.stl button{border:0;background:none;color:#C0392B;cursor:pointer;font-size:.8rem;font-weight:600}
+.stg{display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:8px}.stg select,.stg input{padding:11px 12px}
+.rsum{font-size:.84rem;color:var(--gold);font-weight:600;margin-top:8px;overflow-wrap:anywhere}
+.ck{display:flex;gap:10px;align-items:flex-start;font-size:.88rem;color:var(--mut);margin-top:6px;text-transform:none;letter-spacing:0;font-weight:400}.ck input{width:20px;height:20px;margin-top:3px;flex:none;accent-color:var(--gold)}
+/* date picker dialog */
+.cdh{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}.cdh b{font:700 1.15rem var(--fd);text-align:center;flex:1}
+.cald{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
+.cald .hd{text-align:center;font-size:.7rem;color:var(--mut);padding:4px 0;font-weight:600}
+.cald .d{aspect-ratio:1;display:grid;place-items:center;border-radius:12px;background:rgba(22,163,74,.1);border:0;color:var(--ink);font:600 .92rem var(--fb);cursor:pointer;transition:.2s;position:relative}
+.cald .d:hover:not(:disabled){transform:scale(1.1);background:rgba(169,124,47,.25)}
+.cald .d.ps{opacity:.3;background:none;cursor:not-allowed}
+.cald .d.bk{background:rgba(220,38,38,.12);color:#c0281f;text-decoration:line-through;text-decoration-thickness:2px;cursor:not-allowed}
+.cald .d.rg{background:rgba(169,124,47,.22)}.cald .d.sel{background:var(--gold);color:#1b1204}
+.cald .d.td:after{content:"";position:absolute;bottom:5px;width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.cdl{display:flex;gap:14px;flex-wrap:wrap;font-size:.74rem;color:var(--mut);margin:14px 0}.cdl span:before{content:"";display:inline-block;width:12px;height:12px;border-radius:4px;margin-right:6px;vertical-align:-1px}
+.cdl .a:before{background:rgba(22,163,74,.3)}.cdl .b:before{background:rgba(220,38,38,.3)}.cdl .c:before{background:var(--gold)}
+/* rules / contact */
 details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:0 22px;margin-bottom:12px;transition:border-color .3s}details[open]{border-color:var(--gold)}
 summary{cursor:pointer;font:700 1.05rem var(--fd);padding:18px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}summary::-webkit-details-marker{display:none}
 summary:after{content:"+";font:400 1.7rem var(--fb);color:var(--gold);transition:transform .35s;line-height:1}details[open] summary:after{transform:rotate(45deg)}
 details p{padding-bottom:18px;color:var(--mut);font-size:.92rem}
-/* contact */
 .loc{display:grid;grid-template-columns:1fr 1.25fr;gap:32px;align-items:stretch}
 .ci{display:grid;gap:14px;align-content:start}
-.cc{display:flex;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 20px;transition:.35s}.cc:hover{border-color:var(--gold);transform:translateX(8px)}
+.cc{display:flex;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 20px;transition:.35s;min-width:0}.cc:hover{border-color:var(--gold);transform:translateX(8px)}
 .cc i{font-style:normal;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--bg2);font-size:1.2rem;flex:none;border:1px solid var(--gold)}
-.cc small{display:block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}.cc b{font-weight:600;overflow-wrap:anywhere;font-size:.95rem}
-iframe{width:100%;height:100%;min-height:340px;border:0;border-radius:22px;box-shadow:var(--sh);filter:saturate(.9)}
+.cc>div{min-width:0}.cc small{display:block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}.cc b{font-weight:600;font-size:.95rem;display:block}
+.cc b.one{white-space:nowrap;font-size:clamp(.72rem,3.5vw,.95rem)}
+.mapw{display:flex;flex-direction:column;gap:12px}
+iframe{width:100%;flex:1;min-height:340px;border:0;border-radius:22px;box-shadow:var(--sh)}
 /* footer */
 footer{overflow-x:clip;background:var(--navy);color:#cfd6e2;padding:68px 0 0;position:relative;border-top:4px solid var(--gold)}
-.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.3fr;gap:36px;padding-bottom:44px}
+.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.4fr;gap:36px;padding-bottom:44px}
 footer h4{font:700 1.05rem var(--fd);color:#fff;margin-bottom:16px;position:relative;padding-bottom:10px}footer h4:after{content:"";position:absolute;left:0;bottom:0;width:34px;height:2px;background:var(--gold)}
-footer .fl{display:flex;align-items:center;gap:12px;margin-bottom:14px}footer .fl img{width:56px;height:56px;border-radius:50%;border:2px solid var(--gold)}footer .fl b{font:700 1.2rem var(--fd);color:#fff;line-height:1.15}
-footer p,footer li{font-size:.88rem}footer ul{list-style:none;display:grid;gap:9px}
-footer a{transition:.3s}footer a:hover{color:var(--gold2);padding-left:4px}
+footer .fl{display:flex;align-items:center;gap:14px;margin-bottom:14px}footer .fl .lgo{width:58px;height:58px}footer .fl b{font:700 1.2rem var(--fd);color:#fff;line-height:1.3}
+footer p,footer li{font-size:.88rem}footer ul{list-style:none;display:grid;gap:9px}footer li.one{white-space:nowrap;font-size:clamp(.72rem,3.4vw,.88rem)}
+footer a{transition:.3s}footer a:hover{color:var(--gold2)}
 .fb2{border-top:1px solid rgba(255,255,255,.12);padding:20px 0;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;font-size:.8rem}
 .fb2 .lk{display:flex;gap:20px;flex-wrap:wrap;align-items:center}
-.bt{width:40px;height:40px;border-radius:50%;border:1px solid var(--gold);background:none;color:var(--gold2);cursor:pointer;font-size:1.1rem;transition:.3s}.bt:hover{background:var(--gold);color:#1b1204;transform:translateY(-4px)}
+.bt{width:40px;height:40px;border-radius:50%;border:1px solid var(--gold);background:none;color:var(--gold2);cursor:pointer;font-size:1.1rem;transition:.3s}.bt:hover{background:var(--gold);color:#1b1204}
 .fab{position:fixed;right:20px;bottom:22px;z-index:60;display:flex;flex-direction:column;gap:11px}
 .fab a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:1.4rem;color:#fff;box-shadow:0 12px 24px -8px rgba(0,0,0,.5);transition:.3s}.fab a:hover{transform:scale(1.12)}
 .fab .c{background:var(--navy);border:2px solid var(--gold)}.fab .w2{background:#1FA855;animation:pulse 2s infinite}
 .mb{display:none;position:fixed;bottom:0;left:0;right:0;z-index:60;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--hbg);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line)}
-.mb a{flex:1;text-align:center;padding:13px 6px;border-radius:14px;font-weight:600;font-size:.88rem;color:#fff;background:var(--navy)}.mb a+a{background:#1FA855}
-.toast{position:fixed;top:84px;left:50%;width:max-content;max-width:92vw;transform:translate(-50%,-160px);background:#157a3d;color:#fff;padding:14px 26px;border-radius:30px;z-index:400;transition:.5s cubic-bezier(.2,.8,.2,1);box-shadow:0 14px 34px rgba(0,0,0,.3);text-align:center;font-size:.9rem}.toast.show{transform:translate(-50%,0)}.toast.err{background:#b3261e}
+.mb a{flex:1;text-align:center;padding:12px 6px;border-radius:14px;font-weight:600;font-size:.9rem;color:#fff;background:var(--navy)}.mb a+a{background:#1FA855}
+.toast{position:fixed;top:84px;left:50%;width:max-content;max-width:92vw;transform:translate(-50%,-160px);background:#157a3d;color:#fff;padding:14px 26px;border-radius:30px;z-index:400;transition:.5s cubic-bezier(.2,.8,.2,1);box-shadow:0 14px 34px rgba(0,0,0,.3);text-align:center;font-size:.9rem;line-height:1.5}.toast.show{transform:translate(-50%,0)}.toast.err{background:#b3261e}
 .ov{position:fixed;inset:0;background:rgba(5,12,24,.78);backdrop-filter:blur(4px);z-index:250;display:none;align-items:center;justify-content:center;padding:16px;overflow:auto}.ov.show{display:flex}
-.md{background:var(--card);color:var(--ink);border-radius:24px;padding:30px;max-width:660px;width:100%;max-height:90vh;overflow:auto;animation:mp .4s cubic-bezier(.2,.8,.2,1);border:1px solid var(--gold)}
+.md{background:var(--card);color:var(--ink);border-radius:24px;padding:28px;max-width:660px;width:100%;max-height:90vh;overflow:auto;animation:mp .4s cubic-bezier(.2,.8,.2,1);border:1px solid var(--gold)}
 .md h2{font:700 1.7rem var(--fd);margin-bottom:6px}.md h3{font:700 1.02rem var(--fd);margin:16px 0 4px}.md p,.md li{font-size:.9rem;color:var(--mut);margin-bottom:6px}.md ul{padding-left:20px}
 @keyframes mp{from{transform:translateY(40px) scale(.95);opacity:0}}
 .x{float:right;cursor:pointer;font-size:1.6rem;border:0;background:none;color:var(--ink);line-height:1}
-.gal{display:flex;gap:8px;overflow:auto;margin-top:8px}.gal img{height:72px;border-radius:10px;cursor:pointer}
+.gm{position:relative}.gm img{width:100%;border-radius:14px;min-height:140px;background:#12294a;aspect-ratio:16/10;object-fit:cover}.gm button{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.9);cursor:pointer;font-size:1.2rem}
+.gal{display:flex;gap:8px;overflow:auto;margin-top:8px}.gal img{height:64px;aspect-ratio:16/10;object-fit:cover;border-radius:10px;cursor:pointer;opacity:.6}.gal img.on{opacity:1;outline:2px solid var(--gold)}
 .pw{position:relative}.pw button{position:absolute;right:8px;top:50%;transform:translateY(-50%);border:0;background:none;cursor:pointer;font-size:1.1rem}
 /* ===== ADMIN ===== */
 #admin{position:fixed;inset:0;height:100dvh;z-index:200;display:none;background:var(--bg2);color:var(--ink);font-size:.92rem}
-#admin.show{display:grid;grid-template-columns:260px 1fr}
-.as{background:var(--navy);color:#e6ebf3;padding:26px 18px;display:flex;flex-direction:column;gap:6px;overflow:auto}
-.as .br{display:flex;gap:12px;align-items:center;margin-bottom:24px;padding:0 6px}.as .br img{width:46px;height:46px;border-radius:50%;border:2px solid var(--gold)}.as .br b{font:700 1.05rem var(--fd);line-height:1.15;color:#fff}.as .br small{display:block;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold2)}
-.as button{display:flex;align-items:center;gap:12px;border:0;background:none;color:#cbd5e4;padding:12px 14px;border-radius:12px;cursor:pointer;font:500 .9rem var(--fb);text-align:left;transition:.25s}
+#admin.show{display:grid;grid-template-columns:250px 1fr}
+.as{background:var(--navy);color:#e6ebf3;padding:24px 16px;display:flex;flex-direction:column;gap:5px;overflow:auto}
+.as .br{display:flex;gap:12px;align-items:center;margin-bottom:22px;padding:0 6px}.as .br .lgo{width:46px;height:46px}.as .br b{font:700 1.05rem var(--fd);line-height:1.2;color:#fff;display:block}.as .br small{display:block;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold2)}
+.as button{display:flex;align-items:center;gap:12px;border:0;background:none;color:#cbd5e4;padding:11px 14px;border-radius:12px;cursor:pointer;font:500 .88rem var(--fb);text-align:left;transition:.25s}
 .as button:hover{background:rgba(255,255,255,.08);color:#fff}.as button.on{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#1b1204;font-weight:600}
 .as .sp{flex:1}
-.am{height:100dvh;overflow:auto;padding:26px 30px 40px;-webkit-overflow-scrolling:touch}
-.at{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:22px;flex-wrap:wrap}.at h2{font:700 1.7rem var(--fd)}.at .ac{display:flex;gap:8px}
+.am{height:100dvh;overflow:auto;padding:24px 28px 40px;-webkit-overflow-scrolling:touch}
+.at{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px;flex-wrap:wrap}.at h2{font:700 1.6rem var(--fd)}.at .ac{display:flex;gap:8px;align-items:center}
+#pubbtn{position:relative}#pubbtn.dirty:after{content:"";position:absolute;top:-3px;right:-3px;width:12px;height:12px;border-radius:50%;background:#e11d48;border:2px solid var(--bg2);animation:pulse 1.6s infinite}
 .abn{display:none}
 .ast{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:22px}
 .sc{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;display:flex;gap:16px;align-items:center;position:relative;overflow:hidden}
 .sc:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--gold)}
 .sc i{font-style:normal;width:50px;height:50px;border-radius:14px;display:grid;place-items:center;background:var(--bg2);font-size:1.5rem;flex:none}
-.sc b{display:block;font:800 1.6rem var(--fd);line-height:1.1}.sc span{font-size:.76rem;color:var(--mut);letter-spacing:.06em;text-transform:uppercase}
-.panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;margin-bottom:20px}.panel h3{font:700 1.15rem var(--fd);margin-bottom:14px}
+.sc b{display:block;font:800 1.6rem var(--fd);line-height:1.2}.sc span{font-size:.76rem;color:var(--mut);letter-spacing:.06em;text-transform:uppercase}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;margin-bottom:20px}.panel h3{font:700 1.15rem var(--fd);margin-bottom:6px}.panel .hint{color:var(--mut);font-size:.84rem;margin-bottom:14px}
 .af{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-bottom:14px}
 .row2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .li{display:flex;gap:12px;align-items:center;padding:11px 0;border-bottom:1px solid var(--line)}.li:last-child{border:0}.li .t{flex:1;min-width:0}.li .t b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.li .t small{color:var(--mut)}
-.bg{display:inline-block;padding:3px 12px;border-radius:30px;font-size:.7rem;font-weight:700;letter-spacing:.04em}
+.bg{display:inline-block;padding:3px 12px;border-radius:30px;font-size:.7rem;font-weight:700}
 .bg.New{background:#dbeafe;color:#1d4ed8}.bg.Called{background:#fef3c7;color:#92400e}.bg.Confirmed{background:#dcfce7;color:#166534}.bg.Cancelled{background:#fee2e2;color:#991b1b}
-.fc{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
-.fcard{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--bg)}
-.fcard .im{aspect-ratio:16/9;background:linear-gradient(135deg,#12294a,#0B192C);position:relative}.fcard .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.fcard .in2{padding:14px}.fcard h4{font:700 1.05rem var(--fd)}.fcard small{color:var(--mut)}.fcard .ab2{display:flex;gap:8px;margin-top:12px}
 .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.chips button{border:1px solid var(--line);background:var(--bg);color:var(--ink);padding:7px 16px;border-radius:30px;cursor:pointer;font:600 .78rem var(--fb)}.chips button.on{background:var(--navy);color:#F4EFE3;border-color:var(--navy)}
 [data-theme=dark] .chips button.on{background:var(--gold);color:#0B192C;border-color:var(--gold)}
+.thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px;margin:12px 0}
+.th{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--bg)}.th .im{aspect-ratio:16/10;background:linear-gradient(135deg,#12294a,#0B192C);position:relative}.th img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.th .tb{display:flex;justify-content:space-between;padding:4px}.th button{border:0;background:none;cursor:pointer;font-size:.95rem;padding:3px 6px}.th .n1{position:absolute;top:6px;left:6px;background:var(--gold);color:#1b1204;font:700 .62rem var(--fb);padding:2px 8px;border-radius:10px;z-index:2}
 .cal{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;max-width:560px}.cal div{aspect-ratio:1;display:grid;place-items:center;border-radius:12px;background:rgba(22,163,74,.14);cursor:pointer;font-weight:600;transition:.2s}.cal div:hover{transform:scale(1.08)}
 .cal .bl{background:#dc2626;color:#fff}.cal .cf{background:#f59e0b;color:#fff;cursor:not-allowed}.cal .hd{background:none;cursor:default;font-size:.7rem;color:var(--mut);aspect-ratio:auto;padding:4px 0}.cal .hd:hover{transform:none}.cal .e{background:none;cursor:default}
 .cm{display:flex;align-items:center;gap:12px;margin-bottom:14px}.cm b{font:700 1.1rem var(--fd);min-width:150px;text-align:center}
@@ -252,63 +294,63 @@ footer a{transition:.3s}footer a:hover{color:var(--gold2);padding-left:4px}
 .eqh{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;flex-wrap:wrap;margin-bottom:12px}.eqh b{font:700 1.1rem var(--fd)}.eqh small{color:var(--mut);display:block}
 .eqg{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:14px}.eqg small{display:block;color:var(--mut);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase}.eqg div b{font-weight:600}
 .eqf{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;align-items:end;margin-bottom:14px}
-.bal{font:800 1.3rem var(--fd);color:var(--gold)}
-.eqa{display:flex;gap:8px;flex-wrap:wrap}
-.emp{text-align:center;padding:40px 10px;color:var(--mut)}
+.bal{font:800 1.3rem var(--fd);color:var(--gold)}.eqa{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.emp{text-align:center;padding:40px 10px;color:var(--mut)}
+.hs{display:grid;grid-template-columns:140px 1fr;gap:16px;align-items:start;padding:16px 0;border-bottom:1px solid var(--line)}.hs:last-child{border:0}
+.hs .pv{aspect-ratio:16/10;border-radius:12px;background:#12294a linear-gradient(45deg,rgba(255,255,255,.06) 25%,transparent 25%,transparent 75%,rgba(255,255,255,.06) 75%);background-size:cover,16px 16px;overflow:hidden}.hs .pv img{width:100%;height:100%;object-fit:contain}
+#lmap{height:min(420px,58vh);border-radius:16px;border:1px solid var(--line);z-index:1;margin:12px 0}.lsr{display:flex;gap:10px;flex-wrap:wrap}.lsr input{flex:1;min-width:200px}
+.code{background:var(--bg2);border-radius:10px;padding:10px 14px;font:500 .82rem monospace;overflow-wrap:anywhere}
 /* ===== RESPONSIVE ===== */
 @media(min-width:1800px){html{font-size:18px}.wrap{max-width:1500px}}
 @media(max-width:1100px){.links{gap:18px}.fg{grid-template-columns:1fr 1fr}.chip.k1{left:-4%}.chip.k2{right:-4%}}
 @media(max-width:900px){
 .links,.nr .cbtn{display:none}.hb{display:grid}
 .hg{grid-template-columns:1fr;text-align:center;gap:34px}.hg>div:first-child{opacity:1}.eyb{justify-content:center}.hero p.lead{margin-inline:auto}.hc,.trust{justify-content:center}
-.med{width:min(250px,62vw);order:-1}.chip{padding:6px 12px;font-size:.68rem}.chip b{font-size:1rem}.chip.k1{left:-22%}.chip.k2{right:-22%}.chip.k3{left:-14%}
-.hero{padding:100px 0 250px}
+.med{width:min(250px,62vw);order:-1}.chip{padding:6px 12px;font-size:.68rem;max-width:140px}.chip b{font-size:1rem}.chip.k1{left:-24%}.chip.k2{right:-24%}.chip.k3{left:-16%}
+.hero{padding:100px 0 250px}.hov{background:linear-gradient(180deg,rgba(251,247,239,.92),rgba(251,247,239,.7))}[data-theme=dark] .hov{background:linear-gradient(180deg,rgba(4,10,20,.9),rgba(4,10,20,.7))}
 .tk{grid-template-columns:1fr}.tl:after{top:auto;bottom:-1px;left:18px;right:18px;width:auto;height:2px;background:repeating-linear-gradient(90deg,var(--card) 0 9px,transparent 9px 18px)}
 .loc{grid-template-columns:1fr}.sg{grid-template-columns:1fr 1fr}.sx:nth-child(2){border:0}
 .fab{display:none}.mb{display:flex}body{padding-bottom:76px}
-.route:before{left:23px}.rf{left:23px}.rb{left:23px}
-.rs,.rs:nth-child(even){width:100%;margin-left:0;padding:0 0 36px 64px;text-align:left}
-.rs:before,.rs:nth-child(even):before{left:13px;right:auto}
 #admin.show{display:block}.as{display:none}
-.abn{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:5;background:var(--navy);padding:6px 6px calc(6px + env(safe-area-inset-bottom));justify-content:space-around}
-.abn button{flex:1;border:0;background:none;color:#aab6c9;display:flex;flex-direction:column;align-items:center;gap:2px;font:500 .62rem var(--fb);padding:6px 2px;border-radius:12px;cursor:pointer}.abn button i{font-style:normal;font-size:1.25rem}.abn button.on{color:#1b1204;background:linear-gradient(135deg,var(--gold2),var(--gold))}
-.am{padding:18px 14px 96px}.row2{grid-template-columns:1fr}.at h2{font-size:1.35rem}}
+.abn{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:5;background:var(--navy);padding:6px 6px calc(6px + env(safe-area-inset-bottom));overflow-x:auto;gap:2px}
+.abn button{flex:1 0 66px;border:0;background:none;color:#aab6c9;display:flex;flex-direction:column;align-items:center;gap:2px;font:500 .62rem var(--fb);padding:6px 2px;border-radius:12px;cursor:pointer;white-space:nowrap}.abn button i{font-style:normal;font-size:1.25rem}.abn button.on{color:#1b1204;background:linear-gradient(135deg,var(--gold2),var(--gold))}
+.am{padding:18px 14px 96px}.row2{grid-template-columns:1fr}.at h2{font-size:1.35rem}.hs{grid-template-columns:1fr}}
+@media(max-width:700px){.stg{grid-template-columns:1fr}}
 @media(max-width:600px){
-.wrap{padding:0 16px}.nav{height:64px}.logo img{width:40px;height:40px}.logo b{font-size:.95rem}.logo small{font-size:.54rem}
-.tg button{padding:4px 9px;font-size:.7rem}.nr{gap:6px}.ib{width:36px;height:36px}
-.tr,.tl{padding:28px 20px}.tr{grid-template-columns:1fr}
+.wrap{padding:0 16px}.nav{height:64px}.logo .lgo{width:40px;height:40px}.logo b{font-size:.95rem}.logo small{font-size:.54rem}
+.tg button{padding:4px 9px;font-size:.72rem}.nr{gap:6px}.ib{width:36px;height:36px}
+.tr,.tl{padding:28px 18px}.tr{grid-template-columns:1fr}
 .grid{grid-template-columns:1fr}.fg{grid-template-columns:1fr;gap:28px}.fb2{flex-direction:column;text-align:center}
-.md{padding:22px}.sx b{font-size:2rem}.sx span{font-size:.68rem}.hc .btn{width:100%}
+.md{padding:22px}.sx b{font-size:2rem}.sx span{font-size:.7rem}.hc .btn{width:100%}
 .scene{height:210px}.hero{padding-bottom:230px}.sun{right:8%;bottom:130px;width:70px;height:70px}
 .ast{grid-template-columns:1fr 1fr}.sc{padding:14px;gap:10px;flex-direction:column;align-items:flex-start}.sc b{font-size:1.25rem}.sc i{width:42px;height:42px}
-.panel{padding:16px}.eq{padding:14px}.cm b{min-width:0;flex:1}.cal{gap:4px}}
-@media(max-width:380px){.logo b{font-size:.82rem}.logo small{display:none}.chip.k2{display:none}}
+.panel{padding:16px}.eq{padding:14px}.cm b{min-width:0;flex:1}.cal{gap:4px}.cc{padding:14px}.cc i{width:40px;height:40px}.cald{gap:3px}}
+@media(max-width:380px){.logo small{display:none}.chip.k2{display:none}.logo b{font-size:.85rem}}
 @media(max-height:520px) and (orientation:landscape){.hero{min-height:auto;padding-bottom:210px}.med{display:none}}
 @media(hover:none){.bus:hover,.btn:hover,.occ:hover{transform:none}}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.rv,.fx{opacity:1;transform:none}.wi{transform:none}#pre{display:none}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.rv,.fx{opacity:1;transform:none;filter:none}.wi{transform:none}#pre{display:none}}
 </style>
 </head>
 <body>
-<div id="pre"><div class="pl"><div><img src="images/logo.png" alt=""><i></i></div><span>Bharat Travels</span></div></div>
+<div id="pre"><div class="pl"><span class="lgo"><img src="images/logo.png" alt=""><i></i></span><span class="t">Bharat Travels</span></div></div>
 <div id="prog"></div>
 <header id="hd"><div class="wrap nav">
-<a href="#home" class="logo"><img src="images/logo.png" alt="Bharat Travels Pathri logo" onerror="this.style.display='none'"><span><b>Bharat Travels</b><small>Pathri • Parbhani</small></span></a>
+<a href="#home" class="logo"><span class="lgo"><img src="images/logo.png" alt="Bharat Travels Pathri logo"><i></i></span><span><b>Bharat Travels</b><small>Pathri • Parbhani</small></span></a>
 <nav class="links"><a href="#fleet" data-i="n2">Fleet</a><a href="#occasions" data-i="n3">Occasions</a><a href="#yatra" data-i="n7">Yatra</a><a href="#book" data-i="n4">Book</a><a href="#rules" data-i="n5">Rules</a><a href="#contact" data-i="n6">Contact</a></nav>
-<div class="nr"><button class="ib" id="thb" onclick="toggleTheme()" aria-label="Toggle theme">🌙</button><div class="tg"><button id="bEn" class="on" onclick="setL('en')">EN</button><button id="bMr" onclick="setL('mr')">मराठी</button></div><a class="btn sm gold cbtn" href="tel:+919970889890">📞 <span data-i="call">Call</span></a><button class="ib hb" onclick="document.body.classList.toggle('mo')" aria-label="Menu">☰</button></div>
+<div class="nr"><button class="ib" id="thb" onclick="toggleTheme()" aria-label="Theme">🌙</button><div class="tg"><button id="bMr" class="on" onclick="setL('mr')">मराठी</button><button id="bEn" onclick="setL('en')">EN</button></div><a class="btn sm gold cbtn" data-c="tel" href="tel:+919970889890">📞 <span data-i="call">Call</span></a><button class="ib hb" onclick="document.body.classList.toggle('mo')" aria-label="Menu">☰</button></div>
 </div></header>
 <div class="mnav"><a href="#fleet" data-i="n2">Fleet</a><a href="#occasions" data-i="n3">Occasions</a><a href="#yatra" data-i="n7">Yatra</a><a href="#book" data-i="n4">Book</a><a href="#rules" data-i="n5">Rules</a><a href="#contact" data-i="n6">Contact</a>
-<div class="mc"><a class="btn gold" href="tel:+919970889890" style="font:600 1rem var(--fb);border:0">📞 +91 9970889890</a><a class="btn wa" href="https://wa.me/919960232822" target="_blank" rel="noopener" style="font:600 1rem var(--fb);border:0">💬 WhatsApp</a></div></div>
+<div class="mc"><a class="btn gold" data-c="tel" href="tel:+919970889890" style="font:600 1rem var(--fb)">📞 <span data-c="phone-t">+91 9970889890</span></a><a class="btn wa" data-c="wa" href="https://wa.me/919960232822" target="_blank" rel="noopener" style="font:600 1rem var(--fb)">💬 WhatsApp</a></div></div>
 
-<section class="hero" id="home"><canvas id="stars"></canvas>
+<section class="hero" id="home"><div class="hbg" id="hbg"></div><video class="hvid" id="hvid" muted loop playsinline autoplay></video><div class="hov"></div><canvas id="stars"></canvas>
 <div class="wrap hg"><div>
 <div class="eyb fx" style="--d:0" data-i="eye">Pathri • Parbhani • Maharashtra</div>
 <h1 id="h1" data-i="h1">42-Seater <em>Luxury Bus</em> Rentals from Pathri</h1>
-<p class="lead fx" style="--d:1" data-i="hp">Wedding, pilgrimage, school and corporate tours across Maharashtra and all India – comfortable, punctual and fairly priced.</p>
-<div class="hc fx" style="--d:2"><a href="#book" class="btn gold mag">🗓️ <span data-i="cta">Check Availability & Book</span></a><a href="https://wa.me/919960232822" target="_blank" rel="noopener" class="btn ghost mag">💬 WhatsApp</a></div>
+<p class="lead fx" style="--d:1" data-i="hp"></p>
+<div class="hc fx" style="--d:2"><a href="#book" class="btn gold">🗓️ <span data-i="cta">Check Availability & Book</span></a><a href="https://wa.me/919960232822" data-c="wa" target="_blank" rel="noopener" class="btn ghost">💬 WhatsApp</a></div>
 <div class="trust fx" style="--d:3"><span data-i="b1">Safe Drivers</span><span data-i="b2">Clean Buses</span><span data-i="b3">24/7 Support</span></div></div>
-<div class="med fx" style="--d:1"><div class="r2"></div><div class="r1"></div><div class="core"><img src="images/logo.png" alt="Bharat Travels logo" onerror="this.style.display='none'"></div>
-<div class="chip k1"><b>42</b><span data-i="c1">Seater Luxury</span></div><div class="chip k2"><b>AC</b><span data-i="c2">& Non-AC Coaches</span></div><div class="chip k3"><b>24/7</b><span data-i="c3">Booking Support</span></div></div></div>
-<div class="scene" id="scn"><div class="sun"></div><div class="sk sk1"></div><div class="sk sk2"></div><div class="road"></div>
+<div class="med fx" style="--d:1" id="med"><span class="lgo" id="biglogo"><img src="images/logo.png" alt="Bharat Travels logo"><i></i></span>
+<div class="chip k1"><b>42</b><span data-i="c1">Seater Luxury</span></div><div class="chip k2"><b>AC</b><span data-i="c2">& Non-AC</span></div><div class="chip k3"><b>24/7</b><span data-i="c3">Support</span></div></div></div>
+<div class="scene" id="scn"><div class="sun"></div><div class="sk sk1"></div><div class="sk sk2"></div><div class="road"></div><div class="rroad" id="rroad"></div>
 <div class="busrun"><svg viewBox="0 0 420 140"><defs>
 <linearGradient id="bd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e3dcc9"/></linearGradient>
 <linearGradient id="gs" x1="0" x2="1"><stop offset="0" stop-color="#A97C2F"/><stop offset=".5" stop-color="#E2BE78"/><stop offset="1" stop-color="#A97C2F"/></linearGradient>
@@ -316,70 +358,72 @@ footer a{transition:.3s}footer a:hover{color:var(--gold2);padding-left:4px}
 <polygon class="beam" points="400,86 780,40 780,150 400,100" fill="url(#bm)"/>
 <rect x="110" y="12" width="110" height="9" rx="4" fill="#9aa6bd"/><rect x="10" y="20" width="390" height="92" rx="16" fill="url(#bd)" stroke="#0B192C" stroke-width="2"/>
 <g fill="#0B192C"><rect x="26" y="34" width="34" height="30" rx="5"/><rect x="70" y="34" width="34" height="30" rx="5"/><rect x="114" y="34" width="34" height="30" rx="5"/><rect x="158" y="34" width="34" height="30" rx="5"/><rect x="202" y="34" width="34" height="30" rx="5"/><rect x="246" y="34" width="34" height="30" rx="5"/><rect x="290" y="34" width="34" height="30" rx="5"/><path d="M336 34h44q14 0 16 14v18H336z"/></g>
-<rect x="10" y="72" width="390" height="8" fill="url(#gs)"/><text x="28" y="101" font-size="14" font-weight="800" fill="#0B192C" font-family="Playfair Display,serif" letter-spacing="1">BHARAT TRAVELS PATHRI</text>
+<rect x="10" y="72" width="390" height="8" fill="url(#gs)"/><text x="28" y="101" font-size="14" font-weight="800" fill="#0B192C" font-family="Playfair Display,serif">BHARAT TRAVELS PATHRI</text>
 <circle cx="397" cy="92" r="6" fill="#fffbd0"/><rect x="8" y="84" width="5" height="12" fill="#c0392b"/>
 <g class="wh" style="transform-origin:90px 114px"><circle cx="90" cy="114" r="21" fill="#10131c"/><circle cx="90" cy="114" r="11" fill="#d9c28a"/><path d="M90 103v22M79 114h22" stroke="#10131c" stroke-width="3"/></g>
-<g class="wh" style="transform-origin:310px 114px"><circle cx="310" cy="114" r="21" fill="#10131c"/><circle cx="310" cy="114" r="11" fill="#d9c28a"/><path d="M310 103v22M299 114h22" stroke="#10131c" stroke-width="3"/></g></svg></div></div></section>
+<g class="wh" style="transform-origin:310px 114px"><circle cx="310" cy="114" r="21" fill="#10131c"/><circle cx="310" cy="114" r="11" fill="#d9c28a"/><path d="M310 103v22M299 114h22" stroke="#10131c" stroke-width="3"/></g></svg></div>
+<div class="rbw"><img id="rbimg" alt="Bharat Travels bus"></div></div></section>
 <div class="mq"><div class="mt" id="mt"></div></div>
 
 <section class="stats"><div class="wrap sg">
 <div class="sx rv"><b data-n="42">0</b><span data-i="s1">Seater Luxury</span></div><div class="sx rv"><b data-n="6">0</b><span data-i="s2">Yatra Destinations</span></div><div class="sx rv"><b data-n="24" data-s="/7">0</b><span data-i="s3">Support</span></div><div class="sx rv"><b>🇮🇳</b><span data-i="s4">All India Tours</span></div></div></section>
 
-<section id="fleet"><div class="wrap"><div class="eb rv" data-i="fe">Our Fleet</div><h2 class="ttl rv" data-a="c" data-i="fl">Coaches for every journey</h2><p class="sub rv" data-i="fls">Tap a photo for the gallery. Availability is shown live for today.</p><div class="grid" id="fleetGrid"></div></div></section>
+<section id="fleet"><div class="wrap"><div class="eb rv" data-i="fe">Our Fleet</div><h2 class="ttl rv" data-a="c" data-i="fl">Coaches</h2><p class="sub rv" data-i="fls"></p><div class="grid" id="fleetGrid"></div></div></section>
 
-<section id="occasions" style="padding-top:0"><div class="wrap"><div class="eb rv" data-i="oe">Occasions</div><h2 class="ttl rv" data-a="c" data-i="oh">Every occasion, perfectly planned</h2><p class="sub rv" data-i="ohs">From the baraat to the pilgrimage – a clean, punctual bus with a courteous driver.</p>
+<section id="occasions" style="padding-top:0"><div class="wrap"><div class="eb rv" data-i="oe">Occasions</div><h2 class="ttl rv" data-a="c" data-i="oh">Occasions</h2><p class="sub rv" data-i="ohs"></p>
 <div class="oc">
-<div class="occ rv" style="--td:.0s"><span class="no">01</span><div class="ic">💍</div><h3 data-i="o1">Shadi & Engagement Bhada (लग्न व साखरपुडा)</h3><p data-i="o1d">Decorated buses for baraat, varhadi and guests with DJ & music system.</p></div>
-<div class="occ rv" style="--td:.15s"><span class="no">02</span><div class="ic">🛕</div><h3 data-i="o2">Mandir Darshan & Teerth Yatra</h3><p data-i="o2d">Shirdi • Tuljapur • Pandharpur • Ashtavinayak • Tirupati • Ujjain</p></div>
-<div class="occ rv" style="--td:.3s"><span class="no">03</span><div class="ic">🎓</div><h3 data-i="o3">School / Corporate Tours</h3><p data-i="o3d">Safe, scheduled picnics, educational trips and staff outings.</p></div>
+<div class="occ rv"><span class="no">01</span><div class="ic">💍</div><h3 data-i="o1">Shadi</h3><p data-i="o1d"></p></div>
+<div class="occ rv" style="--td:.15s"><span class="no">02</span><div class="ic">🛕</div><h3 data-i="o2">Yatra</h3><p data-i="o2d"></p></div>
+<div class="occ rv" style="--td:.3s"><span class="no">03</span><div class="ic">🎓</div><h3 data-i="o3">School</h3><p data-i="o3d"></p></div>
 </div></div></section>
 
-<section id="yatra" class="yatra"><div class="wrap"><div class="eb rv" data-i="ye">Teerth Yatra</div><h2 class="ttl rv" data-a="c" data-i="yh">Popular yatra routes from Pathri</h2><p class="sub rv" data-i="ys">Scroll to travel along the route – we plan the stops, halts and timings with you.</p>
-<div class="route" id="route"><div class="rf"></div><div class="rb">🚌</div><div id="rsl"></div></div></div></section>
+<section id="yatra" class="yatra"><div class="wrap"><div class="eb rv" data-i="ye">Teerth Yatra</div><h2 class="ttl rv" data-a="c" data-i="yh">Yatra</h2><p class="sub rv" data-i="ys"></p>
+<div class="route" id="route"></div></div></section>
 
-<section id="book"><div class="wrap"><div class="eb rv" data-i="be">Booking</div><h2 class="ttl rv" data-a="c" data-i="bk">Book on WhatsApp</h2><p class="sub rv" data-i="bks">Fill the details – we check date availability and open WhatsApp instantly.</p>
+<section id="book"><div class="wrap"><div class="eb rv" data-i="be">Booking</div><h2 class="ttl rv" data-a="c" data-i="bk">Book</h2><p class="sub rv" data-i="bks"></p>
 <div class="tk rv" data-a="z">
-<div class="tl"><img src="images/logo.png" alt="" onerror="this.style.display='none'"><h3 data-i="hw">How booking works</h3>
-<ol><li data-i="w1">Choose bus, dates and route</li><li data-i="w2">We verify the date is free</li><li data-i="w3">WhatsApp opens with your details</li><li data-i="w4">Confirm with advance – and travel!</li></ol>
-<div class="cn"><a href="tel:+919970889890">📞 +91 9970889890</a><a href="https://wa.me/919960232822" target="_blank" rel="noopener">💬 +91 9960232822</a><a href="mailto:bharattravelspathri@gmail.com">✉️ bharattravelspathri@gmail.com</a></div></div>
+<div class="tl"><span class="lgo"><img src="images/logo.png" alt=""><i></i></span><h3 data-i="hw">How booking works</h3>
+<ol><li data-i="w1"></li><li data-i="w2"></li><li data-i="w3"></li><li data-i="w4"></li></ol>
+<div class="cn"><a data-c="tel" href="tel:+919970889890">📞 <span data-c="phone-t"></span></a><a data-c="wa" href="https://wa.me/919960232822" target="_blank" rel="noopener">💬 <span data-c="wa-t"></span></a><a data-c="mail" href="mailto:bharattravelspathri@gmail.com">✉️ <span data-c="mail-t"></span></a></div></div>
 <div class="tr">
-<div class="fd"><label data-i="fn">Customer Name</label><input id="fName" placeholder="Your name" autocomplete="name"></div>
-<div class="fd"><label data-i="fm">Mobile Number</label><input id="fMob" type="tel" inputmode="numeric" maxlength="10" placeholder="10-digit mobile" autocomplete="tel"></div>
-<div class="fd"><label data-i="fb">Select Bus</label><select id="fBus"></select></div>
-<div class="fd"><label data-i="ft">Trip Type</label><select id="fType"><option>Shadi</option><option>Mandir Darshan</option><option>Tour</option><option>Other</option></select></div>
-<div class="fd"><label data-i="fs">Start Date</label><input id="fStart" type="date"></div>
-<div class="fd"><label data-i="fr">Return Date</label><input id="fEnd" type="date"></div>
-<div class="fd full"><label data-i="fp">Pickup & Drop Route</label><input id="fRoute" placeholder="Pathri → Shirdi → Pathri"></div>
-<div class="fd full"><button class="btn wa full" onclick="submitBooking()">💬 <span data-i="send">Send Booking on WhatsApp</span></button></div>
+<div class="fd"><label data-i="fn">Name</label><input id="fName" data-p="pn" autocomplete="name"></div>
+<div class="fd"><label data-i="fm">Mobile</label><input id="fMob" type="tel" inputmode="numeric" maxlength="10" data-p="pm" autocomplete="tel"></div>
+<div class="fd"><label data-i="fb">Bus</label><select id="fBus" onchange="revalDates()"></select></div>
+<div class="fd"><label data-i="ft">Trip</label><select id="fType" onchange="$('oth').hidden=this.value!='Other'"><option value="Shadi" data-i="t1">Shadi</option><option value="Mandir Darshan" data-i="t2">Mandir</option><option value="Tour" data-i="t3">Tour</option><option value="Other" data-i="t4">Other</option></select></div>
+<div class="fd full" id="oth" hidden><label data-i="fo2">Other trip</label><input id="fOther" data-p="po" maxlength="80"></div>
+<div class="fd"><label data-i="fs">Start</label><input id="fStart" class="dt" readonly data-p="pd" onclick="openCal('start')"></div>
+<div class="fd"><label data-i="fr">Return</label><input id="fEnd" class="dt" readonly data-p="pd" onclick="openCal('end')"></div>
+<div class="fd full"><label data-i="fp">Route</label><div id="stops"></div>
+<div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center"><button type="button" class="btn ghost sm" onclick="addStop()" data-i="addst">+ Stop</button></div>
+<label class="ck"><input type="checkbox" id="rnd" onchange="rsum()"><span data-i="rnd">Round trip</span></label><div class="rsum" id="rsum"></div></div>
+<div class="fd full"><button class="btn wa full" onclick="submitBooking()">💬 <span data-i="send">Send</span></button></div>
 </div></div></div></section>
 
-<section id="rules" style="padding-top:0"><div class="wrap" style="max-width:860px"><div class="eb rv" data-i="re">Transparent Policy</div><h2 class="ttl rv" data-a="c" data-i="rh">Booking Rules</h2><p class="sub"></p>
-<details class="rv" open><summary data-i="r1">Toll Tax</summary><p data-i="r1d">Toll tax is payable by the customer as per actual receipts.</p></details>
-<details class="rv"><summary data-i="r2">Parking</summary><p data-i="r2d">Parking charges at destination or en-route are paid by the customer.</p></details>
-<details class="rv"><summary data-i="r3">Border Tax</summary><p data-i="r3d">Inter-state border/permit tax is extra and charged as per actuals.</p></details>
-<details class="rv"><summary data-i="r4">Driver Allowance</summary><p data-i="r4d">Driver food & night-halt allowance is payable per day, as agreed at booking.</p></details>
-<details class="rv"><summary data-i="r5">Advance Booking Policy</summary><p data-i="r5d">Booking is confirmed only after advance payment. Balance is payable before/at trip start.</p></details>
-</div></section>
+<section id="rules" style="padding-top:0"><div class="wrap" style="max-width:860px"><div class="eb rv" data-i="re">Policy</div><h2 class="ttl rv" data-a="c" data-i="rh">Rules</h2><p class="sub"></p><div id="rulesList"></div></div></section>
 
-<section id="contact" style="padding-top:0"><div class="wrap"><div class="eb rv" data-i="ce">Visit Us</div><h2 class="ttl rv" data-a="c" data-i="ct">Find Us in Pathri</h2><p class="sub"></p>
+<section id="contact" style="padding-top:0"><div class="wrap"><div class="eb rv" id="ceb"></div><h2 class="ttl rv" data-a="c" id="cttl"></h2><p class="sub"></p>
 <div class="loc"><div class="ci">
-<div class="cc rv" data-a="l"><i>📍</i><div><small data-i="ad">Address</small><b>Manavat Road, Pathri, Dist. Parbhani, Maharashtra</b></div></div>
-<a class="cc rv" data-a="l" style="--td:.1s" href="tel:+919970889890"><i>📞</i><div><small data-i="cl">Call</small><b>+91 9970889890</b></div></a>
-<a class="cc rv" data-a="l" style="--td:.2s" href="https://wa.me/919960232822" target="_blank" rel="noopener"><i>💬</i><div><small>WhatsApp</small><b>+91 9960232822</b></div></a>
-<a class="cc rv" data-a="l" style="--td:.3s" href="mailto:bharattravelspathri@gmail.com"><i>✉️</i><div><small>Email</small><b>bharattravelspathri@gmail.com</b></div></a></div>
-<iframe class="rv" data-a="r" loading="lazy" src="https://www.google.com/maps?q=Pathri,Parbhani,Maharashtra&output=embed" title="Map"></iframe></div></div></section>
+<div class="cc rv" data-a="l"><i>📍</i><div><small data-i="ad">Address</small><b data-c="addr"></b></div></div>
+<a class="cc rv" data-a="l" style="--td:.1s" data-c="tel" href="tel:+919970889890"><i>📞</i><div><small data-i="cl">Call</small><b data-c="phone-t"></b></div></a>
+<a class="cc rv" data-a="l" style="--td:.2s" data-c="wa" href="https://wa.me/919960232822" target="_blank" rel="noopener"><i>💬</i><div><small>WhatsApp</small><b data-c="wa-t"></b></div></a>
+<a class="cc rv" data-a="l" style="--td:.3s" data-c="mail" href="mailto:bharattravelspathri@gmail.com"><i>✉️</i><div><small>Email</small><b class="one" data-c="mail-t"></b></div></a></div>
+<div class="mapw rv" data-a="r"><iframe id="pubmap" loading="lazy" title="Map"></iframe><a class="btn gold sm" id="dirbtn" target="_blank" rel="noopener" href="#">🧭 <span data-i="dir">Directions</span></a></div></div></div></section>
 
 <footer><div class="wrap"><div class="fg">
-<div><div class="fl"><img src="images/logo.png" alt="" onerror="this.style.display='none'"><b>Bharat Travels<br>Pathri</b></div><p data-i="fa">42-seater luxury & tourist buses on rent for weddings, yatras, school and corporate tours – from Pathri to all India.</p></div>
-<div><h4 data-i="fq">Quick Links</h4><ul><li><a href="#fleet" data-i="n2">Fleet</a></li><li><a href="#occasions" data-i="n3">Occasions</a></li><li><a href="#yatra" data-i="n7">Yatra</a></li><li><a href="#book" data-i="n4">Book</a></li><li><a href="#rules" data-i="n5">Rules</a></li></ul></div>
-<div><h4 data-i="fv">Services</h4><ul><li data-i="o1s">Shadi Bhada</li><li data-i="o2">Teerth Yatra</li><li data-i="o3">School / Corporate Tours</li><li data-i="fo">Outstation Trips</li></ul></div>
-<div><h4 data-i="fcn">Contact</h4><ul><li>📍 Manavat Road, Pathri, Dist. Parbhani, Maharashtra</li><li>📞 <a href="tel:+919970889890">+91 9970889890</a></li><li>💬 <a href="https://wa.me/919960232822" target="_blank" rel="noopener">+91 9960232822</a></li><li>✉️ <a href="mailto:bharattravelspathri@gmail.com">bharattravelspathri@gmail.com</a></li></ul></div></div>
-<div class="fb2"><span>© <span id="yr"></span> Bharat Travels Pathri. <span data-i="rr">All rights reserved.</span></span>
-<div class="lk"><a href="#" onclick="openM('terms');return false" data-i="tc">Terms & Conditions</a><a href="#" onclick="openM('priv');return false" data-i="pp">Privacy Policy</a><a href="#" onclick="openM('login');return false" style="opacity:.4">Admin Login</a><button class="bt" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button></div></div></div></footer>
+<div><div class="fl"><span class="lgo"><img src="images/logo.png" alt=""><i></i></span><b>Bharat Travels<br>Pathri</b></div><p data-i="fa"></p></div>
+<div><h4 data-i="fq">Links</h4><ul><li><a href="#fleet" data-i="n2">Fleet</a></li><li><a href="#occasions" data-i="n3">Occasions</a></li><li><a href="#yatra" data-i="n7">Yatra</a></li><li><a href="#book" data-i="n4">Book</a></li><li><a href="#rules" data-i="n5">Rules</a></li></ul></div>
+<div><h4 data-i="fv">Services</h4><ul><li data-i="o1s">Shadi</li><li data-i="o2">Yatra</li><li data-i="o3">School</li><li data-i="fo">Outstation</li></ul></div>
+<div><h4 data-i="fcn">Contact</h4><ul><li>📍 <span data-c="addr"></span></li><li>📞 <a data-c="tel" href="tel:+919970889890"><span data-c="phone-t"></span></a></li><li>💬 <a data-c="wa" href="https://wa.me/919960232822" target="_blank" rel="noopener"><span data-c="wa-t"></span></a></li><li class="one">✉️ <a data-c="mail" href="mailto:bharattravelspathri@gmail.com"><span data-c="mail-t"></span></a></li></ul></div></div>
+<div class="fb2"><span>© <span id="yr"></span> Bharat Travels Pathri. <span data-i="rr"></span></span>
+<div class="lk"><a href="#" onclick="openM('terms');return false" data-i="tc">Terms</a><a href="#" onclick="openM('priv');return false" data-i="pp">Privacy</a><a href="#" onclick="openM('login');return false" style="opacity:.4">Admin Login</a><button class="bt" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Top">↑</button></div></div></div></footer>
 
-<div class="fab"><a class="c" href="tel:+919970889890" aria-label="Call">📞</a><a class="w2" href="https://wa.me/919960232822" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a></div>
-<div class="mb"><a href="tel:+919970889890">📞 Call Now</a><a href="https://wa.me/919960232822" target="_blank" rel="noopener">💬 WhatsApp</a></div>
+<div class="fab"><a class="c" data-c="tel" href="tel:+919970889890" aria-label="Call">📞</a><a class="w2" data-c="wa" href="https://wa.me/919960232822" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a></div>
+<div class="mb"><a data-c="tel" href="tel:+919970889890">📞 <span data-i="callnow">Call</span></a><a data-c="wa" href="https://wa.me/919960232822" target="_blank" rel="noopener">💬 WhatsApp</a></div>
 <div class="toast" id="toast"></div>
+
+<div class="ov" id="m-cal"><div class="md" style="max-width:420px"><button class="x" onclick="closeM()">×</button><h2 id="ctitle" style="font-size:1.3rem;margin-bottom:12px"></h2><div class="cdh"><button class="ib" onclick="calMv(-1)">‹</button><b id="cmon"></b><button class="ib" onclick="calMv(1)">›</button></div><div class="cald" id="cbody"></div>
+<div class="cdl"><span class="a" data-i="cl1">Free</span><span class="b" data-i="cl2">Booked</span><span class="c" data-i="cl3">Selected</span></div>
+<div style="display:flex;gap:10px"><button class="btn ghost sm" onclick="calClear()" data-i="clr">Clear</button><button class="btn sm" style="margin-left:auto" onclick="closeM()" data-i="cls">Close</button></div></div></div>
 
 <div class="ov" id="m-terms"><div class="md"><button class="x" onclick="closeM()">×</button><h2>Terms & Conditions</h2>
 <p>Last updated: <span class="yy"></span>. By booking with Bharat Travels Pathri you agree to the following.</p>
@@ -396,182 +440,327 @@ footer a{transition:.3s}footer a:hover{color:var(--gold2);padding-left:4px}
 <div class="ov" id="m-priv"><div class="md"><button class="x" onclick="closeM()">×</button><h2>Privacy Policy</h2>
 <p>Last updated: <span class="yy"></span>. Bharat Travels Pathri respects your privacy.</p>
 <h3>Information We Collect</h3><p>Name, mobile number, trip type, travel dates, route and bus choice that you enter in the booking form.</p>
-<h3>How We Use It</h3><p>To check bus availability, respond to your enquiry, confirm bookings, and maintain trip accounts. We do not sell or rent your data.</p>
-<h3>Storage</h3><p>Enquiries are stored in our admin system (browser storage or our cloud database) accessible only to authorised staff. Your message is also sent to our WhatsApp number via WhatsApp, which is governed by WhatsApp's own privacy policy.</p>
-<h3>Third Parties</h3><p>Google Fonts and Google Maps are loaded on this site and may receive technical data such as your IP address.</p>
+<h3>How We Use It</h3><p>To check bus availability, respond to your enquiry, confirm bookings, and maintain trip accounts. We do not sell or rent your data. The booking form is sent only to our WhatsApp number; it is not stored on this website.</p>
+<h3>Third Parties</h3><p>Google Fonts, Google Maps and OpenStreetMap (place suggestions) are used on this site and may receive technical data such as your IP address. WhatsApp is governed by its own privacy policy.</p>
 <h3>Your Rights</h3><p>You may request correction or deletion of your data by emailing bharattravelspathri@gmail.com or calling +91 9970889890.</p>
 <h3>Contact</h3><p>Bharat Travels Pathri, Manavat Road, Pathri, Dist. Parbhani, Maharashtra.</p></div></div>
 
-<div class="ov" id="m-bus"><div class="md"><button class="x" onclick="closeM()">×</button><h2 id="gt" style="margin:0 0 10px"></h2><img id="gi" alt="" style="width:100%;border-radius:14px;min-height:120px;background:#12294a"><div class="gal" id="gg"></div></div></div>
+<div class="ov" id="m-bus"><div class="md"><button class="x" onclick="closeM()">×</button><h2 id="gt" style="margin:0 0 10px"></h2><div class="gm"><img id="gi" alt=""><button style="left:8px" onclick="galMv(-1)">‹</button><button style="right:8px" onclick="galMv(1)">›</button></div><div class="gal" id="gg"></div></div></div>
 
 <div class="ov" id="m-login"><div class="md" style="max-width:400px"><button class="x" onclick="closeM()">×</button><h2>🔐 Admin Login</h2><p style="margin-bottom:14px">Authorised staff only.</p>
-<div class="fd"><label>Email</label><input id="lEmail" type="email" placeholder="Admin email" autocomplete="username"></div>
-<div class="fd" style="margin:12px 0 16px"><label>Password</label><div class="pw"><input id="lPass" type="password" autocomplete="current-password" onkeydown="if(event.key=='Enter')doLogin()"><button type="button" onclick="const p=$('lPass');p.type=p.type=='password'?'text':'password'" aria-label="Show password">👁</button></div></div>
+<div class="fd"><label>Email</label><input id="lEmail" type="email" autocomplete="username"></div>
+<div class="fd" style="margin:12px 0 16px"><label>Password</label><div class="pw"><input id="lPass" type="password" autocomplete="current-password" onkeydown="if(event.key=='Enter')doLogin()"><button type="button" onclick="const p=$('lPass');p.type=p.type=='password'?'text':'password'" aria-label="Show">👁</button></div></div>
 <button class="btn gold full" onclick="doLogin()">Login</button></div></div>
 
 <div id="admin">
-<aside class="as"><div class="br"><img src="images/logo.png" alt=""><span><b>Bharat Travels</b><small>Admin Panel</small></span></div><div id="sidenav"></div><div class="sp"></div><button onclick="window.scrollTo(0,0);logout()">🌐 View Website</button><button onclick="logout()">🚪 Logout</button></aside>
-<main class="am"><div class="at"><h2 id="atitle">Dashboard</h2><div class="ac"><button class="ib" onclick="toggleTheme()" aria-label="Theme">🌓</button><button class="btn sm" onclick="logout()">Logout</button></div></div><div id="ab"></div></main>
+<aside class="as"><div class="br"><span class="lgo"><img src="images/logo.png" alt=""><i></i></span><span><b>Bharat Travels</b><small>Admin Panel</small></span></div><div id="sidenav"></div><div class="sp"></div><button onclick="logout()">🌐 View Website</button><button onclick="logout()">🚪 Logout</button></aside>
+<main class="am"><div class="at"><h2 id="atitle">Dashboard</h2><div class="ac"><button class="ib" onclick="toggleTheme()" aria-label="Theme">🌓</button><button class="btn gold sm" id="pubbtn" onclick="publish()">🚀 Publish</button><button class="btn sm" onclick="logout()">Logout</button></div></div><div id="ab"></div></main>
 <nav class="abn" id="botnav"></nav></div>
-
 <script>
 const $=id=>document.getElementById(id);
-/* ===== i18n ===== */
-const T={en:{n2:"Fleet",n3:"Occasions",n7:"Yatra",n4:"Book",n5:"Rules",n6:"Contact",call:"Call",eye:"Pathri • Parbhani • Maharashtra",h1:"42-Seater <em>Luxury Bus</em> Rentals from Pathri",hp:"Wedding, pilgrimage, school and corporate tours across Maharashtra and all India – comfortable, punctual and fairly priced.",cta:"Check Availability & Book",b1:"Safe Drivers",b2:"Clean Buses",b3:"24/7 Support",c1:"Seater Luxury",c2:"& Non-AC Coaches",c3:"Booking Support",s1:"Seater Luxury",s2:"Yatra Destinations",s3:"Support",s4:"All India Tours",fe:"Our Fleet",fl:"Coaches for every journey",fls:"Tap a photo for the gallery. Availability is shown live for today.",oe:"Occasions",oh:"Every occasion, perfectly planned",ohs:"From the baraat to the pilgrimage – a clean, punctual bus with a courteous driver.",o1:"Shadi & Engagement Bhada (लग्न व साखरपुडा)",o1d:"Decorated buses for baraat, varhadi and guests with DJ & music system.",o2:"Mandir Darshan & Teerth Yatra",o2d:"Shirdi • Tuljapur • Pandharpur • Ashtavinayak • Tirupati • Ujjain",o3:"School / Corporate Tours",o3d:"Safe, scheduled picnics, educational trips and staff outings.",o1s:"Shadi Bhada",ye:"Teerth Yatra",yh:"Popular yatra routes from Pathri",ys:"Scroll to travel along the route – we plan the stops, halts and timings with you.",be:"Booking",bk:"Book on WhatsApp",bks:"Fill the details – we check date availability and open WhatsApp instantly.",hw:"How booking works",w1:"Choose bus, dates and route",w2:"We verify the date is free",w3:"WhatsApp opens with your details",w4:"Confirm with advance – and travel!",fn:"Customer Name",fm:"Mobile Number",fb:"Select Bus",ft:"Trip Type",fs:"Start Date",fr:"Return Date",fp:"Pickup & Drop Route",send:"Send Booking on WhatsApp",re:"Transparent Policy",rh:"Booking Rules",r1:"Toll Tax",r1d:"Toll tax is payable by the customer as per actual receipts.",r2:"Parking",r2d:"Parking charges at destination or en-route are paid by the customer.",r3:"Border Tax",r3d:"Inter-state border/permit tax is extra and charged as per actuals.",r4:"Driver Allowance",r4d:"Driver food & night-halt allowance is payable per day, as agreed at booking.",r5:"Advance Booking Policy",r5d:"Booking is confirmed only after advance payment. Balance is payable before/at trip start.",ce:"Visit Us",ct:"Find Us in Pathri",ad:"Address",cl:"Call",fa:"42-seater luxury & tourist buses on rent for weddings, yatras, school and corporate tours – from Pathri to all India.",fq:"Quick Links",fv:"Services",fo:"Outstation Trips",fcn:"Contact",rr:"All rights reserved.",tc:"Terms & Conditions",pp:"Privacy Policy",book:"Book This Bus",av:"Available",bkd:"Booked Today",seat:"Seater",start:"Start",
-route:[["Pathri","Your journey begins here"],["Pandharpur","Vitthal–Rukmini Darshan"],["Tuljapur","Tulja Bhavani Mata Darshan"],["Shirdi","Sai Baba Samadhi Mandir"],["Ashtavinayak","Eight Ganpati temples of Maharashtra"],["Ujjain","Mahakaleshwar Jyotirlinga"],["Tirupati","Venkateswara Balaji Darshan"]]},
-mr:{n2:"गाड्या",n3:"प्रसंग",n7:"यात्रा",n4:"बुकिंग",n5:"नियम",n6:"संपर्क",call:"कॉल",eye:"पाथरी • परभणी • महाराष्ट्र",h1:"पाथरीहून ४२ सीटर <em>लक्झरी बस</em> भाड्याने",hp:"लग्न, तीर्थयात्रा, शाळा व कॉर्पोरेट सहली – संपूर्ण महाराष्ट्र व भारतभर आरामदायी, वेळेवर आणि वाजवी दरात.",cta:"उपलब्धता तपासा व बुक करा",b1:"सुरक्षित चालक",b2:"स्वच्छ बसेस",b3:"२४/७ सेवा",c1:"सीटर लक्झरी",c2:"व नॉन-एसी बसेस",c3:"बुकिंग सहाय्य",s1:"सीटर लक्झरी",s2:"यात्रा स्थळे",s3:"सेवा",s4:"भारतभर टूर",fe:"आमच्या गाड्या",fl:"प्रत्येक प्रवासासाठी बस",fls:"फोटोवर क्लिक करून गॅलरी पहा. आजची उपलब्धता लाईव्ह दिसते.",oe:"प्रसंग",oh:"प्रत्येक प्रसंग, परफेक्ट नियोजन",ohs:"वरातीपासून तीर्थयात्रेपर्यंत – स्वच्छ, वेळेवर बस आणि सौजन्यशील चालक.",o1:"लग्न व साखरपुडा भाडे",o1d:"वरात, वऱ्हाडी व पाहुण्यांसाठी सजवलेल्या बसेस, DJ व म्युझिक सिस्टीमसह.",o2:"मंदिर दर्शन व तीर्थयात्रा",o2d:"शिर्डी • तुळजापूर • पंढरपूर • अष्टविनायक • तिरुपती • उज्जैन",o3:"शाळा / कॉर्पोरेट सहल",o3d:"सुरक्षित सहली, शैक्षणिक टूर व कर्मचारी आउटिंग.",o1s:"लग्न भाडे",ye:"तीर्थयात्रा",yh:"पाथरीहून लोकप्रिय यात्रा मार्ग",ys:"स्क्रोल करा आणि मार्गावरून प्रवास करा – थांबे व वेळापत्रक आम्ही तुमच्यासोबत ठरवतो.",be:"बुकिंग",bk:"WhatsApp वर बुकिंग",bks:"माहिती भरा – तारीख उपलब्धता तपासून WhatsApp उघडेल.",hw:"बुकिंग कसे होते",w1:"बस, तारखा व मार्ग निवडा",w2:"आम्ही तारीख रिकामी आहे का तपासतो",w3:"तुमच्या माहितीसह WhatsApp उघडेल",w4:"अ‍ॅडव्हान्स देऊन निश्चित करा – आणि निघा!",fn:"ग्राहकाचे नाव",fm:"मोबाईल नंबर",fb:"बस निवडा",ft:"प्रवास प्रकार",fs:"सुरू तारीख",fr:"परतीची तारीख",fp:"पिकअप व ड्रॉप मार्ग",send:"WhatsApp वर बुकिंग पाठवा",re:"पारदर्शक धोरण",rh:"बुकिंग नियम",r1:"टोल टॅक्स",r1d:"टोल टॅक्स प्रत्यक्ष पावतीप्रमाणे ग्राहकाने भरावा.",r2:"पार्किंग",r2d:"पार्किंग शुल्क ग्राहकाने भरावे.",r3:"बॉर्डर टॅक्स",r3d:"आंतरराज्य बॉर्डर/परमिट टॅक्स वेगळा, प्रत्यक्ष खर्चाप्रमाणे.",r4:"ड्रायव्हर भत्ता",r4d:"ड्रायव्हरचा जेवण व मुक्काम भत्ता दररोज ठरलेल्याप्रमाणे.",r5:"आगाऊ बुकिंग धोरण",r5d:"अ‍ॅडव्हान्स भरल्यानंतरच बुकिंग निश्चित. उर्वरित रक्कम प्रवासापूर्वी/सुरुवातीला.",ce:"भेट द्या",ct:"पाथरीत आम्हाला भेटा",ad:"पत्ता",cl:"कॉल",fa:"लग्न, यात्रा, शाळा व कॉर्पोरेट सहलींसाठी ४२ सीटर लक्झरी व टुरिस्ट बस भाड्याने – पाथरीहून संपूर्ण भारतात.",fq:"जलद दुवे",fv:"सेवा",fo:"बाहेरगावचे प्रवास",fcn:"संपर्क",rr:"सर्व हक्क राखीव.",tc:"अटी व शर्ती",pp:"गोपनीयता धोरण",book:"ही बस बुक करा",av:"उपलब्ध",bkd:"आज बुक",seat:"सीटर",start:"सुरू",
-route:[["पाथरी","तुमचा प्रवास येथून सुरू"],["पंढरपूर","विठ्ठल–रुक्मिणी दर्शन"],["तुळजापूर","तुळजाभवानी माता दर्शन"],["शिर्डी","साईबाबा समाधी मंदिर"],["अष्टविनायक","महाराष्ट्रातील आठ गणपती"],["उज्जैन","महाकालेश्वर ज्योतिर्लिंग"],["तिरुपती","व्यंकटेश्वर बालाजी दर्शन"]]}};
-let L=localStorage.getItem('bt_lang')||'en';
-function wrapWords(el){let i=0;(function walk(n){[...n.childNodes].forEach(c=>{if(c.nodeType==3){const f=document.createDocumentFragment();c.textContent.split(/(\s+)/).forEach(t=>{if(!t)return;if(/^\s+$/.test(t)){f.appendChild(document.createTextNode(' '));return}const w=document.createElement('span');w.className='w';const s=document.createElement('span');s.className='wi';s.style.setProperty('--d',i++);s.textContent=t;w.appendChild(s);f.appendChild(w)});c.replaceWith(f)}else if(c.nodeType==1)walk(c)})})(el)}
-function renderRoute(){$('rsl').innerHTML=T[L].route.map((r,i)=>`<div class="rs"><div><h4>${r[0]}</h4><p>${r[1]}</p></div></div>`).join('');routeScroll()}
-function setL(l){L=l;localStorage.setItem('bt_lang',l);document.documentElement.lang=l;$('bEn').classList.toggle('on',l=='en');$('bMr').classList.toggle('on',l=='mr');
-document.querySelectorAll('[data-i]').forEach(e=>{const v=T[l][e.dataset.i];if(v!==undefined)e.innerHTML=v});wrapWords($('h1'));renderFleet();renderRoute()}
-/* ===== Data layer (localStorage; swap for Firestore – see bottom) ===== */
-const K={b:'bt_buses',e:'bt_enq',s:'bt2_set'};
+/* ===== Location data: all states/UTs, districts, Maharashtra talukas ===== */
+const STATES=["Andaman and Nicobar Islands","Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chandigarh","Chhattisgarh","Dadra and Nagar Haveli and Daman and Diu","Delhi","Goa","Gujarat","Haryana","Himachal Pradesh","Jammu and Kashmir","Jharkhand","Karnataka","Kerala","Ladakh","Lakshadweep","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Puducherry","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttar Pradesh","Uttarakhand","West Bengal"];
+const DIST={};("Andaman and Nicobar Islands:Nicobars,North and Middle Andaman,South Andaman|Andhra Pradesh:Alluri Sitharama Raju,Anakapalli,Anantapur,Annamayya,Bapatla,Chittoor,Konaseema,East Godavari,Eluru,Guntur,Kakinada,Krishna,Kurnool,Nandyal,NTR,Palnadu,Parvathipuram Manyam,Prakasam,Sri Balaji,Nellore,Sri Sathya Sai,Srikakulam,Tirupati,Visakhapatnam,Vizianagaram,West Godavari,YSR Kadapa|Arunachal Pradesh:Anjaw,Changlang,Dibang Valley,East Kameng,East Siang,Kamle,Kra Daadi,Kurung Kumey,Lepa Rada,Lohit,Longding,Lower Dibang Valley,Lower Siang,Lower Subansiri,Namsai,Pakke-Kessang,Papum Pare,Shi Yomi,Siang,Tawang,Tirap,Upper Siang,Upper Subansiri,West Kameng,West Siang|Assam:Bajali,Baksa,Barpeta,Biswanath,Bongaigaon,Cachar,Charaideo,Chirang,Darrang,Dhemaji,Dhubri,Dibrugarh,Dima Hasao,Goalpara,Golaghat,Hailakandi,Hojai,Jorhat,Kamrup,Kamrup Metropolitan,Karbi Anglong,Karimganj,Kokrajhar,Lakhimpur,Majuli,Morigaon,Nagaon,Nalbari,Sivasagar,Sonitpur,South Salmara-Mankachar,Tamulpur,Tinsukia,Udalguri,West Karbi Anglong|Bihar:Araria,Arwal,Aurangabad,Banka,Begusarai,Bhagalpur,Bhojpur,Buxar,Darbhanga,East Champaran,Gaya,Gopalganj,Jamui,Jehanabad,Kaimur,Katihar,Khagaria,Kishanganj,Lakhisarai,Madhepura,Madhubani,Munger,Muzaffarpur,Nalanda,Nawada,Patna,Purnia,Rohtas,Saharsa,Samastipur,Saran,Sheikhpura,Sheohar,Sitamarhi,Siwan,Supaul,Vaishali,West Champaran|Chandigarh:Chandigarh|Chhattisgarh:Balod,Baloda Bazar,Balrampur,Bastar,Bemetara,Bijapur,Bilaspur,Dantewada,Dhamtari,Durg,Gariaband,Gaurela-Pendra-Marwahi,Janjgir-Champa,Jashpur,Kabirdham,Kanker,Khairagarh,Kondagaon,Korba,Koriya,Mahasamund,Manendragarh,Mohla-Manpur,Mungeli,Narayanpur,Raigarh,Raipur,Rajnandgaon,Sakti,Sarangarh-Bilaigarh,Sukma,Surajpur,Surguja|Dadra and Nagar Haveli and Daman and Diu:Dadra and Nagar Haveli,Daman,Diu|Delhi:Central Delhi,East Delhi,New Delhi,North Delhi,North East Delhi,North West Delhi,Shahdara,South Delhi,South East Delhi,South West Delhi,West Delhi|Goa:North Goa,South Goa|Gujarat:Ahmedabad,Amreli,Anand,Aravalli,Banaskantha,Bharuch,Bhavnagar,Botad,Chhota Udaipur,Dahod,Dang,Devbhoomi Dwarka,Gandhinagar,Gir Somnath,Jamnagar,Junagadh,Kutch,Kheda,Mahisagar,Mehsana,Morbi,Narmada,Navsari,Panchmahal,Patan,Porbandar,Rajkot,Sabarkantha,Surat,Surendranagar,Tapi,Vadodara,Valsad|Haryana:Ambala,Bhiwani,Charkhi Dadri,Faridabad,Fatehabad,Gurugram,Hisar,Jhajjar,Jind,Kaithal,Karnal,Kurukshetra,Mahendragarh,Nuh,Palwal,Panchkula,Panipat,Rewari,Rohtak,Sirsa,Sonipat,Yamunanagar|Himachal Pradesh:Bilaspur,Chamba,Hamirpur,Kangra,Kinnaur,Kullu,Lahaul and Spiti,Mandi,Shimla,Sirmaur,Solan,Una|Jammu and Kashmir:Anantnag,Bandipora,Baramulla,Budgam,Doda,Ganderbal,Jammu,Kathua,Kishtwar,Kulgam,Kupwara,Poonch,Pulwama,Rajouri,Ramban,Reasi,Samba,Shopian,Srinagar,Udhampur|Jharkhand:Bokaro,Chatra,Deoghar,Dhanbad,Dumka,East Singhbhum,Garhwa,Giridih,Godda,Gumla,Hazaribagh,Jamtara,Khunti,Koderma,Latehar,Lohardaga,Pakur,Palamu,Ramgarh,Ranchi,Sahibganj,Seraikela Kharsawan,Simdega,West Singhbhum|Karnataka:Bagalkot,Ballari,Belagavi,Bengaluru Rural,Bengaluru Urban,Bidar,Chamarajanagar,Chikkaballapur,Chikkamagaluru,Chitradurga,Dakshina Kannada,Davanagere,Dharwad,Gadag,Hassan,Haveri,Kalaburagi,Kodagu,Kolar,Koppal,Mandya,Mysuru,Raichur,Ramanagara,Shivamogga,Tumakuru,Udupi,Uttara Kannada,Vijayanagara,Vijayapura,Yadgir|Kerala:Alappuzha,Ernakulam,Idukki,Kannur,Kasaragod,Kollam,Kottayam,Kozhikode,Malappuram,Palakkad,Pathanamthitta,Thiruvananthapuram,Thrissur,Wayanad|Ladakh:Kargil,Leh|Lakshadweep:Lakshadweep|Madhya Pradesh:Agar Malwa,Alirajpur,Anuppur,Ashoknagar,Balaghat,Barwani,Betul,Bhind,Bhopal,Burhanpur,Chhatarpur,Chhindwara,Damoh,Datia,Dewas,Dhar,Dindori,Guna,Gwalior,Harda,Indore,Jabalpur,Jhabua,Katni,Khandwa,Khargone,Maihar,Mandla,Mandsaur,Mauganj,Morena,Narmadapuram,Narsinghpur,Neemuch,Niwari,Pandhurna,Panna,Raisen,Rajgarh,Ratlam,Rewa,Sagar,Satna,Sehore,Seoni,Shahdol,Shajapur,Sheopur,Shivpuri,Sidhi,Singrauli,Tikamgarh,Ujjain,Umaria,Vidisha|Manipur:Bishnupur,Chandel,Churachandpur,Imphal East,Imphal West,Jiribam,Kakching,Kamjong,Kangpokpi,Noney,Pherzawl,Senapati,Tamenglong,Tengnoupal,Thoubal,Ukhrul|Meghalaya:East Garo Hills,East Jaintia Hills,East Khasi Hills,Eastern West Khasi Hills,North Garo Hills,Ri Bhoi,South Garo Hills,South West Garo Hills,South West Khasi Hills,West Garo Hills,West Jaintia Hills,West Khasi Hills|Mizoram:Aizawl,Champhai,Hnahthial,Khawzawl,Kolasib,Lawngtlai,Lunglei,Mamit,Saitual,Serchhip,Siaha|Nagaland:Chumoukedima,Dimapur,Kiphire,Kohima,Longleng,Mokokchung,Mon,Niuland,Noklak,Peren,Phek,Shamator,Tuensang,Tseminyu,Wokha,Zunheboto|Odisha:Angul,Balangir,Balasore,Bargarh,Bhadrak,Boudh,Cuttack,Deogarh,Dhenkanal,Gajapati,Ganjam,Jagatsinghpur,Jajpur,Jharsuguda,Kalahandi,Kandhamal,Kendrapara,Kendujhar,Khordha,Koraput,Malkangiri,Mayurbhanj,Nabarangpur,Nayagarh,Nuapada,Puri,Rayagada,Sambalpur,Subarnapur,Sundargarh|Puducherry:Karaikal,Mahe,Puducherry,Yanam|Punjab:Amritsar,Barnala,Bathinda,Faridkot,Fatehgarh Sahib,Fazilka,Ferozepur,Gurdaspur,Hoshiarpur,Jalandhar,Kapurthala,Ludhiana,Malerkotla,Mansa,Moga,Mohali,Muktsar,Pathankot,Patiala,Rupnagar,Sangrur,Shahid Bhagat Singh Nagar,Tarn Taran|Rajasthan:Ajmer,Alwar,Banswara,Baran,Barmer,Bharatpur,Bhilwara,Bikaner,Bundi,Chittorgarh,Churu,Dausa,Dholpur,Dungarpur,Hanumangarh,Jaipur,Jaisalmer,Jalore,Jhalawar,Jhunjhunu,Jodhpur,Karauli,Kota,Nagaur,Pali,Pratapgarh,Rajsamand,Sawai Madhopur,Sikar,Sirohi,Sri Ganganagar,Tonk,Udaipur|Sikkim:Gangtok,Gyalshing,Mangan,Namchi,Pakyong,Soreng|Tamil Nadu:Ariyalur,Chengalpattu,Chennai,Coimbatore,Cuddalore,Dharmapuri,Dindigul,Erode,Kallakurichi,Kanchipuram,Kanyakumari,Karur,Krishnagiri,Madurai,Mayiladuthurai,Nagapattinam,Namakkal,Nilgiris,Perambalur,Pudukkottai,Ramanathapuram,Ranipet,Salem,Sivaganga,Tenkasi,Thanjavur,Theni,Thoothukudi,Tiruchirappalli,Tirunelveli,Tirupathur,Tiruppur,Tiruvallur,Tiruvannamalai,Tiruvarur,Vellore,Viluppuram,Virudhunagar|Telangana:Adilabad,Bhadradri Kothagudem,Hanumakonda,Hyderabad,Jagtial,Jangaon,Jayashankar Bhupalpally,Jogulamba Gadwal,Kamareddy,Karimnagar,Khammam,Komaram Bheem Asifabad,Mahabubabad,Mahabubnagar,Mancherial,Medak,Medchal-Malkajgiri,Mulugu,Nagarkurnool,Nalgonda,Narayanpet,Nirmal,Nizamabad,Peddapalli,Rajanna Sircilla,Rangareddy,Sangareddy,Siddipet,Suryapet,Vikarabad,Wanaparthy,Warangal,Yadadri Bhuvanagiri|Tripura:Dhalai,Gomati,Khowai,North Tripura,Sepahijala,South Tripura,Unakoti,West Tripura|Uttar Pradesh:Agra,Aligarh,Ambedkar Nagar,Amethi,Amroha,Auraiya,Ayodhya,Azamgarh,Baghpat,Bahraich,Ballia,Balrampur,Banda,Barabanki,Bareilly,Basti,Bhadohi,Bijnor,Budaun,Bulandshahr,Chandauli,Chitrakoot,Deoria,Etah,Etawah,Farrukhabad,Fatehpur,Firozabad,Gautam Buddha Nagar,Ghaziabad,Ghazipur,Gonda,Gorakhpur,Hamirpur,Hapur,Hardoi,Hathras,Jalaun,Jaunpur,Jhansi,Kannauj,Kanpur Dehat,Kanpur Nagar,Kasganj,Kaushambi,Kushinagar,Lakhimpur Kheri,Lalitpur,Lucknow,Maharajganj,Mahoba,Mainpuri,Mathura,Mau,Meerut,Mirzapur,Moradabad,Muzaffarnagar,Pilibhit,Pratapgarh,Prayagraj,Raebareli,Rampur,Saharanpur,Sambhal,Sant Kabir Nagar,Shahjahanpur,Shamli,Shravasti,Siddharthnagar,Sitapur,Sonbhadra,Sultanpur,Unnao,Varanasi|Uttarakhand:Almora,Bageshwar,Chamoli,Champawat,Dehradun,Haridwar,Nainital,Pauri Garhwal,Pithoragarh,Rudraprayag,Tehri Garhwal,Udham Singh Nagar,Uttarkashi|West Bengal:Alipurduar,Bankura,Birbhum,Cooch Behar,Dakshin Dinajpur,Darjeeling,Hooghly,Howrah,Jalpaiguri,Jhargram,Kalimpong,Kolkata,Malda,Murshidabad,Nadia,North 24 Parganas,Paschim Bardhaman,Paschim Medinipur,Purba Bardhaman,Purba Medinipur,Purulia,South 24 Parganas,Uttar Dinajpur").split('|').forEach(x=>{const[a,b]=x.split(':');DIST[a]=b.split(',')});
+const MH={};("Ahilyanagar (Ahmednagar):Ahilyanagar,Akole,Jamkhed,Karjat,Kopargaon,Nevasa,Parner,Pathardi,Rahata,Rahuri,Sangamner,Shevgaon,Shrigonda,Shrirampur|Akola:Akola,Akot,Balapur,Barshitakli,Murtijapur,Patur,Telhara|Amravati:Amravati,Achalpur,Anjangaon Surji,Bhatkuli,Chandur Bazar,Chandur Railway,Chikhaldara,Daryapur,Dhamangaon Railway,Dhamangaon,Morshi,Nandgaon Khandeshwar,Teosa,Warud|Chhatrapati Sambhajinagar (Aurangabad):Chhatrapati Sambhajinagar,Gangapur,Kannad,Khuldabad,Paithan,Phulambri,Sillod,Soegaon,Vaijapur|Beed:Beed,Ambajogai,Ashti,Dharur,Georai,Kaij,Manjlegaon,Parli,Patoda,Shirur Kasar,Wadwani|Bhandara:Bhandara,Lakhandur,Lakhani,Mohadi,Pauni,Sakoli,Tumsar|Buldhana:Buldhana,Chikhli,Deulgaon Raja,Jalgaon Jamod,Khamgaon,Lonar,Malkapur,Mehkar,Motala,Nandura,Sangrampur,Shegaon,Sindkhed Raja|Chandrapur:Chandrapur,Ballarpur,Bhadravati,Brahmapuri,Chimur,Gondpipri,Jiwati,Korpana,Mul,Nagbhid,Pombhurna,Rajura,Sawali,Sindewahi,Warora|Dhule:Dhule,Sakri,Shirpur,Shindkheda|Dharashiv (Osmanabad):Dharashiv,Bhum,Kalamb,Lohara,Paranda,Tuljapur,Umarga,Washi|Gadchiroli:Gadchiroli,Aheri,Armori,Bhamragad,Chamorshi,Desaiganj,Dhanora,Etapalli,Korchi,Kurkheda,Mulchera,Sironcha|Gondia:Gondia,Amgaon,Arjuni Morgaon,Deori,Goregaon,Sadak Arjuni,Salekasa,Tirora|Hingoli:Hingoli,Aundha Nagnath,Basmath,Kalamnuri,Sengaon|Jalgaon:Jalgaon,Amalner,Bhadgaon,Bhusawal,Bodwad,Chalisgaon,Chopda,Dharangaon,Erandol,Jamner,Muktainagar,Pachora,Parola,Raver,Yawal|Jalna:Jalna,Ambad,Badnapur,Bhokardan,Ghansawangi,Jafrabad,Mantha,Partur|Kolhapur:Kolhapur,Ajra,Bavda,Bhudargad,Chandgad,Gadhinglaj,Gaganbawada,Hatkanangale,Kagal,Karveer,Panhala,Radhanagari,Shahuwadi,Shirol|Latur:Latur,Ahmedpur,Ausa,Chakur,Deoni,Jalkot,Nilanga,Renapur,Shirur Anantpal,Udgir|Mumbai City:Mumbai City|Mumbai Suburban:Andheri,Borivali,Kurla|Nagpur:Nagpur Urban,Nagpur Rural,Bhiwapur,Hingna,Kalameshwar,Kamptee,Katol,Kuhi,Mauda,Narkhed,Parseoni,Ramtek,Savner,Umred|Nanded:Nanded,Ardhapur,Bhokar,Biloli,Deglur,Dharmabad,Hadgaon,Himayatnagar,Kandhar,Kinwat,Loha,Mahur,Mudkhed,Mukhed,Naigaon,Umri|Nandurbar:Nandurbar,Akkalkuwa,Akrani,Nawapur,Shahada,Taloda|Nashik:Nashik,Baglan,Chandwad,Deola,Dindori,Igatpuri,Kalwan,Malegaon,Nandgaon,Niphad,Peth,Sinnar,Surgana,Trimbakeshwar,Yeola|Palghar:Palghar,Dahanu,Jawhar,Mokhada,Talasari,Vada,Vasai,Vikramgad|Parbhani:Parbhani,Gangakhed,Jintur,Manwat,Palam,Pathri,Purna,Sailu,Sonpeth|Pune:Pune City,Ambegaon,Baramati,Bhor,Daund,Haveli,Indapur,Junnar,Khed,Mawal,Mulshi,Purandar,Shirur,Velhe|Raigad:Alibag,Karjat,Khalapur,Mahad,Mangaon,Mhasala,Murud,Pali,Panvel,Pen,Poladpur,Roha,Shrivardhan,Sudhagad,Tala,Uran|Ratnagiri:Ratnagiri,Chiplun,Dapoli,Guhagar,Khed,Lanja,Mandangad,Rajapur,Sangameshwar|Sangli:Sangli,Atpadi,Jat,Kadegaon,Kavathemahankal,Khanapur,Miraj,Palus,Shirala,Tasgaon,Walwa|Satara:Satara,Jaoli,Karad,Khandala,Khatav,Koregaon,Mahabaleshwar,Man,Patan,Phaltan,Wai|Sindhudurg:Sindhudurg,Kankavli,Kudal,Malvan,Sawantwadi,Vaibhavwadi,Devgad,Vengurla,Dodamarg|Solapur:Solapur North,Solapur South,Akkalkot,Barshi,Karmala,Madha,Malshiras,Mangalvedhe,Mohol,Pandharpur,Sangole|Thane:Thane,Ambarnath,Bhiwandi,Kalyan,Murbad,Shahapur,Ulhasnagar|Wardha:Wardha,Arvi,Ashti,Deoli,Hinganghat,Karanja,Samudrapur,Seloo|Washim:Washim,Karanja,Malegaon,Manora,Mangrulpir,Risod|Yavatmal:Yavatmal,Arni,Babhulgaon,Darwha,Digras,Ghatanji,Kalamb,Kelapur,Mahagaon,Maregaon,Ner,Pandharkawda,Pusad,Ralegaon,Umarkhed,Wani,Zari Jamani").split('|').forEach(x=>{const[a,b]=x.split(':');MH[a]=b.split(',')});
+/* ===== Default site data (overridden by data/site.json from GitHub) ===== */
 const FEAT=["Pushback Seats","DJ/Music System","Heavy Luggage Carrier","Mobile Charging"];
-const defBuses=[{id:'b1',name:'Tata Starbus Ultra',desc:'42 Seater Luxury Highway Coach',cap:42,type:'AC',features:FEAT,img:'images/bus1.jpg',blocked:[]},
-{id:'b2',name:'Tata Starbus Classic',desc:'42 Seater Group & Wedding Special',cap:42,type:'AC',features:FEAT,img:'images/bus2.jpg',blocked:[]},
-{id:'b3',name:'SML Dolphin Executive',desc:'42 Seater Comfort Tourist Coach',cap:42,type:'Non-AC',features:FEAT,img:'images/bus3.jpg',blocked:[]}];
-/* password is stored as a salted SHA-256 hash (salt "btp|"), never as plain text */
-const defSet={email:'bharattravelspathri@gmail.com',hash:'946c0d006128b03a25f3bda82b6c9fc7042129cbc38c9b115a591946f433ff3d'};
-const get=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}};
-const put=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){toast('Storage full – use a smaller photo or URL',1);return false}};
-let buses=get(K.b,null);if(!buses){buses=defBuses;put(K.b,buses)}
-let enq=get(K.e,[]);let sett=get(K.s,defSet);
-const save=()=>{put(K.b,buses);put(K.e,enq);put(K.s,sett)};
+const DEF={v:1,
+buses:[{id:'b1',name:'Tata Starbus Ultra',desc:'42 Seater Luxury Highway Coach',cap:42,type:'AC',features:FEAT,imgs:['images/bus1.jpg'],blocked:[],booked:[]},
+{id:'b2',name:'Tata Starbus Classic',desc:'42 Seater Group & Wedding Special',cap:42,type:'AC',features:FEAT,imgs:['images/bus2.jpg'],blocked:[],booked:[]},
+{id:'b3',name:'SML Dolphin Executive',desc:'42 Seater Comfort Tourist Coach',cap:42,type:'Non-AC',features:FEAT,imgs:['images/bus3.jpg'],blocked:[],booked:[]}],
+rules:[{t:{en:'Toll Tax',mr:'टोल टॅक्स'},d:{en:'Toll tax is payable by the customer as per actual receipts.',mr:'टोल टॅक्स प्रत्यक्ष पावतीप्रमाणे ग्राहकाने भरावा.'}},
+{t:{en:'Parking',mr:'पार्किंग'},d:{en:'Parking charges at destination or en-route are paid by the customer.',mr:'ठिकाणी किंवा प्रवासात लागणारे पार्किंग शुल्क ग्राहकाने भरावे.'}},
+{t:{en:'Border Tax',mr:'बॉर्डर टॅक्स'},d:{en:'Inter-state border/permit tax is extra and charged as per actuals.',mr:'आंतरराज्य बॉर्डर/परमिट टॅक्स वेगळा, प्रत्यक्ष खर्चाप्रमाणे.'}},
+{t:{en:'Driver Allowance',mr:'ड्रायव्हर भत्ता'},d:{en:'Driver food & night-halt allowance is payable per day, as agreed at booking.',mr:'ड्रायव्हरचा जेवण व मुक्काम भत्ता बुकिंगच्या वेळी ठरल्याप्रमाणे दररोज द्यावा.'}},
+{t:{en:'Advance Booking Policy',mr:'आगाऊ बुकिंग धोरण'},d:{en:'Booking is confirmed only after advance payment. Balance is payable before/at trip start.',mr:'अ‍ॅडव्हान्स भरल्यानंतरच बुकिंग निश्चित होते. उर्वरित रक्कम प्रवासापूर्वी/सुरुवातीला द्यावी.'}}],
+contact:{eb:{en:'Visit Us',mr:'भेट द्या'},ttl:{en:'Find Us in Pathri',mr:'पाथरीत आम्हाला भेटा'},addr:{en:'Manavat Road, Pathri, Dist. Parbhani, Maharashtra',mr:'मानवत रोड, पाथरी, जि. परभणी, महाराष्ट्र'},phone:'9970889890',wa:'9960232822',email:'bharattravelspathri@gmail.com',map:{lat:19.2519,lng:76.4333,z:15}},
+hero:{bg:'',bus:'',road:'',video:''},
+admin:{email:'bharattravelspathri@gmail.com',hash:'946c0d006128b03a25f3bda82b6c9fc7042129cbc38c9b115a591946f433ff3d'}};
+const clone=o=>JSON.parse(JSON.stringify(o));
+function mergeSite(j){const s=clone(DEF);if(!j||typeof j!='object')return s;
+if(Array.isArray(j.buses))s.buses=j.buses;if(Array.isArray(j.rules))s.rules=j.rules;
+['contact','hero','admin'].forEach(k=>{if(j[k])s[k]=Object.assign({},s[k],j[k])});
+s.buses.forEach(b=>{b.imgs=b.imgs||(b.img?[b.img]:[]);b.blocked=b.blocked||[];b.booked=b.booked||[];b.features=b.features||[]});return s}
+let S=mergeSite(null);const PREV={};const imgSrc=p=>PREV[p]||p;
+/* ===== Translations ===== */
+const T={en:{n2:"Fleet",n3:"Occasions",n7:"Yatra",n4:"Book",n5:"Rules",n6:"Contact",call:"Call",callnow:"Call Now",eye:"Pathri • Parbhani • Maharashtra",h1:"42-Seater <em>Luxury Bus</em> Rentals from Pathri",hp:"Wedding, pilgrimage, school and corporate tours across Maharashtra and all India – comfortable, punctual and fairly priced.",cta:"Check Availability & Book",b1:"Safe Drivers",b2:"Clean Buses",b3:"24/7 Support",c1:"Seater Luxury",c2:"& Non-AC",c3:"Support",s1:"Seater Luxury",s2:"Yatra Destinations",s3:"Support",s4:"All India Tours",fe:"Our Fleet",fl:"Coaches for every journey",fls:"Tap a photo for the gallery. Availability is shown live for today.",oe:"Occasions",oh:"Every occasion, perfectly planned",ohs:"From the baraat to the pilgrimage – a clean, punctual bus with a courteous driver.",o1:"Shadi & Engagement Bhada (लग्न व साखरपुडा)",o1d:"Decorated buses for baraat, varhadi and guests with DJ & music system.",o2:"Mandir Darshan & Teerth Yatra",o2d:"Shirdi • Tuljapur • Pandharpur • Ashtavinayak • Tirupati • Ujjain",o3:"School / Corporate Tours",o3d:"Safe, scheduled picnics, educational trips and staff outings.",o1s:"Shadi Bhada",ye:"Teerth Yatra",yh:"Popular yatra routes from Pathri",ys:"Scroll down and watch the bus travel the route – we plan stops, halts and timings with you.",be:"Booking",bk:"Book on WhatsApp",bks:"Fill the details – we check date availability and open WhatsApp instantly.",hw:"How booking works",w1:"Choose bus, dates and route",w2:"We verify the date is free",w3:"WhatsApp opens with your details",w4:"Confirm with advance – and travel!",fn:"Customer Name",fm:"Mobile Number",fb:"Select Bus",ft:"Trip Type",t1:"Shadi / Engagement",t2:"Mandir Darshan / Yatra",t3:"Tour / Picnic",t4:"Other",fo2:"Write your trip type",fs:"Start Date",fr:"Return Date",fp:"Pickup & Drop Route (from → to)",addst:"+ Add stop",rnd:"Round trip (come back to pickup place)",send:"Send Booking on WhatsApp",pn:"Your name",pm:"10-digit mobile",po:"e.g. Birthday trip, Company outing",pd:"Select date",st:"State",di:"District",pl:"Taluka / Village / City",sel:"Select",pk:"Pickup",dp:"Drop",stp:"Stop",rm:"Remove",rt:"return",re:"Transparent Policy",rh:"Booking Rules",ad:"Address",cl:"Call",dir:"Get Directions",fa:"42-seater luxury & tourist buses on rent for weddings, yatras, school and corporate tours – from Pathri to all India.",fq:"Quick Links",fv:"Services",fo:"Outstation Trips",fcn:"Contact",rr:"All rights reserved.",tc:"Terms & Conditions",pp:"Privacy Policy",book:"Book This Bus",av:"Available",bkd:"Booked Today",seat:"Seater",cl1:"Free",cl2:"Booked",cl3:"Selected",clr:"Clear",cls:"Close",cs:"Select start date",ce:"Select return date",
+m:{name:"Please enter your name 🙏",mob:"Enter a valid 10-digit mobile number",sd:"Please select start date",ed:"Return date cannot be before start date",oth:"Please write your trip type",rt:"Please select pickup and drop place",bk:"🙏 Sorry, this bus is already booked on {d}. Please choose another date or bus.",wa:"🎉 Opening WhatsApp…",ns:"Select start date first",dc:"Selected dates are booked for this bus – please pick again"},
+route:[["Pathri","Your journey begins here","🏠"],["Pandharpur","Vitthal–Rukmini Darshan","🛕"],["Tuljapur","Tulja Bhavani Mata Darshan","🙏"],["Shirdi","Sai Baba Samadhi Mandir","🌼"],["Ashtavinayak","Eight Ganpati temples of Maharashtra","🐘"],["Ujjain","Mahakaleshwar Jyotirlinga","🪔"],["Tirupati","Venkateswara Balaji Darshan","⛰️"]]},
+mr:{n2:"गाड्या",n3:"प्रसंग",n7:"यात्रा",n4:"बुकिंग",n5:"नियम",n6:"संपर्क",call:"कॉल",callnow:"कॉल करा",eye:"पाथरी • परभणी • महाराष्ट्र",h1:"पाथरीहून ४२ सीटर <em>लक्झरी बस</em> भाड्याने",hp:"लग्न, तीर्थयात्रा, शाळा व कॉर्पोरेट सहली – संपूर्ण महाराष्ट्र व भारतभर आरामदायी, वेळेवर आणि वाजवी दरात.",cta:"उपलब्धता तपासा व बुक करा",b1:"सुरक्षित चालक",b2:"स्वच्छ बसेस",b3:"२४/७ सेवा",c1:"सीटर लक्झरी",c2:"व नॉन-एसी",c3:"सेवा",s1:"सीटर लक्झरी",s2:"यात्रा स्थळे",s3:"सेवा",s4:"भारतभर टूर",fe:"आमच्या गाड्या",fl:"प्रत्येक प्रवासासाठी बस",fls:"फोटोवर क्लिक करून गॅलरी पहा. आजची उपलब्धता लाईव्ह दिसते.",oe:"प्रसंग",oh:"प्रत्येक प्रसंग, परफेक्ट नियोजन",ohs:"वरातीपासून तीर्थयात्रेपर्यंत – स्वच्छ, वेळेवर बस आणि सौजन्यशील चालक.",o1:"लग्न व साखरपुडा भाडे",o1d:"वरात, वऱ्हाडी व पाहुण्यांसाठी सजवलेल्या बसेस, DJ व म्युझिक सिस्टीमसह.",o2:"मंदिर दर्शन व तीर्थयात्रा",o2d:"शिर्डी • तुळजापूर • पंढरपूर • अष्टविनायक • तिरुपती • उज्जैन",o3:"शाळा / कॉर्पोरेट सहल",o3d:"सुरक्षित सहली, शैक्षणिक टूर व कर्मचारी आउटिंग.",o1s:"लग्न भाडे",ye:"तीर्थयात्रा",yh:"पाथरीहून लोकप्रिय यात्रा मार्ग",ys:"खाली स्क्रोल करा आणि बसला मार्गावरून जाताना पहा – थांबे व वेळापत्रक आम्ही तुमच्यासोबत ठरवतो.",be:"बुकिंग",bk:"WhatsApp वर बुकिंग",bks:"माहिती भरा – तारीख उपलब्धता तपासून WhatsApp उघडेल.",hw:"बुकिंग कसे होते",w1:"बस, तारखा व मार्ग निवडा",w2:"आम्ही तारीख रिकामी आहे का तपासतो",w3:"तुमच्या माहितीसह WhatsApp उघडेल",w4:"अ‍ॅडव्हान्स देऊन निश्चित करा – आणि निघा!",fn:"ग्राहकाचे नाव",fm:"मोबाईल नंबर",fb:"बस निवडा",ft:"प्रवास प्रकार",t1:"लग्न / साखरपुडा",t2:"मंदिर दर्शन / यात्रा",t3:"टूर / सहल",t4:"इतर",fo2:"तुमचा प्रवास प्रकार लिहा",fs:"सुरू तारीख",fr:"परतीची तारीख",fp:"पिकअप व ड्रॉप मार्ग (कुठून → कुठे)",addst:"+ थांबा जोडा",rnd:"परतीचा प्रवास (पिकअपच्या ठिकाणी परत)",send:"WhatsApp वर बुकिंग पाठवा",pn:"तुमचे नाव",pm:"१० अंकी मोबाईल नंबर",po:"उदा. वाढदिवस सहल, कंपनी आउटिंग",pd:"तारीख निवडा",st:"राज्य",di:"जिल्हा",pl:"तालुका / गाव / शहर",sel:"निवडा",pk:"पिकअप",dp:"ड्रॉप",stp:"थांबा",rm:"काढा",rt:"परत",re:"पारदर्शक धोरण",rh:"बुकिंग नियम",ad:"पत्ता",cl:"कॉल",dir:"दिशा पहा",fa:"लग्न, यात्रा, शाळा व कॉर्पोरेट सहलींसाठी ४२ सीटर लक्झरी व टुरिस्ट बस भाड्याने – पाथरीहून संपूर्ण भारतात.",fq:"जलद दुवे",fv:"सेवा",fo:"बाहेरगावचे प्रवास",fcn:"संपर्क",rr:"सर्व हक्क राखीव.",tc:"अटी व शर्ती",pp:"गोपनीयता धोरण",book:"ही बस बुक करा",av:"उपलब्ध",bkd:"आज बुक",seat:"सीटर",cl1:"रिकामी",cl2:"बुक",cl3:"निवडलेली",clr:"साफ करा",cls:"बंद करा",cs:"सुरू तारीख निवडा",ce:"परतीची तारीख निवडा",
+m:{name:"कृपया तुमचे नाव लिहा 🙏",mob:"कृपया १० अंकी योग्य मोबाईल नंबर लिहा",sd:"कृपया सुरू तारीख निवडा",ed:"परतीची तारीख सुरू तारखेपूर्वी असू शकत नाही",oth:"कृपया प्रवास प्रकार लिहा",rt:"कृपया पिकअप व ड्रॉप ठिकाण निवडा",bk:"🙏 क्षमस्व, ही बस {d} रोजी आधीच बुक आहे. कृपया दुसरी तारीख किंवा बस निवडा.",wa:"🎉 WhatsApp उघडत आहे…",ns:"आधी सुरू तारीख निवडा",dc:"निवडलेल्या तारखा या बसला आधीच बुक आहेत – कृपया पुन्हा निवडा"},
+route:[["पाथरी","तुमचा प्रवास येथून सुरू","🏠"],["पंढरपूर","विठ्ठल–रुक्मिणी दर्शन","🛕"],["तुळजापूर","तुळजाभवानी माता दर्शन","🙏"],["शिर्डी","साईबाबा समाधी मंदिर","🌼"],["अष्टविनायक","महाराष्ट्रातील आठ गणपती","🐘"],["उज्जैन","महाकालेश्वर ज्योतिर्लिंग","🪔"],["तिरुपती","व्यंकटेश्वर बालाजी दर्शन","⛰️"]]}};
+let L=localStorage.getItem('bt_lang')||'mr';if(!T[L])L='mr';
+const M=(k,d)=>(T[L].m[k]||'').replace('{d}',d||'');
+</script>
+<script>
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const get=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}};
+const put=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){return false}};
 const iso=d=>{const z=new Date(d.getTime()-d.getTimezoneOffset()*6e4);return z.toISOString().slice(0,10)};
-const today=()=>iso(new Date());
-const fmt=d=>d?d.split('-').reverse().join('-'):'-';
-const eachDay=(a,b)=>{const r=[];let d=new Date(a+'T00:00'),e=new Date((b||a)+'T00:00');if(isNaN(d)||isNaN(e)||e<d)return[a];while(d<=e&&r.length<60){r.push(iso(d));d.setDate(d.getDate()+1)}return r};
-/* a date is booked if admin blocked it OR a Confirmed enquiry covers it */
-function bookedOn(busId,date){const b=buses.find(x=>x.id==busId);if(!b)return false;if(b.blocked.includes(date))return true;
-return enq.some(q=>q.busId==busId&&q.status=='Confirmed'&&q.start&&date>=q.start&&date<=(q.end||q.start))}
-function toast(m,err){const t=$('toast');t.textContent=m;t.className='toast show'+(err?' err':'');clearTimeout(t._t);t._t=setTimeout(()=>t.className='toast',4400)}
-async function sha(s){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));return[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
-/* ===== Public site ===== */
-const PH='<svg class="ph" viewBox="0 0 120 60" fill="none" stroke="#E2BE78" stroke-width="2"><rect x="6" y="8" width="108" height="36" rx="8"/><path d="M14 18h14v12H14zM34 18h14v12H34zM54 18h14v12H54zM74 18h14v12H74zM94 18h14v12H94z"/><circle cx="30" cy="48" r="7" fill="#0B192C"/><circle cx="90" cy="48" r="7" fill="#0B192C"/></svg>';
-function renderFleet(){const g=$('fleetGrid');const t=T[L];
-g.innerHTML=buses.map((b,i)=>{const bk=bookedOn(b.id,today());return `<div class="bus rv in" style="--td:${i*.1}s"><div class="bi" onclick="openBus('${b.id}')">${PH}<img src="${esc(b.img)}" alt="${esc(b.name)}" loading="lazy" onerror="this.style.display='none'"><span class="cp">${esc(b.cap)} ${t.seat} • ${esc(b.type)}</span><span class="av ${bk?'n':''}">${bk?t.bkd:t.av}</span></div>
+const today=()=>iso(new Date());const fmt=d=>d?d.split('-').reverse().join('-'):'-';
+const addDays=(d,n)=>{const x=new Date(d+'T00:00');x.setDate(x.getDate()+n);return iso(x)};
+function toast(m,err){const t=$('toast');t.textContent=m;t.className='toast show'+(err?' err':'');clearTimeout(t._t);t._t=setTimeout(()=>t.className='toast',4600)}
+/* availability: admin-blocked dates OR confirmed booking ranges (no customer data is public) */
+function bookedOn(busId,date){const b=S.buses.find(x=>x.id==busId);if(!b)return false;if((b.blocked||[]).includes(date))return true;return (b.booked||[]).some(r=>date>=r.s&&date<=(r.e||r.s))}
+const eachDay=(a,b)=>{const r=[];let d=a,e=b||a;if(e<d)return[a];while(d<=e&&r.length<90){r.push(d);d=addDays(d,1)}return r};
+/* ===== language ===== */
+function wrapWords(el){let i=0;(function walk(n){[...n.childNodes].forEach(c=>{if(c.nodeType==3){const f=document.createDocumentFragment();c.textContent.split(/(\s+)/).forEach(t=>{if(!t)return;if(/^\s+$/.test(t)){f.appendChild(document.createTextNode(' '));return}const w=document.createElement('span');w.className='w';const s=document.createElement('span');s.className='wi';s.style.setProperty('--d',i++);s.textContent=t;w.appendChild(s);f.appendChild(w)});c.replaceWith(f)}else if(c.nodeType==1)walk(c)})})(el)}
+function setL(l){L=l;localStorage.setItem('bt_lang',l);document.documentElement.lang=l;$('bEn').classList.toggle('on',l=='en');$('bMr').classList.toggle('on',l=='mr');
+document.querySelectorAll('[data-i]').forEach(e=>{const v=T[l][e.dataset.i];if(v!==undefined)e.innerHTML=v});
+document.querySelectorAll('[data-p]').forEach(e=>e.placeholder=T[l][e.dataset.p]||'');
+wrapWords($('h1'));refreshPublic();renderStops();buildRoute();
+if($('m-cal').classList.contains('show'))drawCal()}
+/* ===== render public sections from S ===== */
+function renderFleet(){const t=T[L];
+$('fleetGrid').innerHTML=S.buses.map((b,i)=>{const bk=bookedOn(b.id,today()),im=b.imgs||[];
+return `<div class="bus rv in" style="--td:${i*.1}s"><div class="bi" data-n="${im.length}" onclick="openBus('${b.id}')">${PH}${im.map((s,k)=>`<img class="s ${k?'':'cur'}" src="${esc(imgSrc(s))}" alt="${esc(b.name)}" loading="lazy" onerror="this.style.display='none'">`).join('')}${im.length>1?`<div class="dots">${im.map((_,k)=>`<i class="${k?'':'on'}"></i>`).join('')}</div>`:''}<span class="cp">${esc(b.cap)} ${t.seat} • ${esc(b.type)}</span><span class="av ${bk?'n':''}">${bk?t.bkd:t.av}</span></div>
 <div class="bb"><h3>${esc(b.name)}</h3><small>${esc(b.desc)}</small><div class="fp">${(b.features||[]).map(f=>`<span>${esc(f)}</span>`).join('')}</div><button class="btn gold sm" onclick="pickBus('${b.id}')">${t.book} →</button></div></div>`}).join('');
-const s=$('fBus'),cur=s.value;s.innerHTML=buses.map(b=>`<option value="${b.id}">${esc(b.name)} (${esc(b.cap)} ${t.seat})</option>`).join('');if(cur)s.value=cur}
-function pickBus(id){$('fBus').value=id;$('book').scrollIntoView({behavior:'smooth'})}
-function openBus(id){const b=buses.find(x=>x.id==id);$('gt').textContent=b.name;$('gi').src=b.img;$('gi').onerror=()=>$('gi').removeAttribute('src');$('gg').innerHTML=[b.img,b.img,b.img].map(s=>`<img src="${esc(s)}" onclick="$('gi').src=this.src" onerror="this.style.display='none'">`).join('');openM('bus')}
+const s=$('fBus'),cur=s.value;s.innerHTML=S.buses.map(b=>`<option value="${b.id}">${esc(b.name)} (${esc(b.cap)} ${t.seat})</option>`).join('');if(cur&&S.buses.find(b=>b.id==cur))s.value=cur}
+const PH='<svg class="ph" viewBox="0 0 120 60" fill="none" stroke="#E2BE78" stroke-width="2"><rect x="6" y="8" width="108" height="36" rx="8"/><path d="M14 18h14v12H14zM34 18h14v12H34zM54 18h14v12H54zM74 18h14v12H74zM94 18h14v12H94z"/><circle cx="30" cy="48" r="7" fill="#0B192C"/><circle cx="90" cy="48" r="7" fill="#0B192C"/></svg>';
+setInterval(()=>document.querySelectorAll('.bi[data-n]').forEach(bi=>{const im=bi.querySelectorAll('img.s');if(im.length<2)return;let c=[...im].findIndex(x=>x.classList.contains('cur'));im[c].classList.remove('cur');c=(c+1)%im.length;im[c].classList.add('cur');bi.querySelectorAll('.dots i').forEach((d,k)=>d.classList.toggle('on',k==c))}),3400);
+function renderRules(){$('rulesList').innerHTML=S.rules.map((r,i)=>`<details class="rv in" ${i==0?'open':''}><summary>${esc(r.t[L]||r.t.en)}</summary><p>${esc(r.d[L]||r.d.en)}</p></details>`).join('')}
+function applyContact(){const c=S.contact,ph=String(c.phone).replace(/\D/g,'').slice(-10),wa=String(c.wa).replace(/\D/g,'').slice(-10);
+document.querySelectorAll('[data-c=tel]').forEach(a=>a.href='tel:+91'+ph);document.querySelectorAll('[data-c=wa]').forEach(a=>a.href='https://wa.me/91'+wa);document.querySelectorAll('[data-c=mail]').forEach(a=>a.href='mailto:'+c.email);
+document.querySelectorAll('[data-c=phone-t]').forEach(e=>e.textContent='+91 '+ph);document.querySelectorAll('[data-c=wa-t]').forEach(e=>e.textContent='+91 '+wa);document.querySelectorAll('[data-c=mail-t]').forEach(e=>e.textContent=c.email);
+document.querySelectorAll('[data-c=addr]').forEach(e=>e.textContent=c.addr[L]||c.addr.en);
+$('ceb').textContent=c.eb[L]||c.eb.en;$('cttl').textContent=c.ttl[L]||c.ttl.en;
+const m=c.map||DEF.contact.map,u=`https://www.google.com/maps?q=${m.lat},${m.lng}&z=${m.z||15}&output=embed`;if($('pubmap').dataset.u!=u){$('pubmap').dataset.u=u;$('pubmap').src=u}
+$('dirbtn').href=`https://www.google.com/maps/dir/?api=1&destination=${m.lat},${m.lng}`}
+function probe(src){return new Promise(r=>{if(!src)return r(false);const i=new Image();i.onload=()=>r(i);i.onerror=()=>r(false);i.src=imgSrc(src)})}
+let _hk='';
+async function applyHero(){const h=S.hero,k=JSON.stringify(h)+Object.keys(PREV).length;if(k==_hk)return;_hk=k;const hero=$('home');
+const [bg,bus,road]=await Promise.all([probe(h.bg),probe(h.bus),probe(h.road)]);
+hero.classList.toggle('has-bg',!!bg);if(bg)$('hbg').style.backgroundImage=`url("${imgSrc(h.bg)}")`;
+hero.classList.toggle('has-bus',!!bus);if(bus)$('rbimg').src=imgSrc(h.bus);
+hero.classList.toggle('has-road',!!road);if(road){const r=$('rroad');r.style.backgroundImage=`url("${imgSrc(h.road)}")`;r._i=road;fitRoad()}
+const v=$('hvid');if(h.video){if(v.dataset.s!=h.video){v.dataset.s=h.video;v.src=h.video;v.play().catch(()=>{})}hero.classList.add('has-vid')}else{hero.classList.remove('has-vid');v.removeAttribute('src')}}
+function fitRoad(){const r=$('rroad');if(!r||!r._i)return;const w=r._i.naturalWidth*(r.clientHeight/r._i.naturalHeight);if(w>50){r.style.setProperty('--rw',w+'px');r.style.animationDuration=Math.max(4,w/220)+'s'}}
+addEventListener('resize',fitRoad);
+function refreshPublic(){renderFleet();renderRules();applyContact();applyHero();if($('stops'))rsum()}
+/* ===== gallery ===== */
+let GB=null,GI=0;
+function openBus(id,i){GB=S.buses.find(x=>x.id==id);GI=i||0;$('gt').textContent=GB.name;galShow();openM('bus')}
+function galShow(){const im=GB.imgs||[];$('gi').src=im.length?imgSrc(im[GI]):'';$('gg').innerHTML=im.length>1?im.map((s,k)=>`<img class="${k==GI?'on':''}" src="${esc(imgSrc(s))}" onclick="GI=${k};galShow()">`).join(''):''}
+function galMv(d){const n=(GB.imgs||[]).length;if(n<2)return;GI=(GI+d+n)%n;galShow()}
+function pickBus(id){$('fBus').value=id;revalDates();$('book').scrollIntoView({behavior:'smooth'})}
 function openM(n){document.querySelectorAll('.ov').forEach(o=>o.classList.remove('show'));$('m-'+n).classList.add('show')}
 function closeM(){document.querySelectorAll('.ov').forEach(o=>o.classList.remove('show'))}
 document.querySelectorAll('.ov').forEach(o=>o.addEventListener('click',e=>{if(e.target==o)closeM()}));
 addEventListener('keydown',e=>{if(e.key=='Escape'){closeM();document.body.classList.remove('mo')}});
-function submitBooking(){const n=$('fName').value.trim(),m=$('fMob').value.trim(),bid=$('fBus').value,st=$('fStart').value,en=$('fEnd').value,r=$('fRoute').value.trim();
-if(n.length<2)return toast('Please enter your name 🙏',1);if(!/^[6-9]\d{9}$/.test(m))return toast('Enter a valid 10-digit mobile number',1);
-if(!st)return toast('Please select start date',1);if(st<today())return toast('Start date cannot be in the past',1);if(en&&en<st)return toast('Return date cannot be before start date',1);if(!r)return toast('Please enter pickup & drop route',1);
-const days=eachDay(st,en||st);const hit=days.find(d=>bookedOn(bid,d));
-if(hit)return toast('🙏 Sorry, this bus is already booked on '+fmt(hit)+'. Please choose another date or bus.',1);
-const b=buses.find(x=>x.id==bid),ref='BTP-'+Date.now().toString().slice(-6);
-const q={id:'q'+Date.now(),ref,name:n,mobile:m,busId:bid,busName:b.name,type:$('fType').value,start:st,end:en,route:r,status:'New',total:0,adv:0,ts:new Date().toISOString()};
-enq.unshift(q);save();
-const msg=`🚌 *NEW BUS BOOKING ENQUIRY*\n*Bharat Travels Pathri* • Ref: ${ref}\n━━━━━━━━━━━━━━\n👤 *Name:* ${n}\n📱 *Mobile:* ${m}\n🚍 *Bus:* ${b.name} (${b.cap} Seater, ${b.type})\n🎯 *Trip:* ${q.type}\n📅 *Start:* ${fmt(st)}\n🔁 *Return:* ${en?fmt(en):'Same day / N/A'}\n📍 *Route:* ${r}\n✅ *Date Check:* Bus is AVAILABLE on selected date(s) – awaiting confirmation & advance\n━━━━━━━━━━━━━━\nPlease confirm my booking. 🙏`;
-toast('🎉 Enquiry saved! Opening WhatsApp…');
-const url='https://wa.me/919960232822?text='+encodeURIComponent(msg);
-setTimeout(()=>{const w=window.open(url,'_blank');if(!w)location.href=url},900)}
-/* ===== Admin ===== */
+/* ===== date picker (booked dates struck through) ===== */
+let CT=null,CY=0,CMo=0;
+const dv=id=>$(id).dataset.iso||'';
+function setD(id,v){$(id).dataset.iso=v||'';$(id).value=v?fmt(v):''}
+function limitFor(st,bid){if(!st)return'';for(let i=0,d=st;i<200;i++,d=addDays(st,i))if(bookedOn(bid,d)&&d>st)return d;return''}
+function openCal(t){if(t=='end'&&!dv('fStart'))return toast(M('ns'),1);CT=t;const base=(t=='end'?(dv('fEnd')||dv('fStart')):dv('fStart'))||today();CY=+base.slice(0,4);CMo=+base.slice(5,7)-1;$('ctitle').textContent=T[L][t=='end'?'ce':'cs'];drawCal();openM('cal')}
+function calMv(k){const d=new Date(CY,CMo+k,1);CY=d.getFullYear();CMo=d.getMonth();drawCal()}
+function drawCal(){const bid=$('fBus').value,st=dv('fStart'),en=dv('fEnd'),loc=L=='mr'?'mr-IN':'en-IN',lim=CT=='end'?limitFor(st,bid):'';
+$('cmon').textContent=new Date(CY,CMo,1).toLocaleString(loc,{month:'long',year:'numeric'});
+let h=[0,1,2,3,4,5,6].map(i=>`<div class="hd">${new Date(2026,0,4+i).toLocaleString(loc,{weekday:'short'})}</div>`).join('')+'<div></div>'.repeat(new Date(CY,CMo,1).getDay());
+const n=new Date(CY,CMo+1,0).getDate(),tdy=today();
+for(let i=1;i<=n;i++){const d=`${CY}-${String(CMo+1).padStart(2,'0')}-${String(i).padStart(2,'0')}`;let c='d',dis=false;
+if(d<tdy||(CT=='end'&&d<st)){c+=' ps';dis=true}else if(bookedOn(bid,d)||(lim&&d>=lim)){c+=' bk';dis=true}
+else if(d==st||d==en)c+=' sel';else if(st&&en&&d>st&&d<en)c+=' rg';if(d==tdy)c+=' td';
+h+=`<button class="${c}" ${dis?'disabled':''} onclick="pickDay('${d}')">${i}</button>`}
+$('cbody').innerHTML=h}
+function pickDay(d){if(CT=='start'){setD('fStart',d);const en=dv('fEnd');if(en&&(en<d||eachDay(d,en).some(x=>bookedOn($('fBus').value,x))))setD('fEnd','');closeM();if(!dv('fEnd'))setTimeout(()=>openCal('end'),280)}else{setD('fEnd',d);closeM()}}
+function calClear(){setD(CT=='end'?'fEnd':'fStart','');if(CT=='start')setD('fEnd','');drawCal()}
+function revalDates(){const b=$('fBus').value,s=dv('fStart'),e=dv('fEnd');if(s&&eachDay(s,e||s).some(d=>bookedOn(b,d))){setD('fStart','');setD('fEnd','');toast(M('dc'),1)}}
+/* ===== route builder: state → district → taluka/village, many stops ===== */
+let STOPS=[{st:'Maharashtra',di:'Parbhani (Pathri area)',pl:'Pathri'},{st:'Maharashtra',di:'',pl:''}];STOPS[0].di='Parbhani';
+const distOf=st=>st=='Maharashtra'?Object.keys(MH):(DIST[st]||[]);const talOf=(st,di)=>st=='Maharashtra'&&MH[di]?MH[di]:[];
+function renderStops(){const t=T[L],n=STOPS.length;
+$('stops').innerHTML=STOPS.map((s,i)=>{const last=i==n-1,lab=i==0?t.pk:last?t.dp:t.stp+' '+i;
+return `<div class="stp"><div class="stl"><b>${lab}</b>${i>0&&!last?`<button type="button" onclick="rmStop(${i})">✕ ${t.rm}</button>`:''}</div><div class="stg">
+<select onchange="stSet(${i},'st',this.value)" aria-label="${t.st}">${STATES.map(x=>`<option ${x==s.st?'selected':''}>${x}</option>`).join('')}</select>
+<select onchange="stSet(${i},'di',this.value)" aria-label="${t.di}"><option value="">${t.di}: ${t.sel}</option>${distOf(s.st).map(x=>`<option ${x==s.di?'selected':''}>${x}</option>`).join('')}</select>
+<input list="dl${i}" placeholder="${t.pl}" value="${esc(s.pl)}" oninput="plIn(${i},this)" autocomplete="off"><datalist id="dl${i}">${talOf(s.st,s.di).map(x=>`<option value="${x}">`).join('')}</datalist></div></div>`}).join('');rsum()}
+function stSet(i,k,v){STOPS[i][k]=v;if(k=='st'){STOPS[i].di='';STOPS[i].pl=''}if(k=='di')STOPS[i].pl='';renderStops()}
+function addStop(){const p=STOPS[STOPS.length-2];STOPS.splice(STOPS.length-1,0,{st:p?p.st:'Maharashtra',di:'',pl:''});renderStops()}
+function rmStop(i){STOPS.splice(i,1);renderStops()}
+let _sg;function plIn(i,el){STOPS[i].pl=el.value;rsum();clearTimeout(_sg);const q=el.value.trim();if(q.length<3)return;_sg=setTimeout(async()=>{try{const s=STOPS[i],r=await fetch('https://nominatim.openstreetmap.org/search?format=json&limit=8&countrycodes=in&q='+encodeURIComponent([q,s.di,s.st].filter(Boolean).join(', ')));const d=await r.json();const names=[...new Set(d.map(x=>x.name||x.display_name.split(',')[0]))];const dl=$('dl'+i);if(dl)dl.innerHTML=[...new Set([...talOf(s.st,s.di),...names])].map(x=>`<option value="${esc(x)}">`).join('')}catch(e){}},600)}
+const stopStr=s=>[s.pl,s.di,s.st].filter(Boolean).join(', ');
+function routeStr(){const a=STOPS.map(stopStr);if($('rnd').checked)a.push(stopStr(STOPS[0])+' ('+T[L].rt+')');return a.join(' → ')}
+function rsum(){const e=$('rsum');if(e)e.textContent=STOPS.every(s=>s.pl||s.di)?routeStr():''}
+/* ===== booking → WhatsApp ===== */
+function submitBooking(){const n=$('fName').value.trim(),m=$('fMob').value.trim(),bid=$('fBus').value,st=dv('fStart'),en=dv('fEnd'),ty=$('fType').value,ot=$('fOther').value.trim();
+if(n.length<2)return toast(M('name'),1);if(!/^[6-9]\d{9}$/.test(m))return toast(M('mob'),1);if(ty=='Other'&&!ot)return toast(M('oth'),1);
+if(!st)return toast(M('sd'),1);if(en&&en<st)return toast(M('ed'),1);
+if(!STOPS.every((s,i)=>(i>0&&i<STOPS.length-1)||s.pl||s.di))return toast(M('rt'),1);
+const hit=eachDay(st,en||st).find(d=>bookedOn(bid,d));if(hit)return toast(M('bk',fmt(hit)),1);
+const b=S.buses.find(x=>x.id==bid),ref='BTP-'+Date.now().toString().slice(-6),wa=String(S.contact.wa).replace(/\D/g,'').slice(-10);
+const msg=`🚌 *NEW BUS BOOKING ENQUIRY*\n*Bharat Travels Pathri* • Ref: ${ref}\n━━━━━━━━━━━━━━\n👤 *Name:* ${n}\n📱 *Mobile:* ${m}\n🚍 *Bus:* ${b.name} (${b.cap} Seater, ${b.type})\n🎯 *Trip:* ${ty=='Other'?'Other – '+ot:ty}\n📅 *Start:* ${fmt(st)}\n🔁 *Return:* ${en?fmt(en):'Same day / N/A'}\n📍 *Route:* ${routeStr()}\n✅ *Date Check:* Bus is AVAILABLE on selected date(s) – awaiting confirmation & advance\n━━━━━━━━━━━━━━\nPlease confirm my booking. 🙏`;
+toast(M('wa'));const url='https://wa.me/91'+wa+'?text='+encodeURIComponent(msg);setTimeout(()=>{const w=window.open(url,'_blank');if(!w)location.href=url},900)}
+/* ===== winding yatra road ===== */
+function buildRoute(){const r=$('route');if(!r)return;const W=r.clientWidth||900,list=T[L].route,n=list.length,mob=W<700,step=mob?150:175,H=step*n+30,A=mob?Math.min(34,W*.09):Math.min(190,W*.2),cx=mob?46:W/2;
+const pts=list.map((_,i)=>({x:cx+(i%2?A:-A),y:40+i*step}));if(mob)pts.forEach((p,i)=>p.x=46+(i%2?A:0));
+let d=`M${pts[0].x} ${pts[0].y}`;for(let i=1;i<n;i++){const a=pts[i-1],b=pts[i],m=(a.y+b.y)/2;d+=` C${a.x} ${m} ${b.x} ${m} ${b.x} ${b.y}`}
+r.style.height=H+'px';
+r.innerHTML=`<svg id="rsvg" width="${W}" height="${H}"><path id="rp0" d="${d}" fill="none" stroke="#0B192C" stroke-width="18" stroke-linecap="round" opacity=".92"/><path d="${d}" fill="none" stroke="#E2BE78" stroke-width="2" stroke-dasharray="9 11" stroke-linecap="round"/><path id="rp1" d="${d}" fill="none" stroke="#A97C2F" stroke-width="5" stroke-linecap="round"/></svg>`+
+list.map((s,i)=>{const p=pts[i],left=mob?true:i%2==0;const cw=mob?W-p.x-44:Math.min(290,(left?p.x:W-p.x)-46);const st=mob?`left:${p.x+38}px;width:${cw}px;top:${p.y-30}px`:left?`left:${p.x-38-cw}px;width:${cw}px;top:${p.y-30}px;text-align:right`:`left:${p.x+38}px;width:${cw}px;top:${p.y-30}px`;
+return `<div class="rpin" style="left:${p.x}px;top:${p.y}px">${s[2]}</div><div class="rcard" style="${st}"><small>${T[L].stp} ${i+1}</small><h4>${s[0]}</h4><p>${s[1]}</p></div>`}).join('')+'<div class="rbus" id="rbusb">🚌</div>';
+const p1=$('rp1'),len=p1.getTotalLength();p1.style.strokeDasharray=len;r._len=len;r._lens=pts.map((p,i)=>{if(!i)return 0;const t=document.createElementNS('http://www.w3.org/2000/svg','path');let dd=`M${pts[0].x} ${pts[0].y}`;for(let k=1;k<=i;k++){const a=pts[k-1],b=pts[k],m=(a.y+b.y)/2;dd+=` C${a.x} ${m} ${b.x} ${m} ${b.x} ${b.y}`}t.setAttribute('d',dd);return t.getTotalLength()});routeScroll()}
+function routeScroll(){const r=$('route');if(!r||!r._len)return;const b=r.getBoundingClientRect(),p=Math.min(1,Math.max(0,(innerHeight*.62-b.top-20)/(b.height-40))),l=p*r._len,p1=$('rp1');
+p1.style.strokeDashoffset=r._len-l;const pt=p1.getPointAtLength(l);const bus=$('rbusb');bus.style.left=pt.x+'px';bus.style.top=pt.y+'px';
+r.querySelectorAll('.rpin').forEach((e,i)=>{const on=l>=r._lens[i]-2;e.classList.toggle('on',on);r.querySelectorAll('.rcard')[i].classList.toggle('on',on)})}
+addEventListener('resize',()=>{clearTimeout(window._rz);window._rz=setTimeout(buildRoute,200)});
+/* ===== theme + motion ===== */
+const rt=document.documentElement;function th(t){rt.dataset.theme=t;localStorage.setItem('bt_th',t);$('thb').textContent=t=='dark'?'☀️':'🌙';document.querySelector('meta[name=theme-color]').content=t=='dark'?'#07101D':'#FBF7EF'}
+function toggleTheme(){th(rt.dataset.theme=='dark'?'light':'dark')}th(localStorage.getItem('bt_th')||'light');
+document.querySelectorAll('.mnav a').forEach(a=>a.addEventListener('click',()=>document.body.classList.remove('mo')));
+(()=>{const c=$('stars'),x=c.getContext('2d');let St=[];function rs(){c.width=c.offsetWidth;c.height=c.offsetHeight;St=Array.from({length:innerWidth<640?50:110},()=>({x:Math.random()*c.width,y:Math.random()*c.height*.62,r:Math.random()*1.5+.3,p:Math.random()*6}))}rs();addEventListener('resize',rs);
+(function f(t){x.clearRect(0,0,c.width,c.height);if(rt.dataset.theme=='dark'){x.fillStyle='#fff';St.forEach(s=>{x.globalAlpha=.25+.75*Math.abs(Math.sin(t/900+s.p));x.beginPath();x.arc(s.x,s.y,s.r,0,7);x.fill()})}requestAnimationFrame(f)})(0)})();
+for(let i=0;i<6;i++){const d=document.createElement('i');d.className='sl';d.style.cssText=`top:${46+i*7}%;width:${80+i*24}px;animation-delay:-${i*.41}s;animation-duration:${1+i*.16}s`;$('scn').appendChild(d)}
+const D=['🛕 Shirdi','🙏 Tuljapur','🛕 Pandharpur','🕉️ Ashtavinayak','⛰️ Tirupati','🪔 Ujjain','💍 Shadi','🎓 School Tours','🚌 Pathri'];$('mt').innerHTML=[...D,...D].map(s=>`<span>${s}</span>`).join('');
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);const el=e.target,n=+el.dataset.n,t0=performance.now();(function f(t){const p=Math.min((t-t0)/1500,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+(el.dataset.s||'');if(p<1)requestAnimationFrame(f)})(t0)}));document.querySelectorAll('.sx [data-n]').forEach(e=>co.observe(e));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+let lastY=0;addEventListener('scroll',()=>{const y=scrollY;$('prog').style.width=y/(rt.scrollHeight-innerHeight)*100+'%';rt.style.setProperty('--sy',Math.min(y,900));routeScroll();$('hd').classList.toggle('hide',y>lastY&&y>420&&!document.body.classList.contains('mo'));lastY=y},{passive:true});
+if(matchMedia('(hover:hover)').matches){document.addEventListener('mousemove',e=>{const c=e.target.closest('.bus');document.querySelectorAll('.bus.tl').forEach(o=>{if(o!==c){o.style.transform='';o.classList.remove('tl')}});
+if(c){const r=c.getBoundingClientRect(),px=(e.clientX-r.left)/r.width-.5,py=(e.clientY-r.top)/r.height-.5;c.classList.add('tl');c.style.transform=`perspective(1000px) rotateY(${px*8}deg) rotateX(${-py*8}deg) translateY(-8px)`}
+const m=$('med').getBoundingClientRect();if(m.bottom>0&&m.top<innerHeight){const px=(e.clientX-(m.left+m.width/2))/innerWidth,py=(e.clientY-(m.top+m.height/2))/innerHeight;$('biglogo').style.transform=`rotateY(${px*26}deg) rotateX(${-py*26}deg)`}})}
+document.addEventListener('click',e=>{const b=e.target.closest('.btn');if(!b)return;const r=b.getBoundingClientRect(),s=document.createElement('span');s.className='rip';const z=Math.max(r.width,r.height);s.style.cssText=`width:${z}px;height:${z}px;left:${e.clientX-r.left-z/2}px;top:${e.clientY-r.top-z/2}px`;b.appendChild(s);setTimeout(()=>s.remove(),600)});
+$('yr').textContent=new Date().getFullYear();document.querySelectorAll('.yy').forEach(e=>e.textContent=new Date().toLocaleDateString('en-IN'));
+/* ===== load live data published from admin (data/site.json) ===== */
+async function loadSite(){try{const r=await fetch('data/site.json?t='+Date.now(),{cache:'no-store'});if(r.ok){const j=await r.json();S=mergeSite(j);refreshPublic()}}catch(e){}}
+setL(L);loadSite();
+function go(){$('pre').classList.add('done');document.body.classList.add('ready');setTimeout(()=>$('pre').remove(),1400)}
+if(document.readyState=='complete')setTimeout(go,700);else addEventListener('load',()=>setTimeout(go,700));setTimeout(()=>{if($('pre'))go()},3500);
+</script>
+<script>
+/* ================= ADMIN (data lives in GitHub: data/site.json + images/) ================= */
+const K={e:'bt_enq',gh:'bt_gh'};let enq=get(K.e,[]);let DIRTY=false;
+async function sha(s){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));return[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
+const b64=s=>{const b=new TextEncoder().encode(s);let x='';b.forEach(c=>x+=String.fromCharCode(c));return btoa(x)};
+const GH=()=>{const g=get(K.gh,null);return g&&g.repo&&g.token?{repo:g.repo.trim().replace(/^https?:\/\/github\.com\//,'').replace(/\/$/,''),branch:(g.branch||'main').trim(),token:g.token.trim()}:null};
+function needGh(){toast('First connect GitHub in Settings',1);tab('set');return false}
+async function ghReq(method,path,body){const g=GH();return fetch(`https://api.github.com/repos/${g.repo}/${path}`+(method=='GET'&&path.startsWith('contents')?`?ref=${encodeURIComponent(g.branch)}`:''),{method,headers:{Authorization:'Bearer '+g.token,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'},body:body?JSON.stringify(body):undefined,cache:'no-store'})}
+async function ghErr(r){let m='';try{m=(await r.json()).message}catch(e){}return r.status==401?'Token invalid or expired':r.status==403?'Token has no write permission (needs Contents: Read and write)':r.status==404?'Repo/branch not found, or token has no access to it':'GitHub error '+r.status+(m?': '+m:'')}
+async function ghWrite(path,content64,msg,retry=true){const g=GH();let sh;const r=await ghReq('GET','contents/'+path);if(r.ok)sh=(await r.json()).sha;else if(r.status!=404)throw new Error(await ghErr(r));
+const w=await ghReq('PUT','contents/'+path,Object.assign({message:msg,content:content64,branch:g.branch},sh?{sha:sh}:{}));if(w.ok)return true;if(w.status==409&&retry)return ghWrite(path,content64,msg,false);throw new Error(await ghErr(w))}
+function dirty(){DIRTY=true;$('pubbtn').classList.add('dirty');refreshPublic()}
+addEventListener('beforeunload',e=>{if(DIRTY){e.preventDefault();e.returnValue=''}});
+async function publish(){if(!GH())return needGh();const b=$('pubbtn');b.disabled=true;toast('Publishing…');
+try{await ghWrite('data/site.json',b64(JSON.stringify(S,null,1)),'Update website data from admin panel');DIRTY=false;b.classList.remove('dirty');toast('✅ Published! It will be live for everyone in about 1 minute.')}catch(e){toast('Publish failed: '+e.message,1)}b.disabled=false}
+function readImg(file,{max,q,png}){return new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const s=Math.min(1,max/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=Math.round(im.width*s);c.height=Math.round(im.height*s);c.getContext('2d').drawImage(im,0,0,c.width,c.height);res(png?c.toDataURL('image/png'):c.toDataURL('image/jpeg',q))};im.onerror=()=>rej(new Error('Not a valid image'));im.src=r.result};r.onerror=()=>rej(new Error('Could not read file'));r.readAsDataURL(file)})}
+async function uploadImage(file,{max=1800,q=.82,png=false,name}){const url=await readImg(file,{max,q,png}),path=`images/${name}.${png?'png':'jpg'}`;await ghWrite(path,url.split(',')[1],'Upload '+path);PREV[path]=url;return path}
+/* ---- login ---- */
 let fails=0,lockUntil=0;
-async function doLogin(){if(Date.now()<lockUntil)return toast('Too many attempts. Wait '+Math.ceil((lockUntil-Date.now())/1000)+'s',1);
-if(!window.crypto||!crypto.subtle)return toast('Please open the site over https to log in',1);
+async function doLogin(){if(Date.now()<lockUntil)return toast('Too many attempts. Wait '+Math.ceil((lockUntil-Date.now())/1000)+'s',1);if(!window.crypto||!crypto.subtle)return toast('Open the site over https to log in',1);
 const h=await sha('btp|'+$('lPass').value);
-if($('lEmail').value.trim().toLowerCase()==sett.email.toLowerCase()&&h===sett.hash){fails=0;closeM();$('admin').classList.add('show');document.body.style.overflow='hidden';$('lPass').value='';tab('dash')}
+if($('lEmail').value.trim().toLowerCase()==S.admin.email.toLowerCase()&&h===S.admin.hash){fails=0;closeM();$('admin').classList.add('show');document.body.style.overflow='hidden';$('lPass').value='';tab('dash')}
 else{if(++fails>=5){lockUntil=Date.now()+30000;fails=0}toast('Wrong email or password',1)}}
-function logout(){$('admin').classList.remove('show');document.body.style.overflow='';renderFleet()}
-const TABS=[['dash','📊','Dashboard'],['fleet','🚌','Fleet'],['cal','🗓️','Calendar'],['enq','📒','Enquiries'],['set','⚙️','Settings']];
-let cur='dash',calBus=null,calMonth=today().slice(0,7),eqf='All',eqs='';
-function tab(t){cur=t;$('atitle').textContent=TABS.find(x=>x[0]==t)[2];
+function logout(){$('admin').classList.remove('show');document.body.style.overflow='';refreshPublic()}
+const TABS=[['dash','📊','Dashboard'],['fleet','🚌','Fleet'],['cal','🗓️','Calendar'],['enq','📒','Enquiries'],['rules','📜','Rules'],['cont','📍','Contact & Map'],['hero','🎬','Hero Media'],['set','⚙️','Settings']];
+let cur='dash',curBus=null,calBus=null,calMonth=today().slice(0,7),eqf='All',eqs='';
+function tab(t,keep){const y=$('ab').parentElement.scrollTop;cur=t;$('atitle').textContent=TABS.find(x=>x[0]==t)[2];
 $('sidenav').innerHTML=TABS.map(x=>`<button class="${x[0]==t?'on':''}" onclick="tab('${x[0]}')">${x[1]} ${x[2]}</button>`).join('');
-$('botnav').innerHTML=TABS.map(x=>`<button class="${x[0]==t?'on':''}" onclick="tab('${x[0]}')"><i>${x[1]}</i>${x[2]}</button>`).join('');
-$('ab').innerHTML=({dash:vDash,fleet:vFleet,cal:vCal,enq:vEnq,set:vSet})[t]();if(t=='enq')drawEnq();$('ab').parentElement.scrollTo(0,0)}
-const bal=q=>Math.max(0,(+q.total||0)-(+q.adv||0));
+$('botnav').innerHTML=TABS.map(x=>`<button class="${x[0]==t?'on':''}" onclick="tab('${x[0]}')"><i>${x[1]}</i>${x[2].split(' ')[0]}</button>`).join('');
+$('ab').innerHTML=({dash:vDash,fleet:vFleet,cal:vCal,enq:vEnq,rules:vRules,cont:vCont,hero:vHero,set:vSet})[t]();
+if(t=='enq')drawEnq();if(t=='cont')initMap();$('ab').parentElement.scrollTop=keep?y:0}
+const bal=q=>Math.max(0,(+q.total||0)-(+q.adv||0));const BB=id=>S.buses.find(b=>b.id==id);
+const inp=(l,v,h,x='')=>`<div class="fd"><label>${l}</label><input value="${esc(v)}" ${h} ${x}></div>`;
+/* ---- dashboard ---- */
 function vDash(){const c=enq.filter(q=>q.status=='Confirmed').length,pend=enq.filter(q=>q.status!='Cancelled').reduce((s,q)=>s+bal(q),0);
 const up=enq.filter(q=>q.status=='Confirmed'&&q.start>=today()).sort((a,b)=>a.start<b.start?-1:1).slice(0,5);
-return `<div class="ast"><div class="sc"><i>🚌</i><div><b>${buses.length}</b><span>Total Buses</span></div></div><div class="sc"><i>📩</i><div><b>${enq.length}</b><span>Enquiries</span></div></div><div class="sc"><i>✅</i><div><b>${c}</b><span>Confirmed</span></div></div><div class="sc"><i>💰</i><div><b>₹${pend.toLocaleString('en-IN')}</b><span>Pending Balance</span></div></div></div>
+return `<div class="ast"><div class="sc"><i>🚌</i><div><b>${S.buses.length}</b><span>Total Buses</span></div></div><div class="sc"><i>📩</i><div><b>${enq.length}</b><span>Enquiries</span></div></div><div class="sc"><i>✅</i><div><b>${c}</b><span>Confirmed</span></div></div><div class="sc"><i>💰</i><div><b>₹${pend.toLocaleString('en-IN')}</b><span>Pending Balance</span></div></div></div>
+<div class="panel"><h3>How publishing works</h3><p class="hint" style="margin:0">Edit anything here, then press <b>🚀 Publish</b> (top). Your changes are saved to GitHub and go live for <b>everyone</b> in about 1 minute. ${GH()?'GitHub connected ✅ ('+esc(GH().repo)+')':'<b style="color:#c0281f">GitHub not connected yet</b> – open Settings.'}</p></div>
 <div class="row2"><div class="panel"><h3>Upcoming Confirmed Trips</h3>${up.length?up.map(q=>`<div class="li"><div class="t"><b>${esc(q.name)}</b><small>${esc(q.busName)} • ${fmt(q.start)}</small></div><span class="bg Confirmed">₹${bal(q).toLocaleString('en-IN')} due</span></div>`).join(''):'<div class="emp">No upcoming confirmed trips</div>'}</div>
 <div class="panel"><h3>Latest Enquiries</h3>${enq.slice(0,5).map(q=>`<div class="li"><div class="t"><b>${esc(q.name)}</b><small>${esc(q.busName)} • ${fmt(q.start)}</small></div><span class="bg ${q.status}">${q.status}</span></div>`).join('')||'<div class="emp">No enquiries yet</div>'}</div></div>`}
-function vFleet(){const e=window._eb||{};window._img=null;return `<div class="panel"><h3>${e.id?'Edit':'Add New'} Bus</h3><div class="af">
-<div class="fd"><label>Bus Name</label><input id="aN" value="${esc(e.name)}"></div><div class="fd"><label>Description</label><input id="aD" value="${esc(e.desc)}"></div><div class="fd"><label>Seating Capacity</label><input id="aC" type="number" value="${esc(e.cap||42)}"></div>
-<div class="fd"><label>Type</label><select id="aT"><option ${e.type=='AC'?'selected':''}>AC</option><option ${e.type=='Non-AC'?'selected':''}>Non-AC</option></select></div>
-<div class="fd"><label>Features (comma separated)</label><input id="aF" value="${esc((e.features||FEAT).join(', '))}"></div><div class="fd"><label>Photo URL / path</label><input id="aI" value="${esc(e.img||'images/bus'+(buses.length+1)+'.jpg')}"></div>
-<div class="fd"><label>…or upload photo</label><input id="aU" type="file" accept="image/*" onchange="loadImg(this)"></div></div>
-<img id="aP" alt="" style="max-height:120px;border-radius:12px;margin-bottom:14px;display:none">
-<div class="eqa"><button class="btn gold sm" onclick="saveBus()">💾 Save Bus</button>${e.id?'<button class="btn ghost sm" onclick="window._eb=null;tab(\'fleet\')">Cancel</button>':''}</div></div>
-<div class="panel"><h3>Your Buses (${buses.length})</h3><div class="fc">${buses.map(b=>`<div class="fcard"><div class="im"><img src="${esc(b.img)}" alt="" onerror="this.style.display='none'"></div><div class="in2"><h4>${esc(b.name)}</h4><small>${esc(b.cap)} Seater • ${esc(b.type)}<br>${esc(b.desc)}</small><div class="ab2"><button class="btn sm" onclick="editBus('${b.id}')">✏️ Edit</button><button class="btn red sm" onclick="delBus('${b.id}')">🗑 Delete</button></div></div></div>`).join('')}</div></div>`}
-function loadImg(inp){const f=inp.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const s=Math.min(1,900/im.width),c=document.createElement('canvas');c.width=im.width*s;c.height=im.height*s;c.getContext('2d').drawImage(im,0,0,c.width,c.height);window._img=c.toDataURL('image/jpeg',.72);const p=$('aP');p.src=window._img;p.style.display='block'};im.src=r.result};r.readAsDataURL(f)}
-function saveBus(){if(!$('aN').value.trim())return toast('Bus name required',1);const o={name:$('aN').value.trim(),desc:$('aD').value.trim(),cap:+$('aC').value||42,type:$('aT').value,features:$('aF').value.split(',').map(s=>s.trim()).filter(Boolean),img:window._img||$('aI').value.trim()};
-if(window._eb&&window._eb.id){Object.assign(buses.find(x=>x.id==window._eb.id),o)}else buses.push({id:'b'+Date.now(),blocked:[],...o});
-window._eb=null;if(put(K.b,buses)){renderFleet();toast('Bus saved ✅');tab('fleet')}}
-function editBus(id){window._eb=buses.find(b=>b.id==id);tab('fleet')}
-function delBus(id){if(confirm('Delete this bus?')){buses=buses.filter(b=>b.id!=id);save();renderFleet();tab('fleet')}}
-function vCal(){if(!calBus||!buses.find(b=>b.id==calBus))calBus=buses[0]?.id;const b=buses.find(x=>x.id==calBus);if(!b)return '<div class="panel emp">Add a bus first.</div>';
+/* ---- fleet ---- */
+function vFleet(){if(!curBus||!BB(curBus))curBus=S.buses[0]?.id;const b=BB(curBus);
+const chips=`<div class="chips">${S.buses.map(x=>`<button class="${x.id==curBus?'on':''}" onclick="curBus='${x.id}';tab('fleet')">${esc(x.name)}</button>`).join('')}<button onclick="addBus()" style="border-style:dashed">＋ Add Bus</button></div>`;
+if(!b)return `<div class="panel">${chips}<div class="emp">No buses. Add one.</div></div>`;
+return `<div class="panel">${chips}<h3>Edit: ${esc(b.name)}</h3><div class="af">${inp('Bus Name',b.name,`oninput="bf('${b.id}','name',this.value)"`)}${inp('Description',b.desc,`oninput="bf('${b.id}','desc',this.value)"`)}${inp('Seating Capacity',b.cap,`oninput="bf('${b.id}','cap',this.value)"`,'type="number"')}
+<div class="fd"><label>Type</label><select onchange="bf('${b.id}','type',this.value)"><option ${b.type=='AC'?'selected':''}>AC</option><option ${b.type=='Non-AC'?'selected':''}>Non-AC</option></select></div>
+${inp('Features (comma separated)',b.features.join(', '),`oninput="bff('${b.id}',this.value)"`)}</div>
+<h3 style="margin-top:8px">Photos (${b.imgs.length}) – first photo is the cover</h3><p class="hint">Add 3–4 or more photos. They auto-slide on the website card and open as a gallery.</p>
+<div class="thumbs">${b.imgs.map((s,i)=>`<div class="th"><div class="im">${i==0?'<span class="n1">COVER</span>':''}<img src="${esc(imgSrc(s))}" alt="" onerror="this.style.display='none'"></div><div class="tb"><button onclick="mvImg('${b.id}',${i},-1)" title="Move left">◀</button><button onclick="mvImg('${b.id}',${i},1)" title="Move right">▶</button><button onclick="rmImg('${b.id}',${i})" title="Remove">🗑</button></div></div>`).join('')||'<div class="emp" style="grid-column:1/-1">No photos yet</div>'}</div>
+<div class="eqa"><label class="btn gold sm" style="text-transform:none;letter-spacing:0;font-size:.78rem;color:#1b1204">📤 Upload photos<input type="file" accept="image/*" multiple style="display:none" onchange="upImgs('${b.id}',this)"></label>
+<input id="iu" placeholder="or paste image path / URL" style="flex:1;min-width:180px"><button class="btn sm" onclick="addImgUrl('${b.id}')">Add</button></div>
+<div style="margin-top:18px"><button class="btn red sm" onclick="delBus('${b.id}')">🗑 Delete this bus</button></div></div>`}
+function bf(id,k,v){BB(id)[k]=k=='cap'?(+v||42):v;dirty()}
+function bff(id,v){BB(id).features=v.split(',').map(s=>s.trim()).filter(Boolean);dirty()}
+function addBus(){const id='b'+Date.now();S.buses.push({id,name:'New Bus',desc:'42 Seater Tourist Coach',cap:42,type:'AC',features:[...FEAT],imgs:[],blocked:[],booked:[]});curBus=id;dirty();tab('fleet')}
+function delBus(id){if(!confirm('Delete this bus?'))return;S.buses=S.buses.filter(b=>b.id!=id);curBus=null;dirty();tab('fleet')}
+function mvImg(id,i,d){const a=BB(id).imgs,j=i+d;if(j<0||j>=a.length)return;[a[i],a[j]]=[a[j],a[i]];dirty();tab('fleet',1)}
+function rmImg(id,i){BB(id).imgs.splice(i,1);dirty();tab('fleet',1)}
+function addImgUrl(id){const v=$('iu').value.trim();if(!v)return;BB(id).imgs.push(v);dirty();tab('fleet',1)}
+async function upImgs(id,el){const fs=[...el.files];if(!fs.length)return;if(!GH())return needGh();let ok=0;
+for(let i=0;i<fs.length;i++){toast(`Uploading photo ${i+1} of ${fs.length}…`);try{BB(id).imgs.push(await uploadImage(fs[i],{max:1800,q:.82,name:`bus-${id}-${Date.now()}-${i}`}));ok++;tab('fleet',1)}catch(e){toast('Upload failed: '+e.message,1);break}}
+if(ok){dirty();tab('fleet',1);toast(`✅ ${ok} photo(s) uploaded. Press Publish to show on website.`)}}
+/* ---- calendar ---- */
+function vCal(){if(!calBus||!BB(calBus))calBus=S.buses[0]?.id;const b=BB(calBus);if(!b)return '<div class="panel emp">Add a bus first.</div>';
 const [y,m]=calMonth.split('-').map(Number),first=new Date(y,m-1,1).getDay(),n=new Date(y,m,0).getDate(),mn=new Date(y,m-1,1).toLocaleString('en-IN',{month:'long',year:'numeric'});
 let cells=['S','M','T','W','T','F','S'].map(d=>`<div class="hd">${d}</div>`).join('')+'<div class="e"></div>'.repeat(first);
-for(let i=1;i<=n;i++){const d=`${calMonth}-${String(i).padStart(2,'0')}`;const bl=b.blocked.includes(d),cf=!bl&&bookedOn(b.id,d);cells+=`<div class="${bl?'bl':cf?'cf':''}" ${cf?'title="Confirmed enquiry"':`onclick="togDate('${d}')"`}>${i}</div>`}
-return `<div class="panel"><div class="chips">${buses.map(x=>`<button class="${x.id==calBus?'on':''}" onclick="calBus='${x.id}';tab('cal')">${esc(x.name)}</button>`).join('')}</div>
+for(let i=1;i<=n;i++){const d=`${calMonth}-${String(i).padStart(2,'0')}`,bl=b.blocked.includes(d),cf=!bl&&bookedOn(b.id,d);cells+=`<div class="${bl?'bl':cf?'cf':''}" ${cf?'title="Confirmed booking"':`onclick="togDate('${d}')"`}>${i}</div>`}
+return `<div class="panel"><div class="chips">${S.buses.map(x=>`<button class="${x.id==calBus?'on':''}" onclick="calBus='${x.id}';tab('cal')">${esc(x.name)}</button>`).join('')}</div>
 <div class="cm"><button class="ib" onclick="mshift(-1)">‹</button><b>${mn}</b><button class="ib" onclick="mshift(1)">›</button></div><div class="cal">${cells}</div>
-<div class="lg2"><span class="a">Free – tap to block</span><span class="b">Blocked – tap to unblock</span><span class="c">Auto-booked (Confirmed enquiry)</span></div></div>`}
+<div class="lg2"><span class="a">Free – tap to block</span><span class="b">Blocked – tap to unblock</span><span class="c">Auto-booked (Confirmed enquiry)</span></div><p class="hint" style="margin-top:12px">Blocked dates show as struck-through & unavailable in the website's booking calendar after you Publish.</p></div>`}
 function mshift(k){let[y,m]=calMonth.split('-').map(Number);const d=new Date(y,m-1+k,1);calMonth=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0');tab('cal')}
-function togDate(d){const b=buses.find(x=>x.id==calBus);b.blocked=b.blocked.includes(d)?b.blocked.filter(x=>x!=d):[...b.blocked,d];save();renderFleet();tab('cal')}
-function vEnq(){return `<div class="panel"><div class="chips">${['All','New','Called','Confirmed','Cancelled'].map(s=>`<button class="${s==eqf?'on':''}" onclick="eqf='${s}';tab('enq')">${s}</button>`).join('')}</div><input id="eqs" placeholder="Search name / mobile / bus…" value="${esc(eqs)}" oninput="eqs=this.value;drawEnq()"></div><div id="eql"></div>`}
+function togDate(d){const b=BB(calBus);b.blocked=b.blocked.includes(d)?b.blocked.filter(x=>x!=d):[...b.blocked,d];dirty();tab('cal',1)}
+/* ---- enquiries & hisab (private – stays in this browser) ---- */
+const saveEnq=()=>put(K.e,enq);
+function syncBooked(q){S.buses.forEach(x=>x.booked=(x.booked||[]).filter(r=>r.id!=q.id));const b=BB(q.busId);if(b&&q.status=='Confirmed'&&q.start)b.booked.push({id:q.id,s:q.start,e:q.end||q.start});dirty()}
+function vEnq(){return `<div class="panel"><h3>➕ Add booking (from WhatsApp / phone)</h3><p class="hint">Customer details are private and stay only in this browser – back them up in Settings. Confirmed bookings automatically block those dates on the website.</p><div class="af">
+${inp('Customer Name','','id="nN"')}${inp('Mobile','','id="nM" inputmode="numeric" maxlength="10"')}
+<div class="fd"><label>Bus</label><select id="nB">${S.buses.map(b=>`<option value="${b.id}">${esc(b.name)}</option>`).join('')}</select></div>${inp('Trip type','','id="nT"')}
+${inp('Start date','','id="nS"','type="date"')}${inp('Return date','','id="nE"','type="date"')}${inp('Route','','id="nR"')}
+<div class="fd"><label>Status</label><select id="nSt"><option>New</option><option>Called</option><option>Confirmed</option><option>Cancelled</option></select></div></div><button class="btn gold sm" onclick="addEnq()">Add booking</button></div>
+<div class="panel"><div class="chips">${['All','New','Called','Confirmed','Cancelled'].map(s=>`<button class="${s==eqf?'on':''}" onclick="eqf='${s}';tab('enq')">${s}</button>`).join('')}</div><input id="eqs" placeholder="Search name / mobile / bus…" value="${esc(eqs)}" oninput="eqs=this.value;drawEnq()"></div><div id="eql"></div>`}
+function addEnq(){const n=$('nN').value.trim(),m=$('nM').value.trim(),s=$('nS').value;if(!n||!s)return toast('Name and start date required',1);const b=BB($('nB').value);
+const q={id:'q'+Date.now(),ref:'BTP-'+Date.now().toString().slice(-6),name:n,mobile:m,busId:b.id,busName:b.name,type:$('nT').value,start:s,end:$('nE').value,route:$('nR').value,status:$('nSt').value,total:0,adv:0,ts:new Date().toISOString()};
+enq.unshift(q);saveEnq();syncBooked(q);toast('Booking added ✅');tab('enq')}
 function drawEnq(){const s=eqs.toLowerCase(),l=enq.filter(q=>(eqf=='All'||q.status==eqf)&&(!s||(q.name+q.mobile+q.busName+(q.ref||'')).toLowerCase().includes(s)));
 $('eql').innerHTML=l.length?l.map(q=>`<div class="eq"><div class="eqh"><div><b>${esc(q.name)}</b><small>📱 ${esc(q.mobile)} ${q.ref?'• '+esc(q.ref):''}</small></div><span class="bg ${q.status}">${q.status}</span></div>
 <div class="eqg"><div><small>Bus</small><b>${esc(q.busName)}</b></div><div><small>Trip</small><b>${esc(q.type)}</b></div><div><small>Dates</small><b>${fmt(q.start)} → ${fmt(q.end)}</b></div><div><small>Route</small><b>${esc(q.route)}</b></div></div>
 <div class="eqf"><div class="fd"><label>Status</label><select onchange="upd('${q.id}','status',this.value)">${['New','Called','Confirmed','Cancelled'].map(x=>`<option ${q.status==x?'selected':''}>${x}</option>`).join('')}</select></div>
 <div class="fd"><label>Total Rent ₹</label><input type="number" inputmode="numeric" value="${q.total||''}" onchange="upd('${q.id}','total',this.value)"></div><div class="fd"><label>Advance ₹</label><input type="number" inputmode="numeric" value="${q.adv||''}" onchange="upd('${q.id}','adv',this.value)"></div>
-<div><small style="color:var(--mut);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase">Balance Due</small><div class="bal">₹${bal(q).toLocaleString('en-IN')}</div></div></div>
+<div><small style="color:var(--mut);font-size:.7rem;text-transform:uppercase">Balance Due</small><div class="bal">₹${bal(q).toLocaleString('en-IN')}</div></div></div>
 <div class="eqa"><a class="btn wa sm" target="_blank" rel="noopener" href="https://wa.me/91${esc(q.mobile)}?text=${encodeURIComponent('Namaste '+q.name+' 🙏, Bharat Travels Pathri here. Regarding your booking of '+q.busName+' on '+fmt(q.start)+' ('+q.status+'). Total: ₹'+(q.total||0)+', Advance: ₹'+(q.adv||0)+', Balance: ₹'+bal(q))}">💬 WhatsApp Reply</a><a class="btn sm" href="tel:+91${esc(q.mobile)}">📞 Call</a><button class="btn red sm" onclick="delEnq('${q.id}')">🗑 Delete</button></div></div>`).join(''):'<div class="panel emp">No enquiries found.</div>'}
-function upd(id,k,v){const q=enq.find(x=>x.id==id);q[k]=v;save();renderFleet();const y=$('ab').parentElement.scrollTop;tab('enq');$('ab').parentElement.scrollTop=y}
-function delEnq(id){if(confirm('Delete this enquiry?')){enq=enq.filter(q=>q.id!=id);save();tab('enq')}}
-function vSet(){return `<div class="panel"><h3>Change Admin Login</h3><div class="af"><div class="fd"><label>Admin Email</label><input id="sE" value="${esc(sett.email)}"></div><div class="fd"><label>Current Password</label><input id="sC" type="password" autocomplete="current-password"></div><div class="fd"><label>New Password (min 6)</label><input id="sP" type="password" autocomplete="new-password"></div></div><button class="btn gold sm" onclick="saveSet()">Update Login</button>
-<p style="margin-top:14px;font-size:.8rem;color:var(--mut)">Login is checked inside the browser, so it deters casual access but is not real server security. For real protection connect Firebase Authentication.</p></div>
-<div class="panel"><h3>Backup & Restore</h3><p style="color:var(--mut);margin-bottom:14px;font-size:.88rem">Data is stored in this browser only. Download a backup regularly.</p><div class="eqa"><button class="btn sm" onclick="exportData()">⬇️ Download Backup</button><label class="btn ghost sm" style="text-transform:none;letter-spacing:0;font-size:.78rem;color:var(--ink)">⬆️ Restore Backup<input type="file" accept=".json" style="display:none" onchange="importData(this)"></label><button class="btn red sm" onclick="resetData()">Reset Demo Data</button></div></div>`}
-async function saveSet(){if(!window.crypto||!crypto.subtle)return toast('Open over https',1);if(await sha('btp|'+$('sC').value)!==sett.hash)return toast('Current password is wrong',1);
-if($('sP').value&&$('sP').value.length<6)return toast('Password min 6 chars',1);sett.email=$('sE').value.trim()||sett.email;if($('sP').value)sett.hash=await sha('btp|'+$('sP').value);save();toast('Login updated ✅');tab('set')}
-function exportData(){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify({buses,enq})],{type:'application/json'}));a.download='bharat-travels-backup-'+today()+'.json';a.click()}
-function importData(i){const f=i.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);if(!Array.isArray(d.buses)||!Array.isArray(d.enq))throw 0;buses=d.buses;enq=d.enq;save();renderFleet();toast('Backup restored ✅');tab('set')}catch(e){toast('Invalid backup file',1)}};r.readAsText(f)}
-function resetData(){if(confirm('Reset buses and ALL enquiries to demo data?')){buses=JSON.parse(JSON.stringify(defBuses));enq=[];save();renderFleet();tab('set')}}
-/* ===== premium motion layer ===== */
-const rt=document.documentElement;function th(t){rt.dataset.theme=t;localStorage.setItem('bt_th',t);$('thb').textContent=t=='dark'?'☀️':'🌙';document.querySelector('meta[name=theme-color]').content=t=='dark'?'#07101D':'#FBF7EF'}
-function toggleTheme(){th(rt.dataset.theme=='dark'?'light':'dark')}th(localStorage.getItem('bt_th')||'light');
-document.querySelectorAll('.mnav a').forEach(a=>a.addEventListener('click',()=>document.body.classList.remove('mo')));
-(()=>{const c=$('stars'),x=c.getContext('2d');let S=[];function rs(){c.width=c.offsetWidth;c.height=c.offsetHeight;const n=innerWidth<640?50:110;S=Array.from({length:n},()=>({x:Math.random()*c.width,y:Math.random()*c.height*.62,r:Math.random()*1.5+.3,p:Math.random()*6}))}rs();addEventListener('resize',rs);
-(function f(t){x.clearRect(0,0,c.width,c.height);x.fillStyle='#fff';S.forEach(s=>{x.globalAlpha=.25+.75*Math.abs(Math.sin(t/900+s.p));x.beginPath();x.arc(s.x,s.y,s.r,0,7);x.fill()});requestAnimationFrame(f)})(0)})();
-for(let i=0;i<6;i++){const d=document.createElement('i');d.className='sl';d.style.cssText=`top:${46+i*7}%;width:${80+i*24}px;animation-delay:-${i*.41}s;animation-duration:${1+i*.16}s`;$('scn').appendChild(d)}
-const D=['🛕 Shirdi','🙏 Tuljapur','🛕 Pandharpur','🕉️ Ashtavinayak','⛰️ Tirupati','🪔 Ujjain','💍 Shadi Bhada','🎓 School Tours','🚌 Pathri'];$('mt').innerHTML=[...D,...D].map(s=>`<span>${s}</span>`).join('');
-const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);const el=e.target,n=+el.dataset.n,t0=performance.now();(function f(t){const p=Math.min((t-t0)/1500,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+(el.dataset.s||'');if(p<1)requestAnimationFrame(f)})(t0)}));document.querySelectorAll('[data-n]').forEach(e=>co.observe(e));
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.rv').forEach(e=>io.observe(e));
-function routeScroll(){const r=$('route');if(!r)return;const b=r.getBoundingClientRect(),p=Math.min(1,Math.max(0,(innerHeight*.55-b.top)/b.height));r.style.setProperty('--p',p);
-const by=b.top+b.height*p;r.querySelectorAll('.rs').forEach(s=>{const sb=s.getBoundingClientRect();s.classList.toggle('on',sb.top+14<=by)})}
-let lastY=0;
-addEventListener('scroll',()=>{const y=scrollY;$('prog').style.width=y/(rt.scrollHeight-innerHeight)*100+'%';rt.style.setProperty('--sy',Math.min(y,900));routeScroll();
-$('hd').classList.toggle('hide',y>lastY&&y>420&&!document.body.classList.contains('mo'));lastY=y},{passive:true});
-if(matchMedia('(hover:hover)').matches){
-document.addEventListener('mousemove',e=>{const c=e.target.closest('.bus');document.querySelectorAll('.bus.tl').forEach(o=>{if(o!==c){o.style.transform='';o.classList.remove('tl')}});
-if(c){const r=c.getBoundingClientRect(),px=(e.clientX-r.left)/r.width-.5,py=(e.clientY-r.top)/r.height-.5;c.classList.add('tl');c.style.transform=`perspective(1000px) rotateY(${px*8}deg) rotateX(${-py*8}deg) translateY(-8px)`}});
-document.querySelectorAll('.mag').forEach(b=>{b.addEventListener('mousemove',e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.18}px,${(e.clientY-r.top-r.height/2)*.28}px)`});b.addEventListener('mouseleave',()=>b.style.transform='')})}
-document.addEventListener('click',e=>{const b=e.target.closest('.btn');if(!b)return;const r=b.getBoundingClientRect(),s=document.createElement('span');s.className='rip';const z=Math.max(r.width,r.height);s.style.cssText=`width:${z}px;height:${z}px;left:${e.clientX-r.left-z/2}px;top:${e.clientY-r.top-z/2}px`;b.appendChild(s);setTimeout(()=>s.remove(),600)});
-$('yr').textContent=new Date().getFullYear();document.querySelectorAll('.yy').forEach(e=>e.textContent=new Date().toLocaleDateString('en-IN'));
-$('fStart').min=$('fEnd').min=today();setL(L);
-function go(){$('pre').classList.add('done');document.body.classList.add('ready');setTimeout(()=>$('pre').remove(),1400)}
-if(document.readyState=='complete')setTimeout(go,700);else addEventListener('load',()=>setTimeout(go,700));setTimeout(()=>{if($('pre'))go()},3500);
+function upd(id,k,v){const q=enq.find(x=>x.id==id);q[k]=v;saveEnq();if(k=='status')syncBooked(q);tab('enq',1)}
+function delEnq(id){if(!confirm('Delete this enquiry?'))return;const q=enq.find(x=>x.id==id);enq=enq.filter(x=>x.id!=id);saveEnq();q.status='Cancelled';syncBooked(q);tab('enq',1)}
+/* ---- rules ---- */
+function vRules(){return `<div class="panel"><h3>Booking Rules</h3><p class="hint">Shown in the “Booking Rules” section. Write both Marathi and English.</p>${S.rules.map((r,i)=>`<div class="eq"><div class="af" style="margin:0 0 10px">${inp('Title (Marathi)',r.t.mr,`oninput="rf(${i},'t','mr',this.value)"`)}${inp('Title (English)',r.t.en,`oninput="rf(${i},'t','en',this.value)"`)}</div>
+<div class="af" style="margin:0 0 10px"><div class="fd"><label>Text (Marathi)</label><textarea rows="3" oninput="rf(${i},'d','mr',this.value)">${esc(r.d.mr)}</textarea></div><div class="fd"><label>Text (English)</label><textarea rows="3" oninput="rf(${i},'d','en',this.value)">${esc(r.d.en)}</textarea></div></div>
+<div class="eqa"><button class="btn sm" onclick="rmv(${i},-1)">▲</button><button class="btn sm" onclick="rmv(${i},1)">▼</button><button class="btn red sm" onclick="rdel(${i})">🗑 Delete</button></div></div>`).join('')}
+<button class="btn gold sm" onclick="radd()">＋ Add rule</button></div>`}
+function rf(i,k,l,v){S.rules[i][k][l]=v;dirty()}
+function radd(){S.rules.push({t:{en:'New rule',mr:'नवीन नियम'},d:{en:'',mr:''}});dirty();tab('rules',1)}
+function rdel(i){if(confirm('Delete this rule?')){S.rules.splice(i,1);dirty();tab('rules',1)}}
+function rmv(i,d){const j=i+d;if(j<0||j>=S.rules.length)return;[S.rules[i],S.rules[j]]=[S.rules[j],S.rules[i]];dirty();tab('rules',1)}
+/* ---- contact + map ---- */
+function vCont(){const c=S.contact,cf=(k,l,v)=>`oninput="cs('${k}','${l}',this.value)"`;
+return `<div class="panel"><h3>“Visit Us” section</h3><div class="af">${inp('Small heading (Marathi)',c.eb.mr,cf('eb','mr'))}${inp('Small heading (English)',c.eb.en,cf('eb','en'))}${inp('Title (Marathi)',c.ttl.mr,cf('ttl','mr'))}${inp('Title (English)',c.ttl.en,cf('ttl','en'))}${inp('Address (Marathi)',c.addr.mr,cf('addr','mr'))}${inp('Address (English)',c.addr.en,cf('addr','en'))}</div>
+<div class="af">${inp('Call number (10 digits)',c.phone,cf('phone',''))}${inp('WhatsApp number (10 digits)',c.wa,cf('wa',''))}${inp('Email',c.email,cf('email',''))}</div><p class="hint" style="margin:0">Phone, WhatsApp and email update on every button, link and footer of the website.</p></div>
+<div class="panel"><h3>📍 Map location</h3><p class="hint">Tap the map or drag the pin. The website's map and “Get Directions” button use this pin.</p>
+<div class="lsr"><input id="lq" placeholder="Search place, e.g. Manavat Road, Pathri" onkeydown="if(event.key=='Enter')searchLoc()"><button class="btn sm" onclick="searchLoc()">🔍 Search</button><button class="btn gold sm" onclick="gpsLoc()">🎯 My location</button></div>
+<div id="lmap"></div><p id="lco" style="font-size:.85rem">Pin: <b>${c.map.lat.toFixed(5)}, ${c.map.lng.toFixed(5)}</b></p></div>`}
+function cs(k,l,v){if(l)S.contact[k][l]=v;else S.contact[k]=v;dirty()}
+function loadLeaflet(cb){if(window.L&&L.map)return cb();if(!$('lfcss')){const c=document.createElement('link');c.id='lfcss';c.rel='stylesheet';c.href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';document.head.appendChild(c)}const s=document.createElement('script');s.src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';s.onload=cb;s.onerror=()=>toast('Map could not load. Check internet.',1);document.head.appendChild(s)}
+function setPin(lat,lng,zoom){S.contact.map={lat,lng,z:window._map.getZoom()};if(window._mk)window._mk.setLatLng([lat,lng]);if(zoom)window._map.setView([lat,lng],zoom);S.contact.map.z=window._map.getZoom();$('lco').innerHTML=`Pin: <b>${lat.toFixed(5)}, ${lng.toFixed(5)}</b>`;dirty()}
+function initMap(){loadLeaflet(()=>{if(cur!='cont'||!$('lmap'))return;if(window._map)window._map.remove();const m=S.contact.map;window._map=L.map('lmap').setView([m.lat,m.lng],m.z||15);L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(window._map);
+window._mk=L.marker([m.lat,m.lng],{draggable:true}).addTo(window._map);window._mk.on('dragend',()=>{const p=window._mk.getLatLng();setPin(p.lat,p.lng)});window._map.on('click',e=>setPin(e.latlng.lat,e.latlng.lng));setTimeout(()=>window._map.invalidateSize(),250)})}
+async function searchLoc(){const q=$('lq').value.trim();if(!q)return;try{const r=await fetch('https://nominatim.openstreetmap.org/search?format=json&limit=1&q='+encodeURIComponent(q)),d=await r.json();if(!d.length)return toast('Place not found',1);setPin(+d[0].lat,+d[0].lon,17)}catch(e){toast('Search failed. Tap on the map instead.',1)}}
+function gpsLoc(){if(!navigator.geolocation)return toast('GPS not supported',1);navigator.geolocation.getCurrentPosition(p=>setPin(p.coords.latitude,p.coords.longitude,17),()=>toast('Could not get location. Allow permission.',1),{enableHighAccuracy:true,timeout:15000})}
+/* ---- hero media ---- */
+const HS=[['bg','Background photo (4K road / highway)','JPG, wide 3840×2160 recommended. Replaces the sky & city drawing.',{max:3840,q:.86}],['bus','Real bus photo (transparent PNG)','Side-view bus with transparent background. It drives in on the road.',{max:2400,png:true}],['road','Road strip (seamless, repeats)','Wide road image that tiles left-right; it scrolls like a moving road.',{max:3200,q:.86}],['video','Background video (optional, MP4)','Paste an MP4 URL or a path like images/hero.mp4 (commit the file to your repo).',null]];
+function vHero(){return `<div class="panel"><h3>Hero (top of website)</h3><p class="hint">Upload real 4K photos here – they are saved to your GitHub repo. Until you add them, the animated drawing is shown. Press Publish after changes.</p>${HS.map(([k,t,h,o])=>`<div class="hs"><div class="pv">${S.hero[k]&&k!='video'?`<img src="${esc(imgSrc(S.hero[k]))}" alt="">`:''}</div><div><b>${t}</b><p class="hint" style="margin:2px 0 10px">${h}</p><div class="eqa">${o?`<label class="btn gold sm" style="text-transform:none;letter-spacing:0;font-size:.78rem;color:#1b1204">📤 Upload<input type="file" accept="${o.png?'image/png':'image/*'}" style="display:none" onchange="upHero('${k}',this)"></label>`:''}<input value="${esc(S.hero[k])}" placeholder="path or URL" onchange="setHero('${k}',this.value)" style="flex:1;min-width:160px"><button class="btn red sm" onclick="setHero('${k}','');tab('hero',1)">Remove</button></div></div></div>`).join('')}</div>`}
+function setHero(k,v){S.hero[k]=v.trim();dirty()}
+async function upHero(k,el){const f=el.files[0];if(!f)return;if(!GH())return needGh();const o=HS.find(x=>x[0]==k)[3];toast('Uploading…');try{S.hero[k]=await uploadImage(f,Object.assign({name:`hero-${k}-${Date.now()}`},o));dirty();tab('hero',1);toast('✅ Uploaded. Press Publish.')}catch(e){toast('Upload failed: '+e.message,1)}}
+/* ---- settings ---- */
+function vSet(){const g=get(K.gh,{});return `<div class="panel"><h3>🔗 Connect GitHub (this is your database)</h3><p class="hint">Needed once per device to Publish and upload photos. The token is stored only in this browser.</p>
+<div class="af">${inp('Repository (owner/name)',g.repo||'','id="gR" placeholder="ayan/bharat-travels"')}${inp('Branch',g.branch||'main','id="gB"')}<div class="fd"><label>Access token</label><input id="gT" type="password" value="${esc(g.token||'')}" placeholder="github_pat_…"></div></div>
+<div class="eqa"><button class="btn gold sm" onclick="saveGh()">💾 Save</button><button class="btn sm" onclick="testGh()">🔌 Test connection</button></div>
+<details style="margin-top:14px"><summary style="font-size:.95rem">How to create the token (2 minutes)</summary><p>1) GitHub → your profile → <b>Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token</b>.<br>2) <b>Repository access</b>: Only select repositories → choose your website repo.<br>3) <b>Permissions → Repository → Contents: Read and write</b>.<br>4) Generate, copy the token and paste it above. Never share it with anyone.</p></details></div>
+<div class="panel"><h3>Change Admin Login</h3><div class="af">${inp('Admin Email',S.admin.email,'id="sE"')}<div class="fd"><label>Current Password</label><input id="sC" type="password" autocomplete="current-password"></div><div class="fd"><label>New Password (min 6)</label><input id="sP" type="password" autocomplete="new-password"></div></div><button class="btn gold sm" onclick="saveSet()">Update Login</button>
+<p class="hint" style="margin-top:12px">The login only opens this panel. Real protection is your GitHub token – nobody can change the website without it. After changing, press Publish so it works on all devices.</p></div>
+<div class="panel"><h3>Backup (private enquiries)</h3><p class="hint">Customer enquiries/hisab are private and stored only in this browser. Download a backup regularly.</p><div class="eqa"><button class="btn sm" onclick="exportData()">⬇️ Download backup</button><label class="btn ghost sm" style="text-transform:none;letter-spacing:0;font-size:.78rem">⬆️ Restore backup<input type="file" accept=".json" style="display:none" onchange="importData(this)"></label></div></div>`}
+function saveGh(){put(K.gh,{repo:$('gR').value,branch:$('gB').value,token:$('gT').value});toast('Saved ✅');tab('set',1)}
+async function testGh(){saveGh();if(!GH())return toast('Fill repo and token',1);try{const r=await ghReq('GET','');if(!r.ok)throw new Error(await ghErr(r));const d=await r.json();toast(d.permissions&&d.permissions.push?'✅ Connected – write access OK':'⚠️ Connected but NO write access – token needs Contents: Read and write',!(d.permissions&&d.permissions.push))}catch(e){toast(e.message,1)}}
+async function saveSet(){if(!window.crypto||!crypto.subtle)return toast('Open over https',1);if(await sha('btp|'+$('sC').value)!==S.admin.hash)return toast('Current password is wrong',1);if($('sP').value&&$('sP').value.length<6)return toast('Password min 6 chars',1);
+S.admin.email=$('sE').value.trim()||S.admin.email;if($('sP').value)S.admin.hash=await sha('btp|'+$('sP').value);dirty();toast('Updated – press Publish to apply on all devices ✅');tab('set',1)}
+function exportData(){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify({enq})],{type:'application/json'}));a.download='bharat-travels-enquiries-'+today()+'.json';a.click()}
+function importData(i){const f=i.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);if(!Array.isArray(d.enq))throw 0;enq=d.enq;saveEnq();enq.forEach(syncBooked);toast('Backup restored ✅');tab('set')}catch(e){toast('Invalid backup file',1)}};r.readAsText(f)}
 </script>
-
-<!-- ===== OPTIONAL: FIREBASE FIRESTORE (live sync across devices) =====
-1. Create a free project at https://console.firebase.google.com → Firestore Database → Web app → copy firebaseConfig.
-2. Uncomment the tags below, paste your config, and replace save()/get() to read/write Firestore docs ('buses','enquiries','settings').
-3. Use Firebase Authentication for real admin security.
-
-<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
-<script>
-const firebaseConfig={apiKey:"YOUR_KEY",authDomain:"YOUR.firebaseapp.com",projectId:"YOUR_ID",appId:"YOUR_APP_ID"};
-firebase.initializeApp(firebaseConfig);const db=firebase.firestore();
-// Example: db.collection('data').doc('buses').set({list:buses}); db.collection('data').doc('buses').onSnapshot(s=>{buses=s.data().list;renderFleet()});
-</script>
--->
 </body>
-  </html>
+</html>
