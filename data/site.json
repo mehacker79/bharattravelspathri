@@ -3,17 +3,17 @@
  "buses": [
   {
    "id": "b1794685861631",
-   "name": "New Bus",
-   "desc": "42 Seater Tourist Coach",
+   "name": "Tata Starbus Ultra",
+   "desc": "40/45 Seater Tourist Coach",
    "cap": 42,
-   "type": "AC",
+   "type": "Non-AC",
    "features": [
-    "Pushback Seats",
     "DJ/Music System",
-    "Heavy Luggage Carrier",
-    "Mobile Charging"
+    "Heavy Luggage Carrier."
    ],
-   "imgs": [],
+   "imgs": [
+    "images/bus-b1794685861631-1794686841463-0.jpg"
+   ],
    "blocked": [],
    "booked": []
   }
