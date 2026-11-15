@@ -88,16 +88,23 @@
   "wa": "9960232822",
   "email": "bharattravelspathri@gmail.com",
   "map": {
-   "lat": 19.2519,
-   "lng": 76.4333,
-   "z": 15
+   "lat": 19.2655164,
+   "lng": 76.438774,
+   "z": 17
   }
  },
  "hero": {
-  "bg": "images/hero-bg-1794685696361.jpg",
+  "bg": "",
   "bus": "images/hero-bus-1794686567553.png",
   "road": "images/hero-road-1794684726977.jpg",
-  "video": ""
+  "video": "images/hero-video-1794714409118.mp4",
+  "wheel": {
+   "on": false,
+   "a": 100,
+   "b": 82.5,
+   "y": 81.5,
+   "r": 7.9
+  }
  },
  "admin": {
   "email": "bharattravelspathri@gmail.com",
