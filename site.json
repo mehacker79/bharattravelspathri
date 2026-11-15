@@ -1,1 +1,106 @@
-{"v":1}
+{
+ "v": 1,
+ "buses": [
+  {
+   "id": "b1794685861631",
+   "name": "Tata Starbus Ultra",
+   "desc": "40/45 Seater Tourist Coach",
+   "cap": 42,
+   "type": "Non-AC",
+   "features": [
+    "DJ/Music System",
+    "Heavy Luggage Carrier."
+   ],
+   "imgs": [
+    "images/bus-b1794685861631-1794687576283-0.jpg",
+    "images/bus-b1794685861631-1794686965191-0.jpg"
+   ],
+   "blocked": [],
+   "booked": []
+  }
+ ],
+ "rules": [
+  {
+   "t": {
+    "en": "Toll Tax",
+    "mr": "टोल टॅक्स"
+   },
+   "d": {
+    "en": "Toll tax, parking, and other charges will be decided based on the travel route after discussion with the owner.\n",
+    "mr": "टोल टॅक्स, पार्किंग आणि इतर शुल्क प्रवासाच्या मार्गाप्रमाणे (Route) मालकाशी चर्चा करून ठरवले जाईल.\n"
+   }
+  },
+  {
+   "t": {
+    "en": "Parking",
+    "mr": "पार्किंग"
+   },
+   "d": {
+    "en": "En-route and destination parking charges will be decided based on the travel route after discussion with the owner.\n",
+    "mr": "प्रवासातील आणि ठिकाणचे पार्किंग शुल्क प्रवासाच्या मार्गाप्रमाणे मालकाशी चर्चा करून ठरवले जाईल.\n"
+   }
+  },
+  {
+   "t": {
+    "en": "Border Tax",
+    "mr": "बॉर्डर टॅक्स"
+   },
+   "d": {
+    "en": "Inter-state border and permit taxes will be decided based on the travel route after discussion with the owner.\n",
+    "mr": "आंतरराज्य बॉर्डर आणि परमिट टॅक्स प्रवासाच्या मार्गाप्रमाणे मालकाशी चर्चा करून ठरवले जाईल.\n"
+   }
+  },
+  {
+   "t": {
+    "en": "Driver Allowance",
+    "mr": "ड्रायव्हर भत्ता"
+   },
+   "d": {
+    "en": "Driver food and night-halt allowance will be decided based on the travel route after discussion with the owner.\n",
+    "mr": "ड्रायव्हरचा जेवण व मुक्काम भत्ता प्रवासाच्या मार्गाप्रमाणे मालकाशी चर्चा करून ठरवले जाईल.\n"
+   }
+  },
+  {
+   "t": {
+    "en": "Advance Booking Policy",
+    "mr": "आगाऊ बुकिंग धोरण"
+   },
+   "d": {
+    "en": "Booking is confirmed only after advance payment. Balance is payable before/at trip start.",
+    "mr": "अ‍ॅडव्हान्स भरल्यानंतरच बुकिंग निश्चित होते. उर्वरित रक्कम प्रवासापूर्वी/सुरुवातीला द्यावी."
+   }
+  }
+ ],
+ "contact": {
+  "eb": {
+   "en": "Visit Us",
+   "mr": "भेट द्या"
+  },
+  "ttl": {
+   "en": "Find Us in Pathri",
+   "mr": "पाथरीत आम्हाला भेटा"
+  },
+  "addr": {
+   "en": "Majalgaon Road, Pathri, Dist. Parbhani, Maharashtra",
+   "mr": "माजलगाव रोड, पाथरी, जि. परभणी, महाराष्ट्र"
+  },
+  "phone": "9970889890",
+  "wa": "9960232822",
+  "email": "bharattravelspathri@gmail.com",
+  "map": {
+   "lat": 19.26089,
+   "lng": 76.42764,
+   "z": 17
+  }
+ },
+ "hero": {
+  "bg": "",
+  "bus": "images/hero-bus-1794686567553.png",
+  "road": "images/hero-road-1794684726977.jpg",
+  "video": "images/hero-video-1794714409118.mp4"
+ },
+ "admin": {
+  "email": "bharattravelspathri@gmail.com",
+  "hash": "946c0d006128b03a25f3bda82b6c9fc7042129cbc38c9b115a591946f433ff3d"
+ }
+}
