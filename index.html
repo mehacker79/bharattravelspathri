@@ -478,7 +478,7 @@ rules:[{t:{en:'Toll Tax',mr:'टोल टॅक्स'},d:{en:'Toll tax is paya
 {t:{en:'Border Tax',mr:'बॉर्डर टॅक्स'},d:{en:'Inter-state border/permit tax is extra and charged as per actuals.',mr:'आंतरराज्य बॉर्डर/परमिट टॅक्स वेगळा, प्रत्यक्ष खर्चाप्रमाणे.'}},
 {t:{en:'Driver Allowance',mr:'ड्रायव्हर भत्ता'},d:{en:'Driver food & night-halt allowance is payable per day, as agreed at booking.',mr:'ड्रायव्हरचा जेवण व मुक्काम भत्ता बुकिंगच्या वेळी ठरल्याप्रमाणे दररोज द्यावा.'}},
 {t:{en:'Advance Booking Policy',mr:'आगाऊ बुकिंग धोरण'},d:{en:'Booking is confirmed only after advance payment. Balance is payable before/at trip start.',mr:'अ‍ॅडव्हान्स भरल्यानंतरच बुकिंग निश्चित होते. उर्वरित रक्कम प्रवासापूर्वी/सुरुवातीला द्यावी.'}}],
-contact:{eb:{en:'Visit Us',mr:'भेट द्या'},ttl:{en:'Find Us in Pathri',mr:'पाथरीत आम्हाला भेटा'},addr:{en:'Manavat Road, Pathri, Dist. Parbhani, Maharashtra',mr:'मानवत रोड, पाथरी, जि. परभणी, महाराष्ट्र'},phone:'9970889890',wa:'9960232822',email:'bharattravelspathri@gmail.com',map:{lat:19.26089,lng:76.42764,z:15}},
+contact:{eb:{en:'Visit Us',mr:'भेट द्या'},ttl:{en:'Find Us in Pathri',mr:'पाथरीत आम्हाला भेटा'},addr:{en:'Manavat Road, Pathri, Dist. Parbhani, Maharashtra',mr:'मानवत रोड, पाथरी, जि. परभणी, महाराष्ट्र'},phone:'9970889890',wa:'9960232822',email:'bharattravelspathri@gmail.com',pc:'7C6H+932 Ekta Nagar, Pathri, Maharashtra 431506',map:{lat:19.26089,lng:76.42764,z:15}},
 hero:{bg:'',bus:'',road:'',video:'',wheel:{on:true,a:20.3,b:80.5,y:82.5,r:5.9}},
 admin:{email:'bharattravelspathri@gmail.com',hash:'946c0d006128b03a25f3bda82b6c9fc7042129cbc38c9b115a591946f433ff3d'}};
 const clone=o=>JSON.parse(JSON.stringify(o));
@@ -529,8 +529,8 @@ document.querySelectorAll('[data-c=tel]').forEach(a=>a.href='tel:+91'+ph);docume
 document.querySelectorAll('[data-c=phone-t]').forEach(e=>e.textContent='+91 '+ph);document.querySelectorAll('[data-c=wa-t]').forEach(e=>e.textContent='+91 '+wa);document.querySelectorAll('[data-c=mail-t]').forEach(e=>e.textContent=c.email);
 document.querySelectorAll('[data-c=addr]').forEach(e=>e.textContent=c.addr[L]||c.addr.en);
 $('ceb').textContent=c.eb[L]||c.eb.en;$('cttl').textContent=c.ttl[L]||c.ttl.en;
-const m=c.map||DEF.contact.map,u=`https://www.google.com/maps?q=${m.lat},${m.lng}&z=${m.z||15}&output=embed`;if($('pubmap').dataset.u!=u){$('pubmap').dataset.u=u;$('pubmap').src=u}
-$('dirbtn').href=`https://www.google.com/maps/dir/?api=1&destination=${m.lat},${m.lng}`}
+const m=c.map||DEF.contact.map,q=c.pc?encodeURIComponent(c.pc):m.lat+','+m.lng,u=`https://www.google.com/maps?q=${q}&z=${m.z||15}&output=embed`;if($('pubmap').dataset.u!=u){$('pubmap').dataset.u=u;$('pubmap').src=u}
+$('dirbtn').href=`https://www.google.com/maps/dir/?api=1&destination=${q}`}
 function probe(src){return new Promise(r=>{if(!src)return r(false);const i=new Image();i.onload=()=>r(i);i.onerror=()=>r(false);i.src=imgSrc(src)})}
 let _hk='';
 async function applyHero(){const h=S.hero,k=JSON.stringify(h)+Object.keys(PREV).length;if(k==_hk)return;_hk=k;const hero=$('home');
@@ -749,7 +749,7 @@ return `<div class="panel"><h3>“Visit Us” section</h3><div class="af">${inp(
 <div id="lmap"></div><p id="lco" style="font-size:.85rem">Pin: <b>${c.map.lat.toFixed(5)}, ${c.map.lng.toFixed(5)}</b></p></div>`}
 function cs(k,l,v){if(l)S.contact[k][l]=v;else S.contact[k]=v;dirty()}
 function loadLeaflet(cb){if(window.L&&window.L.map)return cb();if(!$('lfcss')){const c=document.createElement('link');c.id='lfcss';c.rel='stylesheet';c.href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';document.head.appendChild(c)}const s=document.createElement('script');s.src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';s.onload=cb;s.onerror=()=>toast('Map could not load. Check internet.',1);document.head.appendChild(s)}
-function setPin(lat,lng,zoom){S.contact.map={lat,lng,z:window._map.getZoom()};if(window._mk)window._mk.setLatLng([lat,lng]);if(zoom)window._map.setView([lat,lng],zoom);S.contact.map.z=window._map.getZoom();$('lco').innerHTML=`Pin: <b>${lat.toFixed(5)}, ${lng.toFixed(5)}</b>`;dirty()}
+function setPin(lat,lng,zoom){S.contact.pc='';S.contact.map={lat,lng,z:window._map.getZoom()};if(window._mk)window._mk.setLatLng([lat,lng]);if(zoom)window._map.setView([lat,lng],zoom);S.contact.map.z=window._map.getZoom();$('lco').innerHTML=`Pin: <b>${lat.toFixed(5)}, ${lng.toFixed(5)}</b>`;dirty()}
 function initMap(){loadLeaflet(()=>{if(cur!='cont'||!$('lmap'))return;if(window._map)window._map.remove();const m=S.contact.map;window._map=window.L.map('lmap').setView([m.lat,m.lng],m.z||15);window.L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(window._map);
 window._mk=window.L.marker([m.lat,m.lng],{draggable:true}).addTo(window._map);window._mk.on('dragend',()=>{const p=window._mk.getLatLng();setPin(p.lat,p.lng)});window._map.on('click',e=>setPin(e.latlng.lat,e.latlng.lng));setTimeout(()=>window._map.invalidateSize(),250)})}
 async function searchLoc(){const q=$('lq').value.trim();if(!q)return;try{const r=await fetch('https://nominatim.openstreetmap.org/search?format=json&limit=1&q='+encodeURIComponent(q)),d=await r.json();if(!d.length)return toast('Place not found',1);setPin(+d[0].lat,+d[0].lon,17)}catch(e){toast('Search failed. Tap on the map instead.',1)}}
@@ -788,4 +788,4 @@ function exportData(){const a=document.createElement('a');a.href=URL.createObjec
 function importData(i){const f=i.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);if(!Array.isArray(d.enq))throw 0;enq=d.enq;saveEnq();enq.forEach(syncBooked);toast('Backup restored ✅');tab('set')}catch(e){toast('Invalid backup file',1)}};r.readAsText(f)}
 </script>
 </body>
-</html>
+  </html>
