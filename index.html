@@ -131,7 +131,8 @@ header.hide{transform:translateY(-100%)}
 .busrun svg{width:100%;display:block;overflow:visible}
 .has-road .busrun{bottom:calc(clamp(70px,11vw,150px)*.36)}
 .rbw{display:none;position:absolute;left:50%;bottom:40px;width:clamp(300px,52vw,700px);margin-left:calc(clamp(300px,52vw,700px)/-2);animation:drive 2.8s cubic-bezier(.16,.8,.2,1) .7s both}
-.rbw img{width:100%;animation:bob 1.2s ease-in-out infinite;filter:drop-shadow(0 18px 14px rgba(0,0,0,.35))}
+.rbi{position:relative;animation:bob 1.2s ease-in-out infinite}.rbw img{width:100%;filter:drop-shadow(0 18px 14px rgba(0,0,0,.35))}
+.rwh{position:absolute;display:none;border-radius:50%;pointer-events:none;background-repeat:no-repeat;animation:spin .38s linear infinite}.wok .rwh{display:block}.nowh .rwh{display:none!important}
 .rbw:after{content:"";position:absolute;left:5%;right:5%;bottom:-6px;height:18px;background:radial-gradient(ellipse,rgba(0,0,0,.5),transparent 70%);filter:blur(4px)}
 .has-bus .busrun{display:none}.has-bus .rbw{display:block}.has-road .rbw{bottom:calc(clamp(70px,11vw,150px)*.34)}
 @keyframes drive{from{transform:translateX(-110vw)}}
@@ -299,6 +300,10 @@ footer a{transition:.3s}footer a:hover{color:var(--gold2)}
 .hs .pv{aspect-ratio:16/10;border-radius:12px;background:#12294a linear-gradient(45deg,rgba(255,255,255,.06) 25%,transparent 25%,transparent 75%,rgba(255,255,255,.06) 75%);background-size:cover,16px 16px;overflow:hidden}.hs .pv img{width:100%;height:100%;object-fit:contain}
 #lmap{height:min(420px,58vh);border-radius:16px;border:1px solid var(--line);z-index:1;margin:12px 0}.lsr{display:flex;gap:10px;flex-wrap:wrap}.lsr input{flex:1;min-width:200px}
 .code{background:var(--bg2);border-radius:10px;padding:10px 14px;font:500 .82rem monospace;overflow-wrap:anywhere}
+.hs .pv video{width:100%;height:100%;object-fit:cover}
+.wp{position:relative;max-width:560px;margin:10px 0 14px;border-radius:12px;overflow:hidden;background:#12294a}.wp img{width:100%;display:block}
+.sl2{display:grid;grid-template-columns:150px 1fr 46px;gap:10px;align-items:center;margin:8px 0;font-size:.84rem}.sl2 input[type=range]{padding:0;accent-color:var(--gold)}.sl2 b{text-align:right}
+@media(max-width:600px){.sl2{grid-template-columns:1fr 46px}.sl2 span{grid-column:1/-1}}
 /* ===== RESPONSIVE ===== */
 @media(min-width:1800px){html{font-size:18px}.wrap{max-width:1500px}}
 @media(max-width:1100px){.links{gap:18px}.fg{grid-template-columns:1fr 1fr}.chip.k1{left:-4%}.chip.k2{right:-4%}}
@@ -362,7 +367,7 @@ footer a{transition:.3s}footer a:hover{color:var(--gold2)}
 <circle cx="397" cy="92" r="6" fill="#fffbd0"/><rect x="8" y="84" width="5" height="12" fill="#c0392b"/>
 <g class="wh" style="transform-origin:90px 114px"><circle cx="90" cy="114" r="21" fill="#10131c"/><circle cx="90" cy="114" r="11" fill="#d9c28a"/><path d="M90 103v22M79 114h22" stroke="#10131c" stroke-width="3"/></g>
 <g class="wh" style="transform-origin:310px 114px"><circle cx="310" cy="114" r="21" fill="#10131c"/><circle cx="310" cy="114" r="11" fill="#d9c28a"/><path d="M310 103v22M299 114h22" stroke="#10131c" stroke-width="3"/></g></svg></div>
-<div class="rbw"><img id="rbimg" alt="Bharat Travels bus"></div></div></section>
+<div class="rbw" id="rbw"><div class="rbi"><img id="rbimg" alt="Bharat Travels bus"><i class="rwh a"></i><i class="rwh b"></i></div></div></div></section>
 <div class="mq"><div class="mt" id="mt"></div></div>
 
 <section class="stats"><div class="wrap sg">
@@ -474,7 +479,7 @@ rules:[{t:{en:'Toll Tax',mr:'टोल टॅक्स'},d:{en:'Toll tax is paya
 {t:{en:'Driver Allowance',mr:'ड्रायव्हर भत्ता'},d:{en:'Driver food & night-halt allowance is payable per day, as agreed at booking.',mr:'ड्रायव्हरचा जेवण व मुक्काम भत्ता बुकिंगच्या वेळी ठरल्याप्रमाणे दररोज द्यावा.'}},
 {t:{en:'Advance Booking Policy',mr:'आगाऊ बुकिंग धोरण'},d:{en:'Booking is confirmed only after advance payment. Balance is payable before/at trip start.',mr:'अ‍ॅडव्हान्स भरल्यानंतरच बुकिंग निश्चित होते. उर्वरित रक्कम प्रवासापूर्वी/सुरुवातीला द्यावी.'}}],
 contact:{eb:{en:'Visit Us',mr:'भेट द्या'},ttl:{en:'Find Us in Pathri',mr:'पाथरीत आम्हाला भेटा'},addr:{en:'Manavat Road, Pathri, Dist. Parbhani, Maharashtra',mr:'मानवत रोड, पाथरी, जि. परभणी, महाराष्ट्र'},phone:'9970889890',wa:'9960232822',email:'bharattravelspathri@gmail.com',map:{lat:19.2519,lng:76.4333,z:15}},
-hero:{bg:'',bus:'',road:'',video:''},
+hero:{bg:'',bus:'',road:'',video:'',wheel:{on:true,a:20.3,b:80.5,y:82.5,r:5.9}},
 admin:{email:'bharattravelspathri@gmail.com',hash:'946c0d006128b03a25f3bda82b6c9fc7042129cbc38c9b115a591946f433ff3d'}};
 const clone=o=>JSON.parse(JSON.stringify(o));
 function mergeSite(j){const s=clone(DEF);if(!j||typeof j!='object')return s;
@@ -533,10 +538,17 @@ const [bg,bus,road]=await Promise.all([probe(h.bg),probe(h.bus),probe(h.road)]);
 hero.classList.toggle('has-bg',!!bg);if(bg)$('hbg').style.backgroundImage=`url("${imgSrc(h.bg)}")`;
 hero.classList.toggle('has-bus',!!bus);if(bus)$('rbimg').src=imgSrc(h.bus);
 hero.classList.toggle('has-road',!!road);if(road){const r=$('rroad');r.style.backgroundImage=`url("${imgSrc(h.road)}")`;r._i=road;fitRoad()}
-const v=$('hvid');if(h.video){if(v.dataset.s!=h.video){v.dataset.s=h.video;v.src=h.video;v.play().catch(()=>{})}hero.classList.add('has-vid')}else{hero.classList.remove('has-vid');v.removeAttribute('src')}}
+const v=$('hvid');if(h.video){if(v.dataset.s!=h.video){v.dataset.s=h.video;v.muted=true;v.src=imgSrc(h.video);v.play().catch(()=>{})}hero.classList.add('has-vid')}else{hero.classList.remove('has-vid');v.removeAttribute('src')}}
 function fitRoad(){const r=$('rroad');if(!r||!r._i)return;const w=r._i.naturalWidth*(r.clientHeight/r._i.naturalHeight);if(w>50){r.style.setProperty('--rw',w+'px');r.style.animationDuration=Math.max(4,w/220)+'s'}}
 addEventListener('resize',fitRoad);
-function refreshPublic(){renderFleet();renderRules();applyContact();applyHero();if($('stops'))rsum()}
+const WDEF={on:true,a:20.4,b:80.7,y:82.5,r:5.4};
+/* spins the REAL wheel pixels of the bus photo (a rotating circular crop of the same image) */
+function placeWheels(root){const img=root&&root.querySelector('img');if(!img||!img.naturalWidth||!img.clientWidth)return;const w=Object.assign({},WDEF,S.hero.wheel||{}),bw=img.clientWidth,bh=img.clientHeight,d=2*w.r/100*bw,ty=w.y/100*bh;
+root.classList.add('wok');root.classList.toggle('nowh',!w.on);
+root.querySelectorAll('.rwh').forEach((e,i)=>{const cx=(i?w.b:w.a)/100*bw;e.style.cssText=`width:${d}px;height:${d}px;left:${cx-d/2}px;top:${ty-d/2}px;background-image:url("${img.currentSrc||img.src}");background-size:${bw}px ${bh}px;background-position:${-(cx-d/2)}px ${-(ty-d/2)}px`})}
+function applyWheels(){const i=$('rbimg');if(i)placeWheels(i.parentElement);document.querySelectorAll('.wp').forEach(placeWheels)}
+addEventListener('resize',applyWheels);$('rbimg').addEventListener('load',applyWheels);
+function refreshPublic(){renderFleet();renderRules();applyContact();applyHero();applyWheels();if($('stops'))rsum()}
 /* ===== gallery ===== */
 let GB=null,GI=0;
 function openBus(id,i){GB=S.buses.find(x=>x.id==id);GI=i||0;$('gt').textContent=GB.name;galShow();openM('bus')}
@@ -743,10 +755,22 @@ window._mk=L.marker([m.lat,m.lng],{draggable:true}).addTo(window._map);window._m
 async function searchLoc(){const q=$('lq').value.trim();if(!q)return;try{const r=await fetch('https://nominatim.openstreetmap.org/search?format=json&limit=1&q='+encodeURIComponent(q)),d=await r.json();if(!d.length)return toast('Place not found',1);setPin(+d[0].lat,+d[0].lon,17)}catch(e){toast('Search failed. Tap on the map instead.',1)}}
 function gpsLoc(){if(!navigator.geolocation)return toast('GPS not supported',1);navigator.geolocation.getCurrentPosition(p=>setPin(p.coords.latitude,p.coords.longitude,17),()=>toast('Could not get location. Allow permission.',1),{enableHighAccuracy:true,timeout:15000})}
 /* ---- hero media ---- */
-const HS=[['bg','Background photo (4K road / highway)','JPG, wide 3840×2160 recommended. Replaces the sky & city drawing.',{max:3840,q:.86}],['bus','Real bus photo (transparent PNG)','Side-view bus with transparent background. It drives in on the road.',{max:2400,png:true}],['road','Road strip (seamless, repeats)','Wide road image that tiles left-right; it scrolls like a moving road.',{max:3200,q:.86}],['video','Background video (optional, MP4)','Paste an MP4 URL or a path like images/hero.mp4 (commit the file to your repo).',null]];
-function vHero(){return `<div class="panel"><h3>Hero (top of website)</h3><p class="hint">Upload real 4K photos here – they are saved to your GitHub repo. Until you add them, the animated drawing is shown. Press Publish after changes.</p>${HS.map(([k,t,h,o])=>`<div class="hs"><div class="pv">${S.hero[k]&&k!='video'?`<img src="${esc(imgSrc(S.hero[k]))}" alt="">`:''}</div><div><b>${t}</b><p class="hint" style="margin:2px 0 10px">${h}</p><div class="eqa">${o?`<label class="btn gold sm" style="text-transform:none;letter-spacing:0;font-size:.78rem;color:#1b1204">📤 Upload<input type="file" accept="${o.png?'image/png':'image/*'}" style="display:none" onchange="upHero('${k}',this)"></label>`:''}<input value="${esc(S.hero[k])}" placeholder="path or URL" onchange="setHero('${k}',this.value)" style="flex:1;min-width:160px"><button class="btn red sm" onclick="setHero('${k}','');tab('hero',1)">Remove</button></div></div></div>`).join('')}</div>`}
+const HS=[['bg','Background photo (4K road / highway)','JPG, wide 3840×2160 recommended. Replaces the sky & city drawing.',{max:3840,q:.86}],['bus','Real bus photo (transparent PNG)','Side-view bus with transparent background. It drives in on the road.',{max:2400,png:true}],['road','Road strip (seamless, repeats)','Wide road image that tiles left-right; it scrolls like a moving road.',{max:3200,q:.86}],['video','Background video (from your gallery)','MP4, 10–20 seconds, ideally under 25 MB (max 60 MB). Plays muted in a loop behind the hero text and replaces the background photo.',null]];
+const WL=[['a','Left wheel – sideways',0,100],['b','Right wheel – sideways',0,100],['y','Wheels – up / down',60,100],['r','Wheel size',2,10]];
+function vHero(){const w=Object.assign({},WDEF,S.hero.wheel||{});
+return `<div class="panel"><h3>Hero (top of website)</h3><p class="hint">Upload images/video here (saved to your GitHub repo). Until you add them, the animated drawing is shown. Press Publish after changes.</p>${HS.map(([k,t,h,o])=>{const v=k=='video';return `<div class="hs"><div class="pv">${S.hero[k]?(v?`<video src="${esc(imgSrc(S.hero[k]))}" muted playsinline preload="metadata"></video>`:`<img src="${esc(imgSrc(S.hero[k]))}" alt="">`):''}</div><div><b>${t}</b><p class="hint" style="margin:2px 0 10px">${h}</p><div class="eqa"><label class="btn gold sm" style="text-transform:none;letter-spacing:0;font-size:.78rem;color:#1b1204">${v?'🎞️ Choose from gallery':'📤 Upload'}<input type="file" accept="${v?'video/*':o.png?'image/png':'image/*'}" style="display:none" onchange="${v?'upVideo':'upHero'}('${k}',this)"></label><input value="${esc(S.hero[k])}" placeholder="path or URL" onchange="setHero('${k}',this.value)" style="flex:1;min-width:160px"><button class="btn red sm" onclick="setHero('${k}','');tab('hero',1)">Remove</button></div></div></div>`}).join('')}</div>
+<div class="panel"><h3>🛞 Wheel spin on the bus</h3>${S.hero.bus?`<p class="hint">The real wheels of your bus photo rotate. Move the sliders until the spinning circles sit exactly on both wheels.</p><div class="wp" id="wpv"><img src="${esc(imgSrc(S.hero.bus))}" alt="" onload="placeWheels(this.parentElement)"><i class="rwh a"></i><i class="rwh b"></i></div>
+${WL.map(([k,t,mn,mx])=>`<div class="sl2"><span>${t}</span><input type="range" min="${mn}" max="${mx}" step=".1" value="${w[k]}" oninput="wset('${k}',this.value,this)"><b>${w[k]}</b></div>`).join('')}
+<label class="ck"><input type="checkbox" ${w.on?'checked':''} onchange="wset('on',this.checked)"><span>Spin the wheels</span></label>`:'<p class="hint" style="margin:0">Upload the real bus photo above first.</p>'}</div>`}
+function wset(k,v,el){S.hero.wheel=Object.assign({},WDEF,S.hero.wheel||{},{[k]:k=='on'?!!v:+v});if(el)el.nextElementSibling.textContent=v;DIRTY=true;$('pubbtn').classList.add('dirty');applyWheels()}
 function setHero(k,v){S.hero[k]=v.trim();dirty()}
 async function upHero(k,el){const f=el.files[0];if(!f)return;if(!GH())return needGh();const o=HS.find(x=>x[0]==k)[3];toast('Uploading…');try{S.hero[k]=await uploadImage(f,Object.assign({name:`hero-${k}-${Date.now()}`},o));dirty();tab('hero',1);toast('✅ Uploaded. Press Publish.')}catch(e){toast('Upload failed: '+e.message,1)}}
+async function upVideo(k,el){const f=el.files[0];if(!f)return;if(!GH())return needGh();if(!/^video\//.test(f.type))return toast('Please choose a video file',1);
+if(f.size>60*1048576)return toast('Video is too big (max 60 MB). Trim it to 10–20 seconds or compress it first.',1);
+if(f.size>25*1048576&&!confirm('This video is '+Math.round(f.size/1048576)+' MB – the site may load slowly on mobile data. Upload anyway?'))return;
+toast('Uploading video… please wait');try{const ext=/webm/.test(f.type)?'webm':/quicktime/.test(f.type)?'mov':'mp4';
+const b64=await new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(String(r.result).split(',')[1]);r.onerror=()=>rej(new Error('Could not read the video'));r.readAsDataURL(f)});
+const path=`images/hero-video-${Date.now()}.${ext}`;await ghWrite(path,b64,'Upload '+path);PREV[path]=URL.createObjectURL(f);S.hero.video=path;dirty();tab('hero',1);toast('✅ Video uploaded. Press Publish.')}catch(e){toast('Upload failed: '+e.message,1)}}
 /* ---- settings ---- */
 function vSet(){const g=get(K.gh,{});return `<div class="panel"><h3>🔗 Connect GitHub (this is your database)</h3><p class="hint">Needed once per device to Publish and upload photos. The token is stored only in this browser.</p>
 <div class="af">${inp('Repository (owner/name)',g.repo||'','id="gR" placeholder="ayan/bharat-travels"')}${inp('Branch',g.branch||'main','id="gB"')}<div class="fd"><label>Access token</label><input id="gT" type="password" value="${esc(g.token||'')}" placeholder="github_pat_…"></div></div>
@@ -763,4 +787,4 @@ function exportData(){const a=document.createElement('a');a.href=URL.createObjec
 function importData(i){const f=i.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);if(!Array.isArray(d.enq))throw 0;enq=d.enq;saveEnq();enq.forEach(syncBooked);toast('Backup restored ✅');tab('set')}catch(e){toast('Invalid backup file',1)}};r.readAsText(f)}
 </script>
 </body>
-</html>
+                         </html>
